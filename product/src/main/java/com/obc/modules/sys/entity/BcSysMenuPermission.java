@@ -3,10 +3,12 @@ package com.obc.modules.sys.entity;
 import com.obc.common.persistence.mybatis.DataEntity;
 
 /**
- * 权限表
  * 
- * @author FC
+ * @ClassName: BcSysMenuPermission 
  *
+ * @author FC
+ * @Description: TODO 【权限表】
+ * @date 2016年2月20日 下午9:02:59
  */
 public class BcSysMenuPermission extends DataEntity<BcSysMenuPermission> {
 

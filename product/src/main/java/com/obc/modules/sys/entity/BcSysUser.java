@@ -4,6 +4,14 @@ import java.util.Date;
 
 import com.obc.common.persistence.mybatis.DataEntity;
 
+/**
+ * 
+ * @ClassName: BcSysUser
+ *
+ * @author FC
+ * @Description: TODO 【这里用一句话描述这个类的作用】
+ * @date 2016年2月20日 下午9:03:23
+ */
 public class BcSysUser extends DataEntity<BcSysUser> {
 
 	private static final long serialVersionUID = -246089492778549021L;

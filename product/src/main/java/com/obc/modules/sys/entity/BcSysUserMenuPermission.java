@@ -2,6 +2,14 @@ package com.obc.modules.sys.entity;
 
 import com.obc.common.persistence.mybatis.DataEntity;
 
+/**
+ * 
+ * @ClassName: BcSysUserMenuPermission
+ *
+ * @author FC
+ * @Description: TODO 【这里用一句话描述这个类的作用】
+ * @date 2016年2月20日 下午9:03:28
+ */
 public class BcSysUserMenuPermission extends DataEntity<BcSysUserMenuPermission> {
 
 	private static final long serialVersionUID = 5638390700383305444L;

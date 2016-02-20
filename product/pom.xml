@@ -125,6 +125,13 @@
             <version>2.7.3</version>
         </dependency>
         <!-- redis end -->
+        <!-- ftp begin -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.3</version>
+        </dependency>
+        <!-- ftp end -->
     </dependencies>
     <build>
         <finalName>product</finalName>

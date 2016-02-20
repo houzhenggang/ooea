@@ -2,6 +2,14 @@ package com.obc.modules.sys.entity;
 
 import com.obc.common.persistence.mybatis.BaseEntity;
 
+/**
+ * 
+ * @ClassName: BcSysRole
+ *
+ * @author FC
+ * @Description: TODO 【这里用一句话描述这个类的作用】
+ * @date 2016年2月20日 下午9:03:18
+ */
 public class BcSysRole extends BaseEntity<BcSysRole> {
 
 	private static final long serialVersionUID = 3905063886850190481L;
