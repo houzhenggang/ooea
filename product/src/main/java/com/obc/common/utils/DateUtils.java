@@ -1,5 +1,5 @@
 package com.obc.common.utils;
 
-public class A {
+public class DateUtils {
 
 }

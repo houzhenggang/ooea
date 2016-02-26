@@ -22,5 +22,7 @@ import org.springframework.stereotype.Component;
 @Documented
 @Component
 public @interface MyBatisDao {
+
 	String value() default "";
+
 }
