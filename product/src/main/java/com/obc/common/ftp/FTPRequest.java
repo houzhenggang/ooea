@@ -8,11 +8,11 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 import org.apache.commons.net.ftp.FTPReply;
 import org.apache.log4j.Logger;
-import org.springframework.util.StringUtils;
 
 /**
  * 
@@ -33,49 +33,49 @@ public class FTPRequest {
 	private String localPath;// 文件在本地的路径
 	private List<String> fileName = new ArrayList<String>(); // 操作的文件名
 
-	private FTPRequest() {
+	private FTPRequest ( ) {
 	}
 
-	public static FTPRequest newInstance() {
+	public static FTPRequest newInstance ( ) {
 		return new FTPRequest();
 	}
 
-	public FTPRequest addFTPPath(String path) {
+	public FTPRequest addFTPPath ( String path ) {
 		this.ftpPath = path;
 		return this;
 	}
 
-	public FTPRequest addFTPHost(String host) {
+	public FTPRequest addFTPHost ( String host ) {
 		this.ftpHost = host;
 		return this;
 	}
 
-	public FTPRequest addUserName(String userName) {
+	public FTPRequest addUserName ( String userName ) {
 		this.userName = userName;
 		return this;
 	}
 
-	public FTPRequest addPassword(String password) {
+	public FTPRequest addPassword ( String password ) {
 		this.password = password;
 		return this;
 	}
 
-	public FTPRequest addLocalPath(String localPath) {
+	public FTPRequest addLocalPath ( String localPath ) {
 		this.localPath = localPath;
 		return this;
 	}
 
-	public FTPRequest addFileName(String fileName) {
+	public FTPRequest addFileName ( String fileName ) {
 		this.fileName.add(fileName);
 		return this;
 	}
 
-	public FTPRequest addFileNames(List<String> fileName) {
+	public FTPRequest addFileNames ( List<String> fileName ) {
 		this.fileName = fileName;
 		return this;
 	}
 
-	public FTPRequest addPort(int port) {
+	public FTPRequest addPort ( int port ) {
 		this.port = port;
 		return this;
 	}
@@ -90,7 +90,7 @@ public class FTPRequest {
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:52
 	 */
-	public void downFile() throws Exception {
+	public void downFile ( ) throws Exception {
 
 		FTPClient ftp = new FTPClient();
 
@@ -132,11 +132,7 @@ public class FTPRequest {
 			throw e;
 		} finally {
 			if (ftp.isConnected()) {
-				try {
-					ftp.disconnect();
-				} catch (IOException ioe) {
-					throw ioe;
-				}
+				ftp.disconnect();
 			}
 		}
 	}
@@ -151,7 +147,7 @@ public class FTPRequest {
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:45
 	 */
-	public void uploadFile() throws Exception {
+	public void uploadFile ( ) throws Exception {
 		FTPClient ftp = new FTPClient();
 		try {
 			int reply;
@@ -199,8 +195,8 @@ public class FTPRequest {
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:39
 	 */
-	public void initLocalPath() throws Exception {
-		if (this.localPath != null && !"".equals(this.localPath)) {
+	public void initLocalPath ( ) throws Exception {
+		if (StringUtils.isNotEmpty(this.localPath) && !StringUtils.equals("", this.localPath)) {
 			File dirs = new File(this.localPath);
 			if (!dirs.exists()) {// 不存在则创建
 				dirs.mkdirs();
@@ -219,20 +215,22 @@ public class FTPRequest {
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:27
 	 */
-	private void createDirecroty(FTPClient ftpClient) throws Exception {
-		if (this.ftpPath.startsWith("/")) { // 如果是绝对路径
+	private void createDirecroty ( FTPClient ftpClient ) throws Exception {
+		if (this.ftpPath.startsWith("/")) {
 			ftpClient.changeWorkingDirectory("/");
 		}
-		String[] directory = this.ftpPath.split("/");
-		for (int i = 0; i < directory.length; i++) {
-			if (directory[i] != null && !directory[i].trim().equals("")) {
-				if (!ftpClient.changeWorkingDirectory(directory[i])) {
-					ftpClient.makeDirectory(directory[i]);
-					ftpClient.changeWorkingDirectory(directory[i]);
+		String[] directorys = this.ftpPath.split("/");
+		for (int i = 0; i < directorys.length; i++) {
+			// 每级目录名称
+			String directory = directorys[i];
+			if (StringUtils.isNotEmpty(directory) && !StringUtils.equals("", directory.trim())) {
+				if (!ftpClient.changeWorkingDirectory(directory)) {
+
+					ftpClient.makeDirectory(directory);
+					ftpClient.changeWorkingDirectory(directory);
 				}
 			}
 		}
-
 	}
 
 }
