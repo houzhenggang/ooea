@@ -19,10 +19,5 @@
     <import resource="applicationContext-memcached.xml" />
     <import resource="applicationContext-mq" />
     <import resource="applicationContext-shiro.xml" />
-    
-    
-    
-    
-    
 </beans>
     

@@ -3,8 +3,12 @@
 <configuration>
 
     <mappers>
-        <mapper resource=""/>
-        <mapper resource=""/>
+        <mapper resource="mybatis/sys/BcSysMenuMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysMenuPermissionMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysRoleMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysUserMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysUserMenuPermissionMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysUserRoleMapper.xml" />
     </mappers>
 
 </configuration>
