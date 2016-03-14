@@ -1,8 +1,7 @@
 package com.obc.modules.sys.entity;
 
+import java.io.Serializable;
 import java.util.Date;
-
-import com.obc.common.persistence.mybatis.DataEntity;
 
 /**
  * 
@@ -12,7 +11,7 @@ import com.obc.common.persistence.mybatis.DataEntity;
  * @Description: TODO 【这里用一句话描述这个类的作用】
  * @date 2016年2月20日 下午9:03:23
  */
-public class BcSysUser extends DataEntity<BcSysUser> {
+public class BcSysUser implements Serializable {
 
 	private static final long serialVersionUID = -246089492778549021L;
 
@@ -27,83 +26,83 @@ public class BcSysUser extends DataEntity<BcSysUser> {
 	private Date last_login_time;// '最近登录'
 	private String is_valid;// '是否有效【1：有效 0：无效】'
 
-	public Long getSys_user_id() {
+	public Long getSys_user_id ( ) {
 		return sys_user_id;
 	}
 
-	public void setSys_user_id(Long sys_user_id) {
+	public void setSys_user_id ( Long sys_user_id ) {
 		this.sys_user_id = sys_user_id;
 	}
 
-	public String getPassword() {
+	public String getPassword ( ) {
 		return password;
 	}
 
-	public void setPassword(String password) {
+	public void setPassword ( String password ) {
 		this.password = password;
 	}
 
-	public String getSalt() {
+	public String getSalt ( ) {
 		return salt;
 	}
 
-	public void setSalt(String salt) {
+	public void setSalt ( String salt ) {
 		this.salt = salt;
 	}
 
-	public String getUsername() {
+	public String getUsername ( ) {
 		return username;
 	}
 
-	public void setUsername(String username) {
+	public void setUsername ( String username ) {
 		this.username = username;
 	}
 
-	public String getEmail() {
+	public String getEmail ( ) {
 		return email;
 	}
 
-	public void setEmail(String email) {
+	public void setEmail ( String email ) {
 		this.email = email;
 	}
 
-	public String getNickname() {
+	public String getNickname ( ) {
 		return nickname;
 	}
 
-	public void setNickname(String nickname) {
+	public void setNickname ( String nickname ) {
 		this.nickname = nickname;
 	}
 
-	public String getMobile_phone() {
+	public String getMobile_phone ( ) {
 		return mobile_phone;
 	}
 
-	public void setMobile_phone(String mobile_phone) {
+	public void setMobile_phone ( String mobile_phone ) {
 		this.mobile_phone = mobile_phone;
 	}
 
-	public Date getCreate_time() {
+	public Date getCreate_time ( ) {
 		return create_time;
 	}
 
-	public void setCreate_time(Date create_time) {
+	public void setCreate_time ( Date create_time ) {
 		this.create_time = create_time;
 	}
 
-	public Date getLast_login_time() {
+	public Date getLast_login_time ( ) {
 		return last_login_time;
 	}
 
-	public void setLast_login_time(Date last_login_time) {
+	public void setLast_login_time ( Date last_login_time ) {
 		this.last_login_time = last_login_time;
 	}
 
-	public String getIs_valid() {
+	public String getIs_valid ( ) {
 		return is_valid;
 	}
 
-	public void setIs_valid(String is_valid) {
+	public void setIs_valid ( String is_valid ) {
 		this.is_valid = is_valid;
 	}
 
