@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="">
+<mapper namespace="com.obc.modules.sys.dao.BcSysUserDao">
     <sql id="UserColumns">
+        bsu.sys_user_id,
+        bsu.password,
+        bsu.salt,
+        bsu.username,
+        bsu.email,
+        bsu.nickname,
+        bsu.mobile_phone,
+        bsu.create_time,
+        bsu.last_login_time,
+        bsu.valid
     </sql>
 
+    <resultMap type="bcSysUser" id="userResult">
+        <id property="sys_user_id" column="sys_user_id" />
+        <result property="password" column="password" />
+        <result property="salt" column="salt" />
+        <result property="username" column="email" />
+        <result property="nickname" column="nickname" />
+        <result property="mobile_phone" column="mobile_phone" />
+        <result property="create_time" column="create_time" />
+        <result property="last_login_time" column="last_login_time" />
+        <result property="valid" column="valid" />
+    </resultMap>
+
+
+    <select id="findBcSysUser" parameterType="java.lang.String"
+        resultType="bcSysUser">
+        select
+        <include refid="UserColumns" />
+        form bc_sys_user bsu where bsu.username=#{username }
+    </select>
 </mapper>
