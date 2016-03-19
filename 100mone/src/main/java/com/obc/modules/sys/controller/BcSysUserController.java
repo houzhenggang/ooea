@@ -25,7 +25,19 @@ public class BcSysUserController {
 		return "";
 	}
 
+	/**
+	 * 退出登录（后台）
+	 * 
+	 * @Title: outlogin
+	 * 
+	 * @author FC
+	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * @return
+	 * @date 2016年3月19日 下午10:30:44
+	 */
+	@RequestMapping( "/outlogin.do" )
 	public String outlogin ( ) {
-		return PageUrl.INDEX;
+		
+		return PageUrl.SYSINDEX;
 	}
 }

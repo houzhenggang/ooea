@@ -2,7 +2,7 @@ package com.obc.common.consumer.constant;
 
 /**
  * 
- * @ClassName: PageUrl 
+ * @ClassName: PageUrl
  *
  * @author FC
  * @Description: TODO 【每个页面跳转地址】
@@ -10,12 +10,11 @@ package com.obc.common.consumer.constant;
  */
 public class PageUrl {
 	/**
-	 * 首页
+	 * consumer普通用户首页
 	 */
 	public static final String INDEX = "obc/index";
 	/**
-	 * sys
+	 * sys管理首页
 	 */
 	public static final String SYSINDEX = "obc/sys/index";
-
 }
