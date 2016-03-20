@@ -3,7 +3,7 @@ package com.obc.modules.sys.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.obc.common.consumer.constant.PageUrl;
+import com.obc.common.constant.PageUrl;
 import com.obc.modules.sys.service.BcSysUserService;
 
 @RequestMapping( "/login" )

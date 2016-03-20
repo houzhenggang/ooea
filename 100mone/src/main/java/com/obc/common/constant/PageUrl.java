@@ -1,4 +1,4 @@
-package com.obc.common.consumer.constant;
+package com.obc.common.constant;
 
 /**
  * 
