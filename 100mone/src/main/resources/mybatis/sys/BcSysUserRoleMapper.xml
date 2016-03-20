@@ -3,5 +3,4 @@
 <mapper namespace="">
     <sql id="UserRoleColumns">
     </sql>
-
 </mapper>

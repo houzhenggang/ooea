@@ -22,22 +22,22 @@ public class BcSysUserController {
 	 * @date 2016年3月19日 下午10:12:53
 	 */
 	public String login ( ) {
+		bcSysUserService.findBcSysUser("");
 		return "";
 	}
 
 	/**
-	 * 退出登录（后台）
 	 * 
 	 * @Title: outlogin
 	 * 
 	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * @Description: TODO 【退出登录（后台）】
 	 * @return
 	 * @date 2016年3月19日 下午10:30:44
 	 */
 	@RequestMapping( "/outlogin.do" )
 	public String outlogin ( ) {
-		
+
 		return PageUrl.SYSINDEX;
 	}
 }
