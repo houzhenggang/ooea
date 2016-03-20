@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.obc.mm</groupId>
+            <groupId>com.obc</groupId>
             <artifactId>i-commons</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
