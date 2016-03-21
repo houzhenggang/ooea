@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="">
-    
+<mapper namespace="com.obc.modules.sys.dao.BcSysMenuDao">
     <sql id="MenuColumns">
+        bsm.sys_meum_id,
+        bsm.sn,
+        bsm.name,
+        bsm.priority,
+        bsm.parent_id,
+        bsm.description,
+        bsm.url
     </sql>
+
+    <select id="findSysMenu">
+        select
+        <include refid="MenuColumns" />
+        from bc_sys_menu bsm
+    </select>
 
 </mapper>
