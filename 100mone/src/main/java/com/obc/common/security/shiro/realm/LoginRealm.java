@@ -6,7 +6,14 @@ import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-
+/**
+ * 
+ * @ClassName: LoginRealm 
+ *
+ * @author FC
+ * @Description: TODO 【登陆时验证】
+ * @date 2016年3月21日 下午5:50:11
+ */
 public class LoginRealm extends AuthorizingRealm {
 
 	@Override

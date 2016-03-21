@@ -12,9 +12,9 @@ public class PageUrl {
 	/**
 	 * consumer普通用户首页
 	 */
-	public static final String INDEX = "obc/index";
+	public static final String Index = "obc/index";
 	/**
 	 * sys管理首页
 	 */
-	public static final String SYSINDEX = "obc/sys/index";
+	public static final String SysIndex = "obc/sys/index";
 }

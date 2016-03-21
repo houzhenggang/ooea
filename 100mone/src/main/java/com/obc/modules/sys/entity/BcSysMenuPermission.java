@@ -60,4 +60,21 @@ public class BcSysMenuPermission implements Serializable {
 		this.menu_id = menu_id;
 	}
 
+	public BcSysMenuPermission ( ) {
+		super();
+	}
+
+	public BcSysMenuPermission ( Long sys_menu_permission_id ,
+			String sn ,
+			String name ,
+			String is_valid ,
+			Long menu_id ) {
+		super();
+		this.sys_menu_permission_id = sys_menu_permission_id;
+		this.sn = sn;
+		this.name = name;
+		this.is_valid = is_valid;
+		this.menu_id = menu_id;
+	}
+
 }

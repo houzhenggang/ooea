@@ -69,4 +69,18 @@ public class BcSysMeum implements Serializable {
 		this.url = url;
 	}
 
+	public BcSysMeum ( ) {
+		super();
+	}
+
+	public BcSysMeum ( String sn , String name , Long priority , Long parent_id , String description , String url ) {
+		super();
+		this.sn = sn;
+		this.name = name;
+		this.priority = priority;
+		this.parent_id = parent_id;
+		this.description = description;
+		this.url = url;
+	}
+
 }

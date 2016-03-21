@@ -38,6 +38,6 @@ public class BcSysUserController {
 	@RequestMapping( "/outlogin.do" )
 	public String outlogin ( ) {
 
-		return PageUrl.SYSINDEX;
+		return PageUrl.SysIndex;
 	}
 }

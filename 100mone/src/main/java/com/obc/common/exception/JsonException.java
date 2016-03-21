@@ -1,8 +1,8 @@
 package com.obc.common.exception;
 
-public class JsonException extends Exception {
+import com.obc.common.constant.ExceptionCode;
 
-	private static final String JosnExceptionMessage = "10000000001";
+public class JsonException extends Exception {
 
 	/**
 	 * @author FC
@@ -12,11 +12,11 @@ public class JsonException extends Exception {
 	private static final long serialVersionUID = -6105893005062688525L;
 
 	public JsonException ( ) {
-		super(JosnExceptionMessage);
+		super(ExceptionCode.JosnExceptionMessage);
 	}
 
 	public JsonException ( String message ) {
-		super(JosnExceptionMessage);
+		super(ExceptionCode.JosnExceptionMessage);
 	}
 
 }

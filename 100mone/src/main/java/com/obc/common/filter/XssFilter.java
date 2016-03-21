@@ -12,6 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.obc.common.utils.XssHttpServletRequestWrapper;
 
+/**
+ * 
+ * @ClassName: XssFilter 
+ *
+ * @author FC
+ * @Description: TODO 【这里用一句话描述这个类的作用】
+ * @date 2016年3月21日 下午5:47:59
+ */
 public class XssFilter implements Filter {
 	FilterConfig filterConfig = null;
 

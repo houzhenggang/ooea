@@ -41,4 +41,15 @@ public class BcSysUserRole implements Serializable {
 		this.sys_role_id = sys_role_id;
 	}
 
+	public BcSysUserRole ( ) {
+		super();
+	}
+
+	public BcSysUserRole ( Long sys_user_role_id , Long sys_user_id , Long sys_role_id ) {
+		super();
+		this.sys_user_role_id = sys_user_role_id;
+		this.sys_user_id = sys_user_id;
+		this.sys_role_id = sys_role_id;
+	}
+
 }

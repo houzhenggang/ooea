@@ -106,4 +106,31 @@ public class BcSysUser implements Serializable {
 		this.is_valid = is_valid;
 	}
 
+	public BcSysUser ( ) {
+		super();
+	}
+
+	public BcSysUser ( Long sys_user_id ,
+			String password ,
+			String salt ,
+			String username ,
+			String email ,
+			String nickname ,
+			String mobile_phone ,
+			Date create_time ,
+			Date last_login_time ,
+			String is_valid ) {
+		super();
+		this.sys_user_id = sys_user_id;
+		this.password = password;
+		this.salt = salt;
+		this.username = username;
+		this.email = email;
+		this.nickname = nickname;
+		this.mobile_phone = mobile_phone;
+		this.create_time = create_time;
+		this.last_login_time = last_login_time;
+		this.is_valid = is_valid;
+	}
+
 }

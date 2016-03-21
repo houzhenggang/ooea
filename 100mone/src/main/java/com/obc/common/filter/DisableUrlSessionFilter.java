@@ -13,13 +13,23 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 import javax.servlet.http.HttpSession;
 
+/**
+ * 
+ * @ClassName: DisableUrlSessionFilter
+ *
+ * @author FC
+ * @Description: TODO 【这里用一句话描述这个类的作用】
+ * @date 2016年3月21日 下午5:48:10
+ */
 public class DisableUrlSessionFilter implements Filter {
-	
-	public void init(FilterConfig config) throws ServletException {
+
+	public void init ( FilterConfig config ) throws ServletException {
 	}
 
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-			throws IOException, ServletException {
+	public void doFilter (	ServletRequest request ,
+							ServletResponse response ,
+							FilterChain chain )	throws IOException ,
+												ServletException {
 		// skip non-http requests
 		if (!(request instanceof HttpServletRequest)) {
 			chain.doFilter(request, response);
@@ -36,19 +46,19 @@ public class DisableUrlSessionFilter implements Filter {
 		// wrap response to remove URL encoding
 		HttpServletResponseWrapper wrappedResponse = new HttpServletResponseWrapper(httpResponse) {
 			@Override
-			public String encodeRedirectUrl(String url) {
+			public String encodeRedirectUrl ( String url ) {
 				return url;
 			}
 
-			public String encodeRedirectURL(String url) {
+			public String encodeRedirectURL ( String url ) {
 				return url;
 			}
 
-			public String encodeUrl(String url) {
+			public String encodeUrl ( String url ) {
 				return url;
 			}
 
-			public String encodeURL(String url) {
+			public String encodeURL ( String url ) {
 				return url;
 			}
 		};
@@ -56,6 +66,6 @@ public class DisableUrlSessionFilter implements Filter {
 		chain.doFilter(request, wrappedResponse);
 	}
 
-	public void destroy() {
+	public void destroy ( ) {
 	}
 }

@@ -41,4 +41,15 @@ public class BcSysRole implements Serializable {
 		this.sn = sn;
 	}
 
+	public BcSysRole ( ) {
+		super();
+	}
+
+	public BcSysRole ( Long sys_role_id , String name , String sn ) {
+		super();
+		this.sys_role_id = sys_role_id;
+		this.name = name;
+		this.sn = sn;
+	}
+
 }

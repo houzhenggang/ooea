@@ -51,4 +51,19 @@ public class BcSysUserMenuPermission implements Serializable {
 		this.sys_menu_permission_id = sys_menu_permission_id;
 	}
 
+	public BcSysUserMenuPermission ( ) {
+		super();
+	}
+
+	public BcSysUserMenuPermission ( Long sys_user_menu_permission_id ,
+			Long sys_user_id ,
+			Long sys_menu_id ,
+			Long sys_menu_permission_id ) {
+		super();
+		this.sys_user_menu_permission_id = sys_user_menu_permission_id;
+		this.sys_user_id = sys_user_id;
+		this.sys_menu_id = sys_menu_id;
+		this.sys_menu_permission_id = sys_menu_permission_id;
+	}
+
 }

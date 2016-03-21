@@ -14,13 +14,13 @@ public class Canonical {
 	/**
 	 * 邮箱验证
 	 */
-	public static final String EMAIL = "";
+	public static final String Email = "";
 	/**
 	 * 手机号码
 	 */
-	public static final String PHONE = "";
+	public static final String Phone = "";
 	/**
 	 * 身份证
 	 */
-	public static final String CARD = "";
+	public static final String Card = "";
 }
