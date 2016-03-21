@@ -1,6 +1,6 @@
 package com.obc.modules.sys.dao.impl;
 
-import com.obc.common.mybatis.BaseDao;
+import com.obc.common.persistence.mybatis.BaseDao;
 import com.obc.modules.sys.dao.BcSysUserDao;
 import com.obc.modules.sys.entity.BcSysUser;
 

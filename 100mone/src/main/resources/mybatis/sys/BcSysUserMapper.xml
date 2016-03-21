@@ -11,7 +11,7 @@
         bsu.mobile_phone,
         bsu.create_time,
         bsu.last_login_time,
-        bsu.valid
+        bsu.is_valid
     </sql>
 
     <resultMap type="bcSysUser" id="userResult">
@@ -23,7 +23,7 @@
         <result property="mobile_phone" column="mobile_phone" />
         <result property="create_time" column="create_time" />
         <result property="last_login_time" column="last_login_time" />
-        <result property="valid" column="valid" />
+        <result property="is_valid" column="is_valid" />
     </resultMap>
 
 
@@ -31,6 +31,6 @@
         resultType="bcSysUser">
         select
         <include refid="UserColumns" />
-        form bc_sys_user bsu where bsu.username=#{username }
+        from bc_sys_user bsu where bsu.username=#{username }
     </select>
 </mapper>

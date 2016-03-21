@@ -1,4 +1,4 @@
-package com.obc.common.mybatis;
+package com.obc.common.persistence.mybatis;
 
 import java.io.Serializable;
 
