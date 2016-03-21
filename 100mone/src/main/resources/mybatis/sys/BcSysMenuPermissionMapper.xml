@@ -8,5 +8,12 @@
         bsmp.is_valid,
         bsmp.menu_id
     </sql>
-    
+    <resultMap type="bcSysMenuPermission" id="menuPermissionResult">
+        <id property="sys_menu_permission_id" column="sys_menu_permission_id" />
+        <result property="sn" column="sn" />
+        <result property="name" column="name" />
+        <result property="is_valid" column="is_valid" />
+        <result property="menu_id" column="menu_id" />
+    </resultMap>
+
 </mapper>

@@ -13,7 +13,6 @@
         bsu.last_login_time,
         bsu.is_valid
     </sql>
-
     <resultMap type="bcSysUser" id="userResult">
         <id property="sys_user_id" column="sys_user_id" />
         <result property="password" column="password" />
@@ -25,10 +24,8 @@
         <result property="last_login_time" column="last_login_time" />
         <result property="is_valid" column="is_valid" />
     </resultMap>
-
-
-    <select id="findBcSysUser" parameterType="java.lang.String"
-        resultType="bcSysUser">
+    <!-- --- -->
+    <select id="findBcSysUser" parameterType="java.lang.String" resultType="bcSysUser">
         select
         <include refid="UserColumns" />
         from bc_sys_user bsu where bsu.username=#{username }

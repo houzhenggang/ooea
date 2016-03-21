@@ -26,15 +26,21 @@
     </settings>
 
     <typeAliases>
+        <!-- 后台操作 -->
         <typeAlias type="com.obc.modules.sys.entity.BcSysUser" alias="bcSysUser" />
+        <typeAlias type="com.obc.modules.sys.entity.BcSysMenuPermission" alias="bcSysMenuPermission" />
+        <typeAlias type="com.obc.modules.sys.entity.BcSysMeum" alias="bcSysMeum" />
+        <typeAlias type="com.obc.modules.sys.entity.BcSysRole" alias="bcSysRole" />
+        <typeAlias type="com.obc.modules.sys.entity.BcSysUserMenuPermission" alias="bcSysUserMenuPermission" />
+        <typeAlias type="com.obc.modules.sys.entity.BcSysUserRole" alias="bcSysUserRole" />
     </typeAliases>
     <mappers>
-        <!-- <mapper resource="mybatis/sys/BcSysMenuMapper.xml" /> -->
-        <!-- <mapper resource="mybatis/sys/BcSysMenuPermissionMapper.xml" /> -->
-        <!-- <mapper resource="mybatis/sys/BcSysRoleMapper.xml" /> -->
+        <mapper resource="mybatis/sys/BcSysMenuMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysMenuPermissionMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysRoleMapper.xml" />
         <mapper resource="mybatis/sys/BcSysUserMapper.xml" />
-        <!-- <mapper resource="mybatis/sys/BcSysUserMenuPermissionMapper.xml" /> -->
-        <!-- <mapper resource="mybatis/sys/BcSysUserRoleMapper.xml" /> -->
+        <mapper resource="mybatis/sys/BcSysUserMenuPermissionMapper.xml" />
+        <mapper resource="mybatis/sys/BcSysUserRoleMapper.xml" />
     </mappers>
 
 </configuration>

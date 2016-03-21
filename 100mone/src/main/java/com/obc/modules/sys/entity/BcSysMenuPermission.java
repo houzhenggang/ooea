@@ -12,8 +12,13 @@ import java.io.Serializable;
  */
 public class BcSysMenuPermission implements Serializable {
 
-	private static final long serialVersionUID = 7900303369989512672L;
-
+	/**
+	 * @author FC
+	 * @Fields serialVersionUID : TODO 【用一句话描述这个变量表示什么】
+	 * @date 2016年3月21日 下午8:39:04
+	 */
+	private static final long serialVersionUID = 4158879638694457623L;
+	
 	private Long sys_menu_permission_id;// '权限ID'
 	private String sn;// '权限关键字'
 	private String name;// '权限名称'

@@ -12,7 +12,12 @@ import java.io.Serializable;
  */
 public class BcSysMeum implements Serializable {
 
-	private static final long serialVersionUID = 6815735499662162418L;
+	/**
+	 * @author FC
+	 * @Fields serialVersionUID : TODO 【用一句话描述这个变量表示什么】
+	 * @date 2016年3月21日 下午8:39:21
+	 */
+	private static final long serialVersionUID = -679417266901092660L;
 
 	private String sn;// '菜单标识'
 	private String name;// '菜单显示名称'

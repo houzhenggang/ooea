@@ -11,8 +11,14 @@ import java.io.Serializable;
  * @date 2016年2月20日 下午9:03:18
  */
 public class BcSysRole implements Serializable {
-
+	
+	/**
+	 * @author FC
+	 * @Fields serialVersionUID : TODO 【用一句话描述这个变量表示什么】
+	 * @date 2016年3月21日 下午8:39:21
+	 */
 	private static final long serialVersionUID = 3905063886850190481L;
+
 	private Long sys_role_id;// '角色ID'
 	private String name;// '角色名'
 	private String sn;// '角色标识'

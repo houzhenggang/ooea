@@ -7,5 +7,10 @@
         bsump.sys_menu_id,
         bsump.sys_menu_permission_id
     </sql>
-
+    <resultMap type="bcSysUserMenuPermission" id="userMenuPermissionResult">
+        <id property="sys_user_menu_permission_id" column="sys_user_menu_permission_id" />
+        <result property="sys_user_id" column="sys_user_id" />
+        <result property="sys_menu_id" column="sys_menu_id" />
+        <result property="sys_menu_permission_id" column="sys_menu_permission_id" />
+    </resultMap>
 </mapper>

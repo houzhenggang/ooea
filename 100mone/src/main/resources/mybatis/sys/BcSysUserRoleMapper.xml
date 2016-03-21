@@ -6,6 +6,10 @@
         bsur.sys_user_id,
         bsur.sys_role_id
     </sql>
-    
-    
+    <resultMap type="bcSysUserRole" id="userRoleResult">
+        <id property="sys_user_role_id" column="sys_user_role_id" />
+        <result property="sys_user_id" column="sys_user_id" />
+        <result property="sys_role_id" column="sys_role_id" />
+    </resultMap>
+
 </mapper>

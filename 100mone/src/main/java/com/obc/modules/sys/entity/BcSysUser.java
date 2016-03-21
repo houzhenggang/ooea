@@ -13,6 +13,11 @@ import java.util.Date;
  */
 public class BcSysUser implements Serializable {
 
+	/**
+	 * @author FC
+	 * @Fields serialVersionUID : TODO 【用一句话描述这个变量表示什么】
+	 * @date 2016年3月21日 下午8:39:21
+	 */
 	private static final long serialVersionUID = -246089492778549021L;
 
 	private Long sys_user_id;// '用户ID'
