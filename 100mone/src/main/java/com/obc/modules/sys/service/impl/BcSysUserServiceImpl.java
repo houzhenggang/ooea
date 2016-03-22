@@ -1,5 +1,7 @@
 package com.obc.modules.sys.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -12,12 +14,16 @@ import com.obc.modules.sys.service.BcSysUserService;
 public class BcSysUserServiceImpl implements BcSysUserService {
 
 	@Autowired
-	@Qualifier("bcSysUserDaoImpl")
+	@Qualifier( "bcSysUserDaoImpl" )
 	private BcSysUserDao bcSysUserDao;
 
 	@Override
 	public BcSysUser findBcSysUser ( String username ) {
-		return bcSysUserDao.findBcSysUser(username);
+		List<BcSysUser> users = bcSysUserDao.findBcSysUser(username);
+		if (users.size() > 0) {
+			return users.get(0);
+		}
+		return null;
 	}
 
 }
