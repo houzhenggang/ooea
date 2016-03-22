@@ -30,7 +30,7 @@
         from bc_sys_user bsu where bsu.username=#{username }
     </select>
     <!-- 注册 -->
-    <insert id="addBcSysUser" parameterType="bcSysUser" useGeneratedKeys="true" keyProperty="id">
+    <insert id="addBcSysUser" parameterType="bcSysUser" useGeneratedKeys="true" keyProperty="sys_user_id">
         INSERT INTO bc_sys_user
         (password,salt,username,email,nickname,mobile_phone,create_time,last_login_time,is_valid)
         VALUES
@@ -41,14 +41,14 @@
     <update id="updateBcSysUser" parameterType="bcSysUser">
         UPDATE bc_sys_user bsu
         <set>
-            <if test="password!=null and password!=''">bsu.password=#{password}</if>
-            <if test="salt!=null and salt!=''">bsu.salt=#{salt}</if>
-            <if test="username!=null and username!=''">bsu.username=#{username}</if>
-            <if test="email!=null and email!=''">bsu.email=#{email}</if>
-            <if test="nickname!=null and nickname!=''">bsu.nickname=#{nickname}</if>
-            <if test="mobile_phone!=null and mobile_phone!=''">bsu.mobile_phone=#{mobile_phone}</if>
-            <if test="create_time!=null and create_time!=''">bsu.create_time=#{create_time}</if>
-            <if test="last_login_time!=null and last_login_time!=''">bsu.last_login_time=#{last_login_time}</if>
+            <if test="password!=null and password!=''">bsu.password=#{password},</if>
+            <if test="salt!=null and salt!=''">bsu.salt=#{salt},</if>
+            <if test="username!=null and username!=''">bsu.username=#{username},</if>
+            <if test="email!=null and email!=''">bsu.email=#{email},</if>
+            <if test="nickname!=null and nickname!=''">bsu.nickname=#{nickname},</if>
+            <if test="mobile_phone!=null and mobile_phone!=''">bsu.mobile_phone=#{mobile_phone},</if>
+            <if test="create_time!=null and create_time!=''">bsu.create_time=#{create_time},</if>
+            <if test="last_login_time!=null and last_login_time!=''">bsu.last_login_time=#{last_login_time},</if>
             <if test="is_valid!=null and is_valid!=''">bsu.is_valid=#{is_valid}</if>
         </set>
         <where>

@@ -26,4 +26,16 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		return null;
 	}
 
+	@Override
+	public BcSysUser updateBcSysUser ( BcSysUser bcSysUser ) {
+		bcSysUserDao.updateBcSysUser(bcSysUser);
+		return bcSysUser;
+	}
+
+	@Override
+	public BcSysUser addBcSysUser ( BcSysUser bcSysUser ) {
+		bcSysUserDao.addBcSysUser(bcSysUser);
+		return bcSysUser;
+	}
+
 }
