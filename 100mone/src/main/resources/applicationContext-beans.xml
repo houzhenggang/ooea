@@ -18,6 +18,6 @@
 <!--     <import resource="applicationContext-jedis.xml" /> -->
 <!--     <import resource="applicationContext-memcached.xml" /> -->
 <!--     <import resource="applicationContext-mq" /> -->
-<!--     <import resource="applicationContext-shiro.xml" /> -->
+    <import resource="applicationContext-shiro.xml" />
 </beans>
     

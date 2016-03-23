@@ -82,6 +82,11 @@
             <artifactId>shiro-ehcache</artifactId>
             <version>${shiro.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
         <!-- shiro -->
         <!-- excel 导入导出 -->
         <dependency>
@@ -179,6 +184,12 @@
             <artifactId>springside-core</artifactId>
             <version>4.0.0.GA</version>
         </dependency>
+        
+
+
+
+        
+        
     </dependencies>
     <build>
         <finalName>100mone</finalName>
