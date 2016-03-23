@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="<%=request.getContextPath() %>/login/outlogin.do" >ases</a>
+啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 </body>
 </html>
