@@ -30,15 +30,15 @@ public class BcSysUserController {
 
 	/**
 	 * 
-	 * @Title: outlogin
+	 * @Title: loginout
 	 * 
 	 * @author FC
 	 * @Description: TODO 【退出登录（后台）】
 	 * @return
 	 * @date 2016年3月19日 下午10:30:44
 	 */
-	@RequestMapping( "/outlogin.do" )
-	public String outlogin ( ) {
+	@RequestMapping( "/loginout.do" )
+	public String loginout ( ) {
 
 		return PageUrl.SysIndex;
 	}

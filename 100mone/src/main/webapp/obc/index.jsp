@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="<%=request.getContextPath() %>/login/outlogin.do" >ases</a>
+<a href="<%=request.getContextPath() %>/login/loginout.do" >ases</a>
 </body>
 </html>
