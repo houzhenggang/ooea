@@ -9,7 +9,7 @@
     </bean>
 
     <!-- 項目自定义的Realm -->
-    <bean id="loginRealm" class="com.obc.common.security.shiro.realm.LoginRealm">
+    <bean id="loginRealm" class="com.obc.common.filter.shiro.realm.LoginRealm">
     </bean>
 
     <!-- Shiro Filter -->
@@ -18,30 +18,17 @@
         <property name="loginUrl" value="/loginout.do" />
         <property name="successUrl" value="/index.do" />
         <property name="unauthorizedUrl" value="/loginout.do" />
-<!--         <property name="filters"> -->
-<!--             <map> -->
-<!--                 扩展登陆令牌过滤器 -->
-<!--                 <entry key="user" value-ref="customUserFilter" /> -->
-<!--             </map> -->
-<!--         </property> -->
-<!--         <property name="filterChainDefinitions"> -->
-<!--             <value> -->
-<!--                 /css/** = anon -->
-<!--                 /images/** = anon -->
-<!--                 /js/** = anon -->
-<!--                 /new/css/** = anon -->
-<!--                 /new/images/** = anon -->
-<!--                 /new/js/** = anon -->
-<!--                 /login.do = anon -->
-<!--                 /loginout.do = anon -->
-<!--                 /ekeylogin.do = anon -->
-<!--                 /validateCode.do = -->
-<!--                 anon -->
-<!--                 /favicon.ico = anon -->
-<!--                 / = anon -->
-<!--                 /** =user -->
-<!--             </value> -->
-<!--         </property> -->
+        <property name="filters">
+            <map>
+                <!-- 扩展登陆令牌过滤器 -->
+                <entry key="user" value-ref="customUserFilter" />
+            </map>
+        </property>
+        <property name="filterChainDefinitions">
+            <value>
+                /** =user
+            </value>
+        </property>
     </bean>
 
     <!-- 用户授权信息Cache, 采用EhCache -->
@@ -51,6 +38,5 @@
 
     <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
     <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
-
-<!--     <bean id="customUserFilter" class="com.sse.lcs.filter.CustomUserFilter" /> -->
+    <bean id="customUserFilter" class="com.obc.common.filter.shiro.CustomUserFilter" />
 </beans>
