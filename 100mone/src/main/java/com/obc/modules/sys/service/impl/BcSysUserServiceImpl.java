@@ -32,23 +32,25 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 	}
 
 	@Override
-	public BcSysUser updateBcSysUser ( BcSysUser bcSysUser ) {
-		bcSysUserDao.updateBcSysUser(bcSysUser);
-		return bcSysUser;
+	public BcSysUser updateBcSysUser ( BcSysUser bsu ) {
+		bcSysUserDao.updateBcSysUser(bsu);
+		return bsu;
 	}
 
 	@Override
-	public BcSysUser addBcSysUser ( BcSysUser bcSysUser ) {
-		if (ObcStringUtils.isValidate(bcSysUser.getPlain_text(), Code.validatePass)) {// 当密码不是当前验证规则是抛出异常
+	public BcSysUser addBcSysUser ( BcSysUser bsu ) {
+		String str = bsu.getPlain_text();// 用户传入的密码
+		// 正则验证密码格式是否正确
+		if (ObcStringUtils.isValidate(str, Code.validatePass)) {
 			throw new RuntimeException(Code.i000010002EM.getNO());
 		}
-		Map<String, String> encrypt = EncryptUtil.encrypt(bcSysUser.getPlain_text());
-		bcSysUser.setPassword(encrypt.get(Code.pass.getDesc()));
-		bcSysUser.setSalt(encrypt.get(Code.salt.getDesc()));
-		bcSysUser.setCreate_time(new Date());
-		bcSysUser.setIs_valid(Code.isValid.getDesc());
-		bcSysUserDao.addBcSysUser(bcSysUser);
-		return bcSysUser;
+		Map<String, String> enc = EncryptUtil.encrypt(bsu.getPlain_text());
+		bsu.setPassword(enc.get(Code.pass.getDesc()));
+		bsu.setSalt(enc.get(Code.salt.getDesc()));
+		bsu.setCreate_time(new Date());
+		bsu.setIs_valid(Code.isValid.getDesc());
+		bcSysUserDao.addBcSysUser(bsu);
+		return bsu;
 	}
 
 }

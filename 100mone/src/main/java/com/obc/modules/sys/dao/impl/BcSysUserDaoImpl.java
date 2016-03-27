@@ -21,13 +21,13 @@ public class BcSysUserDaoImpl extends BaseDao implements BcSysUserDao {
 	}
 
 	@Override
-	public int updateBcSysUser ( BcSysUser bcSysUser ) {
-		return sqlSession.update("com.obc.modules.sys.dao.BcSysUserDao.updateBcSysUser", bcSysUser);
+	public int updateBcSysUser ( BcSysUser bsu ) {
+		return sqlSession.update("com.obc.modules.sys.dao.BcSysUserDao.updateBcSysUser", bsu);
 	}
 
 	@Override
-	public int addBcSysUser ( BcSysUser bcSysUser ) {
-		return sqlSession.insert("com.obc.modules.sys.dao.BcSysUserDao.addBcSysUser", bcSysUser);
+	public int addBcSysUser ( BcSysUser bsu ) {
+		return sqlSession.insert("com.obc.modules.sys.dao.BcSysUserDao.addBcSysUser", bsu);
 	}
 
 }

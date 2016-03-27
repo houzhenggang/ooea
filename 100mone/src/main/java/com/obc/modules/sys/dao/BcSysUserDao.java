@@ -28,7 +28,7 @@ public interface BcSysUserDao {
 	 * @return
 	 * @date 2016年3月22日 下午7:05:00
 	 */
-	public int updateBcSysUser ( BcSysUser bcSysUser );
+	public int updateBcSysUser ( BcSysUser bsu );
 
 	/**
 	 * 
@@ -40,5 +40,5 @@ public interface BcSysUserDao {
 	 * @return
 	 * @date 2016年3月22日 下午7:05:04
 	 */
-	public int addBcSysUser ( BcSysUser bcSysUser );
+	public int addBcSysUser ( BcSysUser bsu );
 }
