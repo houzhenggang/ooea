@@ -32,7 +32,9 @@ public enum Code {
 	/** 手机号验证 */
 	validatePhone ( "i000010011" , "Phone" ) , //
 	/** 是否有效 */
-	i000IsValid ( "i000019999" , "1" );
+	i000IsValid1L ( "i000019999" , "1" ) , // 数据库记录有效性【有效】
+	/** 是否有效 */
+	i000IsValid0L ( "i000019999" , "0" );// 数据库记录有效性【无效】
 
 	private String no;
 	private String desc;

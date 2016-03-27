@@ -48,7 +48,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		bsu.setPassword(enc.get(Code.i000Pass.getDesc()));
 		bsu.setSalt(enc.get(Code.i000Salt.getDesc()));
 		bsu.setCreate_time(new Date());
-		bsu.setIs_valid(Code.i000IsValid.getDesc());
+		bsu.setIs_valid(Code.i000IsValid1L.getDesc());
 		bcSysUserDao.addBcSysUser(bsu);
 		return bsu;
 	}
