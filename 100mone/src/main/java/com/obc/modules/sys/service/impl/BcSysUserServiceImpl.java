@@ -45,10 +45,10 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 			throw new RuntimeException(Code.i000010002EM.getNO());
 		}
 		Map<String, String> enc = EncryptUtil.encrypt(bsu.getPlain_text());
-		bsu.setPassword(enc.get(Code.pass.getDesc()));
-		bsu.setSalt(enc.get(Code.salt.getDesc()));
+		bsu.setPassword(enc.get(Code.i000pass.getDesc()));
+		bsu.setSalt(enc.get(Code.i000salt.getDesc()));
 		bsu.setCreate_time(new Date());
-		bsu.setIs_valid(Code.isValid.getDesc());
+		bsu.setIs_valid(Code.i000isValid.getDesc());
 		bcSysUserDao.addBcSysUser(bsu);
 		return bsu;
 	}

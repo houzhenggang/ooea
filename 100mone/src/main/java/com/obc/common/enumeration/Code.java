@@ -18,11 +18,11 @@ public enum Code {
 	/** 成功 */
 	SuccesssMessage ( "i000010004" , "验证成功。" ) , //
 	/** 登录路径 */
-	loginSalt ( "i000010005" , "908SWDMDWA7SbsS9desUE" ) , //
+	i000loginSalt ( "i000010005" , "908SWDMDWA7SbsS9desUE" ) , //
 	/** 加密盐 */
-	salt ( "i000010006" , "SALT" ) , //
+	i000salt ( "i000010006" , "SALT" ) , //
 	/** 密码 */
-	pass ( "i000010007" , "PASSWD" ) , //
+	i000pass ( "i000010007" , "PASSWD" ) , //
 	/** 密码验证 */
 	validatePass ( "i000010008" , "Pass" ) , //
 	/** 身份证验证 */
@@ -32,7 +32,7 @@ public enum Code {
 	/** 手机号验证 */
 	validatePhone ( "i000010011" , "Phone" ) , //
 	/** 是否有效 */
-	isValid ( "i000019999" , "1" );
+	i000isValid ( "i000019999" , "1" );
 
 	private String no;
 	private String desc;

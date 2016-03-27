@@ -63,7 +63,7 @@ public class SysController {
 	 */
 	@RequestMapping( "/loginout.do" )
 	public String loginout ( String loginSalt ) {
-		if (StringUtils.equals(Code.loginSalt.getDesc(), loginSalt)) {
+		if (StringUtils.equals(Code.i000loginSalt.getDesc(), loginSalt)) {
 			return PageUrl.SysIndex;
 		}
 		return PageUrl.ConsumerIndex;
