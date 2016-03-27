@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<%@include file="../js.jsp" %>
+<%@include file="../js.jsp"%>
 <title>100MONE欢迎您！</title>
 </head>
 <body>
 	<%@include file="home/header.jsp"%>
-	<div style="height: 90px;"></div>
+	<div style="height: 90px;">
+		<%@include file="home/centre.jsp"%>
+	</div>
 	<%@include file="home/footer.jsp"%>
 </body>
 </html>
