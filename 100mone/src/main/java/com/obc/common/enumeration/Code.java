@@ -9,30 +9,31 @@ package com.obc.common.enumeration;
  * @date 2016年3月27日 下午2:06:28
  */
 public enum Code {
-	/**
-	 * 验证异常
-	 */
-	i000010002EM ( "i000010002" , "验证没有通过." ) , // 验证
-	/**
-	 * json解析异常
-	 */
-	i000010001EM ( "i000010001" , "JSON异常" ) , // json处理
-	/**
-	 * 成功
-	 */
-	SuccesssMessage ( "0000" , "验证成功。" ) , //
-	/**
-	 * 加密盐
-	 */
-	salt ( "0002" , "SALT" ) , //
-	/**
-	 * 密码
-	 */
-	pass ( "0003" , "PASSWD" ) , //
-	/**
-	 * 是否有效
-	 */
-	isValid ( "0004" , "1" );
+	/** json解析异常 */
+	i000010001EM ( "i000010001" , "JSON异常" ) , //
+	/** 验证异常 */
+	i000010002EM ( "i000010002" , "验证没有通过." ) , //
+	/** 查询异常 */
+	i000010003EM ( "i000010003" , "查询异常" ) , //
+	/** 成功 */
+	SuccesssMessage ( "i000010004" , "验证成功。" ) , //
+	/** 登录路径 */
+	loginSalt ( "i000010005" , "908SWDMDWA7SbsS9desUE" ) , //
+	/** 加密盐 */
+	salt ( "i000010006" , "SALT" ) , //
+	/** 密码 */
+	pass ( "i000010007" , "PASSWD" ) , //
+	/** 密码验证 */
+	validatePass ( "Pass" , "" ) , //
+	/** 身份证验证 */
+	validateCard ( "Card" , "" ) , //
+	/** 邮箱验证 */
+	validateEmail ( "Email" , "" ) , //
+	/** 手机号验证 */
+	validatePhone ( "Phone" , "" ) , //
+	/** 是否有效 */
+	isValid ( "i000019999" , "1" );
+
 	private String no;
 	private String desc;
 
@@ -48,4 +49,5 @@ public enum Code {
 	public String getDesc ( ) {
 		return desc;
 	}
+
 }

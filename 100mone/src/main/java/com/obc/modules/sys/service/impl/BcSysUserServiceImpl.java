@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.obc.common.constant.Canonical;
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
+import com.obc.common.utils.ObcStringUtils;
 import com.obc.modules.sys.dao.BcSysUserDao;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
@@ -28,7 +28,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		if (users.size() > 0) {
 			return users.get(0);
 		}
-		return null;
+		throw new RuntimeException(Code.i000010003EM.getNO());
 	}
 
 	@Override
@@ -39,8 +39,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 
 	@Override
 	public BcSysUser addBcSysUser ( BcSysUser bcSysUser ) {
-		boolean bool = bcSysUser.getPlain_text().matches(Canonical.Password);
-		if (bool) {// 当密码不是当前验证规则是抛出异常
+		if (ObcStringUtils.isValidate(bcSysUser.getPlain_text(), Code.validatePass)) {// 当密码不是当前验证规则是抛出异常
 			throw new RuntimeException(Code.i000010002EM.getNO());
 		}
 		Map<String, String> encrypt = EncryptUtil.encrypt(bcSysUser.getPlain_text());

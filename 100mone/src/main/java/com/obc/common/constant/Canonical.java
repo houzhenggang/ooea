@@ -11,20 +11,12 @@ package com.obc.common.constant;
  */
 public class Canonical {
 
-	/**
-	 * 邮箱验证
-	 */
-	public static final String Email = "";
-	/**
-	 * 手机号码
-	 */
-	public static final String Phone = "";
-	/**
-	 * 身份证
-	 */
-	public static final String Card = "";
-	/**
-	 * 密码验证
-	 */
-	public static final String Password = "";
+	/** 邮箱验证 */
+	public static final String Email = "Email";
+	/** 手机号码 */
+	public static final String Phone = "Phone";
+	/** 身份证 */
+	public static final String Card = "Card";
+	/** 密码验证 */
+	public static final String Pass = "Pass";
 }

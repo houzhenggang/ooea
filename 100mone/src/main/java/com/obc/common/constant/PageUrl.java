@@ -9,16 +9,12 @@ package com.obc.common.constant;
  * @date 2016年3月19日 下午10:15:55
  */
 public class PageUrl {
-	/**
-	 * consumer普通用户首页
-	 */
-	public static final String Index = "obc/index";
-	/**
-	 * sys管理首页
-	 */
+	/** sys管理首页 */
 	public static final String SysIndex = "obc/sys/index";
-	/**
-	 * consumer注册页面
-	 */
+	/** consumer注册页面 */
 	public static final String ConsumerRegister = "obc/consumer/register";
+	/** consumer登录页面 */
+	public static final String ConsumerLogin = "obc/consumer/login";
+	/** consumer首页 */
+	public static final String ConsumerIndex = "obc/consumer/index";
 }
