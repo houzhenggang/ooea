@@ -15,9 +15,9 @@
     <!-- Shiro Filter -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager" />
-        <property name="loginUrl" value="/loginout.do" />
+        <property name="loginUrl" value="/login/loginout.do" />
         <property name="successUrl" value="/index.do" />
-        <property name="unauthorizedUrl" value="/loginout.do" />
+        <property name="unauthorizedUrl" value="/login/loginout.do" />
         <property name="filters">
             <map>
                 <!-- 扩展登陆令牌过滤器 -->
@@ -26,8 +26,8 @@
         </property>
         <property name="filterChainDefinitions">
             <value>
-                /login/loginout.do = anon
-                /login/login.do = anon
+                /loginout.do = anon
+                /login.do = anon
                 /** = anon
             </value>
         </property>

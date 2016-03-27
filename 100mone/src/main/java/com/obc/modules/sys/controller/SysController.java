@@ -14,9 +14,17 @@ import com.obc.common.enumeration.Code;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
 
-@RequestMapping( "/login" )
+/**
+ * 
+ * @ClassName: BcSysUserController 
+ *
+ * @author FC
+ * @Description: TODO 【系统注册】
+ * @date 2016年3月27日 下午5:57:05
+ */
+@RequestMapping( "/sys" )
 @Controller
-public class BcSysUserController {
+public class SysController {
 
 	@Autowired
 	private BcSysUserService bcSysUserService;
