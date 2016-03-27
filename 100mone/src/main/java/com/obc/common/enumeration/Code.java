@@ -24,13 +24,13 @@ public enum Code {
 	/** 密码 */
 	pass ( "i000010007" , "PASSWD" ) , //
 	/** 密码验证 */
-	validatePass ( "Pass" , "" ) , //
+	validatePass ( "i000010008" , "Pass" ) , //
 	/** 身份证验证 */
-	validateCard ( "Card" , "" ) , //
+	validateCard ( "i000010009" , "Card" ) , //
 	/** 邮箱验证 */
-	validateEmail ( "Email" , "" ) , //
+	validateEmail ( "i000010010" , "Email" ) , //
 	/** 手机号验证 */
-	validatePhone ( "Phone" , "" ) , //
+	validatePhone ( "i000010011" , "Phone" ) , //
 	/** 是否有效 */
 	isValid ( "i000019999" , "1" );
 

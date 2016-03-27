@@ -27,18 +27,18 @@ public class ObcStringUtils {
 	public static Boolean isValidate (	String str ,
 										Code validate ) {
 		Boolean bool = false;
-		switch (validate.getNO()) {
-		case Canonical.Pass:
-			bool = str.matches(Code.validatePass.getDesc());
+		switch (validate.getDesc()) {
+		case "Pass":
+			bool = str.matches(Canonical.Pass);
 			break;
-		case Canonical.Card:
-			bool = str.matches(Code.validateCard.getDesc());
+		case "Card":
+			bool = str.matches(Canonical.Card);
 			break;
-		case Canonical.Email:
-			bool = str.matches(Code.validateEmail.getDesc());
+		case "Email":
+			bool = str.matches(Canonical.Email);
 			break;
-		case Canonical.Phone:
-			bool = str.matches(Code.validatePhone.getDesc());
+		case "Phone":
+			bool = str.matches(Canonical.Phone);
 			break;
 		}
 		return bool;
