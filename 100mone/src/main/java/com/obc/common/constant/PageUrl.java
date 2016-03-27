@@ -17,4 +17,8 @@ public class PageUrl {
 	 * sys管理首页
 	 */
 	public static final String SysIndex = "obc/sys/index";
+	/**
+	 * consumer注册页面
+	 */
+	public static final String ConsumerRegister = "obc/consumer/register";
 }

@@ -38,7 +38,7 @@ public class EncryptUtil {
 	 * @return Map{SALT->saltVal,PASSWD->passwdVal}
 	 * @date 2016年3月22日 下午5:46:17
 	 */
-	public Map<String, String> encrypt ( String plainText ) {
+	public static Map<String, String> encrypt ( String plainText ) {
 		// 构造返回Map对象
 		Map<String, String> passwdMap = new HashMap<String, String>();
 		// 获取随机加密因子
@@ -63,7 +63,7 @@ public class EncryptUtil {
 	 * @return 加密后的密文
 	 * @date 2016年3月22日 下午5:47:06
 	 */
-	public String encryptBySalt (	String plainText ,
+	public static String encryptBySalt (	String plainText ,
 									String salt ) {
 		// 将因子转换为字节数组类型
 		byte[] old_salt = Encodes.decodeHex(salt);

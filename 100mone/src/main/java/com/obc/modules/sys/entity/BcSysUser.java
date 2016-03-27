@@ -30,6 +30,15 @@ public class BcSysUser implements Serializable {
 	private Date create_time;// '创建时间'
 	private Date last_login_time;// '最近登录'
 	private String is_valid;// '是否有效【1：有效 0：无效】'
+	private String plain_text;// 明文密码
+
+	public String getPlain_text ( ) {
+		return plain_text;
+	}
+
+	public void setPlain_text ( String plain_text ) {
+		this.plain_text = plain_text;
+	}
 
 	public Long getSys_user_id ( ) {
 		return sys_user_id;

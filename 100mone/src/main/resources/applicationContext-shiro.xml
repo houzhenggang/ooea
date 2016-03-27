@@ -26,7 +26,9 @@
         </property>
         <property name="filterChainDefinitions">
             <value>
-                /** =user
+                /login/loginout.do = anon
+                /login/login.do = anon
+                /** = anon
             </value>
         </property>
     </bean>

@@ -1,6 +1,6 @@
 package com.obc.common.exception;
 
-import com.obc.common.constant.ExceptionCode;
+import com.obc.common.enumeration.Code;
 
 public class JsonException extends Exception {
 
@@ -12,11 +12,11 @@ public class JsonException extends Exception {
 	private static final long serialVersionUID = -6105893005062688525L;
 
 	public JsonException ( ) {
-		super(ExceptionCode.JosnExceptionMessage);
+		super(Code.i000010002EM.getNO());
 	}
 
 	public JsonException ( String message ) {
-		super(ExceptionCode.JosnExceptionMessage);
+		super(Code.i000010002EM.getNO());
 	}
 
 }

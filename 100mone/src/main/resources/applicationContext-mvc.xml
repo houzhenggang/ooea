@@ -18,6 +18,7 @@
 
     <mvc:annotation-driven />
 
+    <!-- 重写过滤器HandlerInterceptor(preHandle:false验证不通过;true验证成功) -->
     <mvc:interceptors>
         <bean class="com.obc.common.filter.spring.mvc.ControllerInterceptor" />
     </mvc:interceptors>

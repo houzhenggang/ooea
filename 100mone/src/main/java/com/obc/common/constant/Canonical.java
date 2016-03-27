@@ -23,4 +23,8 @@ public class Canonical {
 	 * 身份证
 	 */
 	public static final String Card = "";
+	/**
+	 * 密码验证
+	 */
+	public static final String Password = "";
 }
