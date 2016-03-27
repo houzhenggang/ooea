@@ -8,7 +8,7 @@
 </head>
 <body>
 	<a href="<%=request.getContextPath()%>/login/loginout.do">退出</a>
-	<a href="<%=request.getContextPath()%>/login/register.do">注册</a>
+	<a href="<%=request.getContextPath()%>/consumer/register.do">注册</a>
 	
 </body>
 </html>
