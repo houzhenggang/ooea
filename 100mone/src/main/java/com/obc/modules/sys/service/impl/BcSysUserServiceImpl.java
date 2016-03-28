@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
-import com.obc.common.utils.ObcStringUtils;
+import com.obc.common.utils.IStringUtils;
 import com.obc.modules.sys.dao.BcSysUserDao;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
@@ -41,7 +41,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 	public BcSysUser addBcSysUser ( BcSysUser bsu ) {
 		String str = bsu.getPlain_text();// 用户传入的密码
 		// 正则验证密码格式是否正确
-		if (ObcStringUtils.isValidate(str, Code.validatePass)) {
+		if (IStringUtils.isValidate(str, Code.validatePass)) {
 			throw new RuntimeException(Code.i000010002EM.getNO());
 		}
 		Map<String, String> enc = EncryptUtil.encrypt(bsu.getPlain_text());

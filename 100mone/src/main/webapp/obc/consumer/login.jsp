@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%@include file="home/header.jsp"%>
-	<div style="height: 90px;">
+	<div style="height: 588px;">
 		<%@include file="home/centre.jsp"%>
 	</div>
 	<%@include file="home/footer.jsp"%>

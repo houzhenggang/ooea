@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+#centre {
+	height: 588px;
+}
+
+#centre .centre-left {
+	height: 493px;
+	width: 32%;
+	border: 1px solid red;
+	float: left;
+}
+
+#centre .centre-right {
+	height: 493px;
+	width: 67%;
+	border: 1px solid red;
+	float: left;
+}
+
+#centre .centre-right input {
+	width: 288px;
+	height: 28px;
+}
+
+#centre .centre-right tr {
+	line-height: 47px;
+}
+
+#centre .centre-right span {
+	color: red;
+	font-size: 11px;
+}
+
+#centre .centre-right .t-left {
+	text-align: right;
+	width: 58px;
+}

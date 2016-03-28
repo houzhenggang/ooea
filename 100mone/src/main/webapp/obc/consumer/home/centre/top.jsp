@@ -2,9 +2,11 @@
 	pageEncoding="UTF-8"%>
 <div>
 	<dl>
-		<dt style="padding: 20px 35px;">
-			<span style="font-size: 50px;color: #666666;font-weight: 900;">100MONE.</span><span style="font-size: 35px;color: #666666;font-weight: 900;">com</span>
+		<dt style="padding: 15px 35px;">
+			<img alt="logo" src="<%=request.getContextPath()%>/resources/images/logo.jpg">
 		</dt>
-		<dd></dd>
+		<dd>
+			<hr>
+		</dd>
 	</dl>
 </div>
