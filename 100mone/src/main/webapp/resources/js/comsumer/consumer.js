@@ -3,7 +3,7 @@
  */
 
 $(function() {
-	$("#consumerRegister").submit(function(event) {
+	$("#register").submit(function(event) {
 		if (!$("input[name='user.username']").val()) {
 			$("#username").text("请注意，您的用户名未填写。");
 			return false; 

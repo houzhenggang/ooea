@@ -16,7 +16,7 @@
 		<%@include file="home/centre.jsp"%>
 		<div class="centre-left"></div>
 		<div class="centre-right">
-			<form id="consumerRegister" action="<%=request.getContextPath()%>/consumer/register.do" method="post">
+			<form id="register" action="<%=request.getContextPath()%>/consumer/register.do" method="post">
 				<table>
 					<tr>
 						<td class="t-left">用户名</td>
