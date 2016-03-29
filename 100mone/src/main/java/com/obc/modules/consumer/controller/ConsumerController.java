@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.obc.common.ExceptionMessage;
 import com.obc.common.constant.PageUrl;
 import com.obc.common.enumeration.Code;
+import com.obc.common.utils.IStringUtils;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
 
@@ -52,8 +53,8 @@ public class ConsumerController {
 			bcSysUserService.addBcSysUser(user);
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		} catch (Exception e) {
-			log.info(e.getMessage());
-			em.addCuePhrases(Code.i000010002EM.getDesc()).addIsBool(false);
+			em.addCuePhrases(e.getMessage()).addIsBool(false);
+			IStringUtils.log(e.getMessage(), ConsumerController.class);
 		}
 		return em;
 	}

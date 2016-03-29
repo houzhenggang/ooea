@@ -184,12 +184,21 @@
             <artifactId>springside-core</artifactId>
             <version>4.0.0.GA</version>
         </dependency>
-        
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.1.2</version>
+        </dependency>
 
 
 
-        
-        
     </dependencies>
     <build>
         <finalName>100mone</finalName>

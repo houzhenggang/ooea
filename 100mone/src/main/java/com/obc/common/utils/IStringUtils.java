@@ -2,11 +2,13 @@ package com.obc.common.utils;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 
 import com.obc.common.constant.Canonical;
 import com.obc.common.enumeration.Code;
+import com.obc.modules.consumer.controller.ConsumerController;
 
 /**
  * 
@@ -35,9 +37,6 @@ public class IStringUtils {
 		switch (validate.getDesc()) {
 		case "Pass":
 			bool = str.matches(Canonical.Pass);
-			break;
-		case "Card":
-			bool = str.matches(Canonical.Card);
 			break;
 		case "Email":
 			bool = str.matches(Canonical.Email);
@@ -103,4 +102,79 @@ public class IStringUtils {
 		return ip;
 	}
 
+	/**
+	 * 
+	 * @Title: codeReplaceVK
+	 * 
+	 * @author FC
+	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * @param str
+	 * @return
+	 * @date 2016年3月29日 下午7:33:37
+	 */
+	public static String replaceK ( String str ) {
+		StringBuffer buffer = new StringBuffer();
+		String codes[] = str.split("");
+		for (int i = 0; i < codes.length; i++) {
+			String code = codes[i];
+			if (code.matches(Canonical.codeRegex)) {
+				code = Canonical.cvk.get(code);
+			}
+			buffer.append(code);
+		}
+		return buffer.toString();
+	}
+
+	/**
+	 * 
+	 * @Title: codeReplaceKV
+	 * 
+	 * @author FC
+	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * @param str
+	 * @return
+	 * @date 2016年3月29日 下午7:33:41
+	 */
+	public static String replaceV ( String str ) {
+		StringBuffer buffer = new StringBuffer();
+		String codes[] = str.split("");
+		for (int i = 0; i < codes.length; i++) {
+			String code = codes[i];
+			if (code.matches(Canonical.codeRegex)) {
+				code = Canonical.ckv.get(code);
+			}
+			buffer.append(code);
+		}
+		return buffer.toString();
+	}
+
+	/**
+	 * 
+	 * @Title: log
+	 * 
+	 * @author FC
+	 * @Description: TODO 【异常休息输出格式】
+	 * @param e
+	 * @return
+	 * @date 2016年3月29日 下午8:33:57
+	 */
+	public static void log (	Exception e ,
+								Class<?> clazz ) {
+		Logger log = Logger.getLogger(clazz);
+		StringBuilder builder = new StringBuilder();
+		builder.append("*ⅩⅩⅩⅩⅩⅩⅩⅩ*");
+		builder.append(e.getMessage());
+		builder.append("*ⅩⅩⅩⅩⅩⅩⅩⅩ*");
+		log.info(builder.toString());
+	}
+
+	public static void log (	String str ,
+								Class<?> clazz ) {
+		Logger log = Logger.getLogger(clazz);
+		StringBuilder builder = new StringBuilder();
+		builder.append("*ⅩⅩ*");
+		builder.append(str);
+		builder.append("*ⅩⅩ*");
+		log.info(builder.toString());
+	}
 }

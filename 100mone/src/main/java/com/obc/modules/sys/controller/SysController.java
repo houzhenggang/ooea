@@ -47,7 +47,7 @@ public class SysController {
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		} catch (Exception e) {
 			log.info(e.getMessage());
-			em.addCuePhrases(Code.i000010002EM.getDesc()).addIsBool(false);
+			em.addCuePhrases(Code.i000010002em.getDesc()).addIsBool(false);
 		}
 		return "";
 	}

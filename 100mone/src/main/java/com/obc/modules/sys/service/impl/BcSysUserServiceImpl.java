@@ -28,7 +28,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		if (users.size() > 0) {
 			return users.get(0);
 		}
-		throw new RuntimeException(Code.i000010003EM.getNO());
+		throw new RuntimeException(Code.i000010003em.getNO());
 	}
 
 	@Override
@@ -39,16 +39,23 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 
 	@Override
 	public BcSysUser addBcSysUser ( BcSysUser bsu ) {
-		String str = bsu.getPlain_text();// 用户传入的密码
+		String pass = bsu.getPlain_text();// 用户传入的密码
 		// 正则验证密码格式是否正确
-		if (IStringUtils.isValidate(str, Code.validatePass)) {
-			throw new RuntimeException(Code.i000010002EM.getNO());
+		if (!IStringUtils.isValidate(pass, Code.validatePass)) {
+			throw new RuntimeException(Code.i000010002em.getNO());
 		}
-		Map<String, String> enc = EncryptUtil.encrypt(bsu.getPlain_text());
+		String email = bsu.getEmail();
+		if (!IStringUtils.isValidate(email, Code.validateEmail)) {
+			throw new RuntimeException(Code.i000010002em.getNO());
+		}
+		String phone = bsu.getMobile_phone();
+		Map<String, String> enc = EncryptUtil.encrypt(pass);
 		bsu.setPassword(enc.get(Code.i000Pass.getDesc()));
 		bsu.setSalt(enc.get(Code.i000Salt.getDesc()));
 		bsu.setCreate_time(new Date());
 		bsu.setIs_valid(Code.i000IsValid1L.getDesc());
+		bsu.setEmail(IStringUtils.replaceK(email));
+		bsu.setMobile_phone(IStringUtils.replaceK(phone));
 		bcSysUserDao.addBcSysUser(bsu);
 		return bsu;
 	}

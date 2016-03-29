@@ -20,11 +20,11 @@
 				<table>
 					<tr>
 						<td class="t-left">用户名</td>
-						<td><span>*</span><input type="text" name="user.username" /><span id="username"></span></td>
+						<td><span>*</span><input type="text" name="username" /><span id="username"></span></td>
 					</tr>
 					<tr>
 						<td class="t-left">密码</td>
-						<td><span>*</span><input type="password" name="user.plain_text" /><span id="plain_text"></span></td>
+						<td><span>*</span><input type="password" name="plain_text" /><span id="plain_text"></span></td>
 					</tr>
 					<tr>
 						<td class="t-left">再次输入密码</td>
@@ -32,11 +32,11 @@
 					</tr>
 					<tr>
 						<td class="t-left">邮箱</td>
-						<td><span>*</span><input type="text" name="user.email" /><span id="email"></span></td>
+						<td><span>*</span><input type="text" name="email" /><span id="email"></span></td>
 					</tr>
 					<tr>
 						<td class="t-left">手机号</td>
-						<td><span>*</span><input type="text" name="user.mobile_phone" /><span id="mobile_phone"></span></td>
+						<td><span>*</span><input type="text" name="mobile_phone" /><span id="mobile_phone"></span></td>
 					</tr>
 					<tr>
 						<td><input type="submit" value="立即注册"></td>

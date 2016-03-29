@@ -2,7 +2,7 @@ package com.obc.common.exception;
 
 import com.obc.common.enumeration.Code;
 
-public class JsonException extends Exception {
+public class JsonException extends RuntimeException {
 
 	/**
 	 * @author FC
@@ -12,11 +12,14 @@ public class JsonException extends Exception {
 	private static final long serialVersionUID = -6105893005062688525L;
 
 	public JsonException ( ) {
-		super(Code.i000010002EM.getNO());
+		super(Code.i000010002em.getNO());
 	}
 
 	public JsonException ( String message ) {
-		super(Code.i000010002EM.getNO());
+		super(Code.i000010002em.getNO() + message);
 	}
 
+	public JsonException ( Class<?> clazz ) {
+		super(clazz.toString());
+	}
 }
