@@ -12,9 +12,9 @@ public class PageUrl {
 	/** sys管理首页 */
 	public static final String SysIndex = "obc/sys/index";
 	/** consumer注册页面 */
-	public static final String ConsumerRegister = "obc/consumer/register";
+	public static final String ConsumerRegister = "obc/consumer/register/register";
 	/** consumer登录页面 */
-	public static final String ConsumerLogin = "obc/consumer/login";
+	public static final String ConsumerLogin = "obc/consumer/login/login";
 	/** consumer首页 */
 	public static final String ConsumerIndex = "obc/consumer/index";
 }
