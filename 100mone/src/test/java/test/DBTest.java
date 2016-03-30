@@ -8,6 +8,7 @@ public class DBTest extends BaseTest {
 
 	public void test() {
 		BcSysUserService bsys = CTX.getBean(BcSysUserServiceImpl.class);
+		@SuppressWarnings( "unused" )
 		BcSysUser bsu = bsys.findBcSysUser("11");
 	}
 }
