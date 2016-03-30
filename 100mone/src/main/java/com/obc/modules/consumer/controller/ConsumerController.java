@@ -2,7 +2,6 @@ package com.obc.modules.consumer.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -28,8 +27,6 @@ import com.obc.modules.sys.service.BcSysUserService;
 @RequestMapping( "/consumer" )
 @Controller
 public class ConsumerController {
-
-	private static Logger log = Logger.getLogger(ConsumerController.class);
 
 	@Autowired
 	@Qualifier( "bcSysUserServiceImpl" )

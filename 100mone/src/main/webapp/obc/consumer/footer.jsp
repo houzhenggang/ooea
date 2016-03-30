@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<link href="<%=request.getContextPath()%>/resources/css/footer.css"
+<link href="<%=request.getContextPath()%>/resources/css/consumer/footer.css"
 	rel="stylesheet" type="text/css" />
 <div id="footer">
 	<div class="footer-top">
@@ -25,7 +25,7 @@
 		</ul>
 	</div>
 	<div class="footer-centre">
-		<span>100MONE 京ICP证*****号 北京市公安局朝阳分局备案编号：***** Copyright ©
+		<span>100 京ICP证*****号 备案编号：***** Copyright ©
 			2006-2014</span>
 	</div>
 	<div class="footer-bottom">

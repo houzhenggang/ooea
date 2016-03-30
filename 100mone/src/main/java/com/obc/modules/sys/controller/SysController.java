@@ -1,7 +1,6 @@
 package com.obc.modules.sys.controller;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -10,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.obc.common.ExceptionMessage;
 import com.obc.common.constant.PageUrl;
 import com.obc.common.enumeration.Code;
+import com.obc.common.utils.IStringUtils;
 import com.obc.modules.sys.service.BcSysUserService;
 
 /**
@@ -23,8 +23,6 @@ import com.obc.modules.sys.service.BcSysUserService;
 @RequestMapping( "/sys" )
 @Controller
 public class SysController {
-
-	private static Logger log = Logger.getLogger(SysController.class);
 
 	@Autowired
 	@Qualifier( "bcSysUserServiceImpl" )
@@ -46,8 +44,8 @@ public class SysController {
 			bcSysUserService.findBcSysUser("");
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		} catch (Exception e) {
-			log.info(e.getMessage());
 			em.addCuePhrases(Code.i000010002em.getDesc()).addIsBool(false);
+			IStringUtils.log(e.getMessage(), SysController.class);
 		}
 		return "";
 	}

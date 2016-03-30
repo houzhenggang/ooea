@@ -28,7 +28,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		if (users.size() > 0) {
 			return users.get(0);
 		}
-		throw new RuntimeException(Code.i000010003em.getNO());
+		return null;
 	}
 
 	@Override

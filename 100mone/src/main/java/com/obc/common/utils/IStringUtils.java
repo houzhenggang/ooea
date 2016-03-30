@@ -8,7 +8,6 @@ import org.apache.shiro.subject.Subject;
 
 import com.obc.common.constant.Canonical;
 import com.obc.common.enumeration.Code;
-import com.obc.modules.consumer.controller.ConsumerController;
 
 /**
  * 
@@ -162,19 +161,29 @@ public class IStringUtils {
 								Class<?> clazz ) {
 		Logger log = Logger.getLogger(clazz);
 		StringBuilder builder = new StringBuilder();
-		builder.append("*ⅩⅩⅩⅩⅩⅩⅩⅩ*");
+		builder.append("[");
 		builder.append(e.getMessage());
-		builder.append("*ⅩⅩⅩⅩⅩⅩⅩⅩ*");
+		builder.append("]");
 		log.info(builder.toString());
 	}
 
+	/**
+	 * 
+	 * @Title: log
+	 * 
+	 * @author FC
+	 * @Description: TODO 【这里用一句话描述这个方法的作用】 
+	 * @param str
+	 * @param clazz 
+	 * @date 2016年3月30日 下午5:59:20
+	 */
 	public static void log (	String str ,
 								Class<?> clazz ) {
 		Logger log = Logger.getLogger(clazz);
 		StringBuilder builder = new StringBuilder();
-		builder.append("*ⅩⅩ*");
+		builder.append("[");
 		builder.append(str);
-		builder.append("*ⅩⅩ*");
+		builder.append("]");
 		log.info(builder.toString());
 	}
 }
