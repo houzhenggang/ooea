@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>系统登录</title>
 <%@include file="../../js.jsp"%>
+<link rel="icon" href="<%=request.getContextPath()%>/resources/images/favicon.ico" type="image/x-icon">
 <link href="<%=request.getContextPath()%>/resources/css/consumer/login/login.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 </script>
