@@ -24,10 +24,9 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 
 	@Override
 	public BcSysUser findBcSysUser ( String username ) {
+		username = IStringUtils.replaceK(username);
 		List<BcSysUser> users = bcSysUserDao.findBcSysUser(username);
-		if (users.size() > 0) {
-			return users.get(0);
-		}
+		if (users.size() > 0) { return users.get(0); }
 		return null;
 	}
 
@@ -41,13 +40,11 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 	public BcSysUser addBcSysUser ( BcSysUser bsu ) {
 		String pass = bsu.getPlain_text();// 用户传入的密码
 		// 正则验证密码格式是否正确
-		if (!IStringUtils.isValidate(pass, Code.validatePass)) {
-			throw new RuntimeException(Code.i000010002em.getNO());
-		}
+		if (!IStringUtils.isValidate(pass,
+				Code.validatePass)) { throw new RuntimeException(Code.i000010002em.getNO()); }
 		String email = bsu.getEmail();
-		if (!IStringUtils.isValidate(email, Code.validateEmail)) {
-			throw new RuntimeException(Code.i000010002em.getNO());
-		}
+		if (!IStringUtils.isValidate(email,
+				Code.validateEmail)) { throw new RuntimeException(Code.i000010002em.getNO()); }
 		String phone = bsu.getMobile_phone();
 		Map<String, String> enc = EncryptUtil.encrypt(pass);
 		bsu.setPassword(enc.get(Code.i000Pass.getDesc()));

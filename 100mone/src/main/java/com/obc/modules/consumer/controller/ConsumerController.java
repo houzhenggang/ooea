@@ -2,6 +2,11 @@ package com.obc.modules.consumer.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -12,7 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.obc.common.ExceptionMessage;
 import com.obc.common.constant.PageUrl;
 import com.obc.common.enumeration.Code;
+import com.obc.common.security.EncryptUtil;
 import com.obc.common.utils.IStringUtils;
+import com.obc.modules.LoginPojo;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
 
@@ -49,7 +56,8 @@ public class ConsumerController {
 		try {
 			bcSysUserService.addBcSysUser(user);
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			em.addCuePhrases(e.getMessage()).addIsBool(false);
 			IStringUtils.log(e.getMessage(), ConsumerController.class);
 		}
@@ -81,6 +89,33 @@ public class ConsumerController {
 	 */
 	@RequestMapping( value = "/login.do" , method = RequestMethod.GET )
 	public String login ( ) {
+		return PageUrl.ConsumerLogin;
+	}
+
+	/**
+	 * 
+	 * @Title: login
+	 * 
+	 * @author FC
+	 * @Description: TODO 【跳转到登录页面】
+	 * @return
+	 * @date 2016年3月27日 下午6:11:00
+	 */
+	@RequestMapping( value = "/login.do" , method = RequestMethod.POST )
+	public String login (	HttpServletRequest request ,
+							LoginPojo user ) {
+		try {
+			String name = user.getUsername();
+			Subject subject = SecurityUtils.getSubject();
+			BcSysUser bsu = bcSysUserService.findBcSysUser(name);
+			String pass = EncryptUtil.encryptBySalt(user.getPassword(), bsu.getSalt());
+			AuthenticationToken token = new UsernamePasswordToken(name, pass);
+			subject.login(token);
+			return PageUrl.ConsumerIndex;
+		}
+		catch (AuthenticationException e) {
+			e.printStackTrace();
+		}
 		return PageUrl.ConsumerLogin;
 	}
 }

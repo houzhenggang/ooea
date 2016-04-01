@@ -17,4 +17,5 @@ public class PageUrl {
 	public static final String ConsumerLogin = "obc/consumer/login/login";
 	/** consumer首页 */
 	public static final String ConsumerIndex = "obc/consumer/index";
+	
 }

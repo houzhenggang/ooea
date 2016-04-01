@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>登陆成功</title>
 </head>
 <body>
-
+<img alt="" src="<%=request.getContextPath() %>/resources/images/123.jpg">
 </body>
 </html>

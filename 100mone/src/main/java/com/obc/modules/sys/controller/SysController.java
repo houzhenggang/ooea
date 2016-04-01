@@ -37,17 +37,9 @@ public class SysController {
 	 * @return
 	 * @date 2016年3月19日 下午10:12:53
 	 */
-
+	@RequestMapping( "/login.do" )
 	public String login ( ) {
-		ExceptionMessage em = ExceptionMessage.newInstance();
-		try {
-			bcSysUserService.findBcSysUser("");
-			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
-		} catch (Exception e) {
-			em.addCuePhrases(Code.i000010002em.getDesc()).addIsBool(false);
-			IStringUtils.log(e.getMessage(), SysController.class);
-		}
-		return "";
+		return PageUrl.ConsumerLogin;
 	}
 
 	/**
@@ -61,9 +53,7 @@ public class SysController {
 	 */
 	@RequestMapping( "/loginout.do" )
 	public String loginout ( String loginSalt ) {
-		if (StringUtils.equals(Code.i000LoginSalt.getDesc(), loginSalt)) {
-			return PageUrl.SysIndex;
-		}
+		if (StringUtils.equals(Code.i000LoginSalt.getDesc(), loginSalt)) { return PageUrl.SysIndex; }
 		return PageUrl.ConsumerIndex;
 	}
 

@@ -27,7 +27,7 @@
     <select id="findBcSysUser" parameterType="java.lang.String" resultType="bcSysUser">
         select
         <include refid="UserColumns" />
-        from bc_sys_user bsu where bsu.username=#{username }
+        from bc_sys_user bsu where bsu.mobile_phone=#{username } or bsu.email=#{username }
     </select>
     <!-- 注册 -->
     <insert id="addBcSysUser" parameterType="bcSysUser" useGeneratedKeys="true" keyProperty="sys_user_id">
