@@ -1,9 +1,5 @@
 @CHARSET "UTF-8";
-
-* {
-	margin: 0px;
-	padding: 0px;
-}
+@import url('../css.css');
 
 #centre {
 	height: 588px;
@@ -11,33 +7,54 @@
 
 #centre .centre-left {
 	height: 493px;
-	width: 32%;
-	border: 1px solid red;
+	width: 61%;
 	float: left;
 }
 
 #centre .centre-right {
 	height: 493px;
-	width: 67%;
-	border: 1px solid red;
+	width: 39%;
 	float: left;
 }
 
-#centre .centre-right input {
+#centre .centre-left input {
 	width: 288px;
-	height: 28px;
+	height: 37px;
 }
 
-#centre .centre-right tr {
-	line-height: 47px;
+#centre .centre-left tr {
+	line-height: 57px;
+	text-align: center;
 }
 
-#centre .centre-right span {
+#centre .centre-left span {
 	color: red;
 	font-size: 11px;
 }
 
-#centre .centre-right .t-left {
+#centre .centre-left .t-left {
 	text-align: right;
-	width: 58px;
+	width: 120px;
+}
+
+#centre .centre-left form {
+	margin-top: 10%;
+	margin-left: 35%;
+}
+
+#centre .btn-register {
+	width: 100%;
+	height: 54px;
+	color: #fff;
+	background: #e22;
+	border: 0;
+	font-size: 16px;
+	font-family: "Microsoft YaHei", "Hiragino Sans GB";
+}
+
+
+#centre .centre-top{
+	width: 100%;
+	min-width:800px;
+	height: 95px;
 }

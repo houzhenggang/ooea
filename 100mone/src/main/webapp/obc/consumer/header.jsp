@@ -6,8 +6,8 @@
 	<div class="header-left">
 		<ul>
 			<li>HEI，欢迎</li>
-			<li><a href="<%=request.getContextPath()%>/consumer/login.do">【登录】</a></li>
-			<li><a href="<%=request.getContextPath()%>/consumer/register.do">【免费注册】</a></li>
+			<li><a href="<%=request.getContextPath()%>/consumer/login.do">登录</a></li>
+			<li><a href="<%=request.getContextPath()%>/consumer/register.do">免费注册</a></li>
 			<li><a href="#">精彩专题</a></li>
 			<li><a href="#">今日热点</a></li>
 		</ul>
