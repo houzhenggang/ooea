@@ -1,6 +1,7 @@
 package com.obc.modules.consumer.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
@@ -97,9 +98,11 @@ public class ConsumerController {
 	 * @Title: login
 	 * 
 	 * @author FC
-	 * @Description: TODO 【跳转到登录页面】
-	 * @return
-	 * @date 2016年3月27日 下午6:11:00
+	 * @Description: TODO 【跳转到登录页面】 
+	 * @param request
+	 * @param user
+	 * @return 
+	 * @date 2016年4月10日 上午12:17:45
 	 */
 	@RequestMapping( value = "/login.do" , method = RequestMethod.POST )
 	public String login (	HttpServletRequest request ,
@@ -117,5 +120,31 @@ public class ConsumerController {
 			e.printStackTrace();
 		}
 		return PageUrl.ConsumerLogin;
+	}
+
+	/**
+	 * 发送邮件验证用户邮箱
+	 * @Title: validateCode
+	 * 
+	 * @author FC
+	 * @Description: TODO 【发送邮箱验证码】
+	 * @param request
+	 * @param user
+	 * @date 2016年4月10日 上午12:17:02
+	 */
+	@RequestMapping( "/validateCode.do" )
+	@ResponseBody
+	public void validateCode (	HttpServletRequest request ,
+	                          	BcSysUser user ) {
+		
+		//发件人system@100mone.com
+		//密码Fc13
+		String code = "code";
+		HttpSession session = request.getSession();
+		session.setAttribute("validateCode", code);
+		session.setMaxInactiveInterval(1800);
+		//发送邮件
+		//freemacker使用
+
 	}
 }

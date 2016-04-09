@@ -17,14 +17,19 @@
 	float: left;
 }
 
-#centre .centre-left input {
+
+#centre .centre-left .input {
 	width: 288px;
 	height: 37px;
+	text-align: left;
 }
 
-#centre .centre-left tr {
+#centre .centre-left .tr-top {
 	line-height: 57px;
-	text-align: center;
+}
+
+#centre .centre-left .tr-bottom{
+	height:20px;
 }
 
 #centre .centre-left span {
@@ -35,10 +40,11 @@
 #centre .centre-left .t-left {
 	text-align: right;
 	width: 120px;
+	padding-right: 10px;
 }
 
 #centre .centre-left form {
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 35%;
 }
 
@@ -48,6 +54,7 @@
 	color: #fff;
 	background: #e22;
 	border: 0;
+	left:50px;
 	font-size: 16px;
 	font-family: "Microsoft YaHei", "Hiragino Sans GB";
 }
@@ -56,5 +63,21 @@
 #centre .centre-top{
 	width: 100%;
 	min-width:800px;
-	height: 95px;
+	border-bottom: 1px #999999 solid;
+	height: 93px;
+}
+#centre .email-validate{
+	width: 50%;
+	height:37px;
+	text-align: left;
+}
+
+#centre .getEmail-validate{
+	width: 48%;
+	border:1px #999 solid;
+	cursor:pointer;
+	padding:11.5px 20px;
+	height: 54px;
+	line-height:37px;
+	text-decoration: none;
 }

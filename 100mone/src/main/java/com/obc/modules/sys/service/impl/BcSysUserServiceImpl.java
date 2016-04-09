@@ -45,14 +45,12 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		String email = bsu.getEmail();
 		if (!IStringUtils.isValidate(email,
 				Code.validateEmail)) { throw new RuntimeException(Code.i000010002em.getNO()); }
-		String phone = bsu.getMobile_phone();
 		Map<String, String> enc = EncryptUtil.encrypt(pass);
 		bsu.setPassword(enc.get(Code.i000Pass.getDesc()));
 		bsu.setSalt(enc.get(Code.i000Salt.getDesc()));
 		bsu.setCreate_time(new Date());
 		bsu.setIs_valid(Code.i000IsValid1L.getDesc());
 		bsu.setEmail(IStringUtils.replaceK(email));
-		bsu.setMobile_phone(IStringUtils.replaceK(phone));
 		bcSysUserDao.addBcSysUser(bsu);
 		return bsu;
 	}
