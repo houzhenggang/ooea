@@ -1,8 +1,12 @@
 package com.obc.modules.consumer.controller;
 
+import java.io.IOException;
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -16,10 +20,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.obc.common.ExceptionMessage;
+import com.obc.common.constant.Canonical;
 import com.obc.common.constant.PageUrl;
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
 import com.obc.common.utils.IStringUtils;
+import com.obc.common.utils.ValidateCode;
 import com.obc.modules.LoginPojo;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
@@ -52,9 +58,16 @@ public class ConsumerController {
 	@RequestMapping( value = "/register.do" , method = RequestMethod.POST )
 	@ResponseBody
 	public ExceptionMessage register (	HttpServletRequest request ,
-										BcSysUser user ) {
+										BcSysUser user ,
+										String code ) {
+		HttpSession session = request.getSession();
+		String validateCode = (String) session.getAttribute("validateCode");
+		
 		ExceptionMessage em = ExceptionMessage.newInstance();
 		try {
+			if(StringUtils.equals(code, validateCode)){
+				throw new Exception(Canonical.validateCodeMessage);
+			}
 			bcSysUserService.addBcSysUser(user);
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		}
@@ -98,10 +111,10 @@ public class ConsumerController {
 	 * @Title: login
 	 * 
 	 * @author FC
-	 * @Description: TODO 【跳转到登录页面】 
+	 * @Description: TODO 【跳转到登录页面】
 	 * @param request
 	 * @param user
-	 * @return 
+	 * @return
 	 * @date 2016年4月10日 上午12:17:45
 	 */
 	@RequestMapping( value = "/login.do" , method = RequestMethod.POST )
@@ -133,18 +146,34 @@ public class ConsumerController {
 	 * @date 2016年4月10日 上午12:17:02
 	 */
 	@RequestMapping( "/validateCode.do" )
-	@ResponseBody
 	public void validateCode (	HttpServletRequest request ,
-	                          	BcSysUser user ) {
-		
-		//发件人system@100mone.com
-		//密码Fc13
-		String code = "code";
-		HttpSession session = request.getSession();
-		session.setAttribute("validateCode", code);
-		session.setMaxInactiveInterval(1800);
-		//发送邮件
-		//freemacker使用
+								HttpServletResponse response ,
+								BcSysUser user ) {
+
+		try {
+			ValidateCode validateCode = ValidateCode.newInstance();
+			//发件人system@100mone.com
+			//密码Fc13
+			HttpSession session = request.getSession();
+
+			//发送邮件
+			//freemacker使用
+
+			// 设置响应的类型格式为图片格式  
+			response.setContentType("image/jpeg");
+			//禁止图像缓存。  
+			response.setHeader("Pragma", "no-cache");
+			response.setHeader("Cache-Control", "no-cache");
+			response.setDateHeader("Expires", 0);
+
+			session.setAttribute("validateCode", validateCode.getCode());
+			session.setMaxInactiveInterval(1800);
+			validateCode.write(response.getOutputStream());
+
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
 
 	}
 }

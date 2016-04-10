@@ -30,7 +30,7 @@
 				</tr>
 				<tr class="tr-top">
 					<td class="t-left">邮箱验证码</td>
-					<td><input type="password" name="password" class="email-validate" /> <a href="javascript:;" class="getEmail-validate" target="_blank">获取验证码</a></td>
+					<td><input type="text" name="code" class="email-validate" /> <a href="javascript:;" class="getEmail-validate" target="_blank">获取验证码</a></td>
 				</tr>
 				<tr class="tr-bottom">
 					<td></td>

@@ -21,9 +21,12 @@ public class Canonical {
 	/** 密码验证 */
 	public static final String Pass = "^[a-zA-Z]\\w{5,17}$";
 
+	/** **/
 	public static final Map<String, String> cvk = new HashMap<String, String>();
+	/** **/
 	public static final Map<String, String> ckv = new HashMap<String, String>();
 	public static final String codeRegex = "^[A-Za-z0-9]$";
+	public static final String validateCodeMessage = "验证码不正确或已过期，请重新获取.";
 
 	static {
 		cvk.put("0", "a");
@@ -98,7 +101,6 @@ public class Canonical {
 		ckv.put("8", "y");
 		cvk.put("z", "9");
 		ckv.put("9", "z");
-
 	}
 
 }
