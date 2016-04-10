@@ -27,6 +27,7 @@ public class Canonical {
 	public static final Map<String, String> ckv = new HashMap<String, String>();
 	public static final String codeRegex = "^[A-Za-z0-9]$";
 	public static final String validateCodeMessage = "验证码不正确或已过期，请重新获取.";
+	public static final String emailSubject = "100mone注册验证";
 
 	public static final Integer num1 = 1;
 	public static final Integer num2 = 2;

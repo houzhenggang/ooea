@@ -66,7 +66,9 @@ public class ConsumerController {
 
 		ExceptionMessage em = ExceptionMessage.newInstance();
 		try {
-			if (StringUtils.equals(code, validateCode)) { throw new Exception(Canonical.validateCodeMessage); }
+			if (StringUtils.isNotEmpty(code)
+					&& StringUtils.equals(code, validateCode)) { throw new Exception(Canonical.validateCodeMessage); }
+
 			bcSysUserService.addBcSysUser(user);
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		}
@@ -179,15 +181,17 @@ public class ConsumerController {
 	 * @Description: TODO 【发送邮件验证用户邮箱】
 	 * @date 2016年4月10日 上午11:56:56
 	 */
-	@RequestMapping("/emailCode.do")
+	@RequestMapping( "/emailCode.do" )
 	@ResponseBody
 	public void emailCode (	HttpServletRequest request ,
 							BcSysUser user ) {
 		HttpSession session = request.getSession();
 		String emailCode = ValidateCode.createCode(Canonical.num6);
 		//发送邮件
-		EmailUtils.send(user.getEmail(), emailCode);
+		EmailUtils.send(user.getEmail(), emailCode, null);
 		session.setAttribute("validateCode", emailCode);
 		session.setMaxInactiveInterval(1800);
+		IStringUtils.log("验证码：" + emailCode, ConsumerController.class);
+
 	}
 }
