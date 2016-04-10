@@ -126,6 +126,10 @@ public class EmailUtils {
 	}
 
 	public static void main ( String[] args ) throws EmailException {
-		EmailUtils.send("201692131@qq.com", "<img src='http://img.hb.aicdn.com/d2024a8a998c8d3e4ba842e40223c23dfe1026c8bbf3-OudiPA_fw580'/><a href='http://run01.com/consumer/register.do'>点击注册</a>", null);
+		EmailUtils.send("201692131@qq.com",
+				"<div style='height:200px;width:55%;min-width: 388px;'>\n" + "	<p>尊敬的201692131@qq.com</p><br>\n"
+						+ "	您已经在100mone.com申请注册：<br>\n" + "	注册验证码：<span style='color:red;'>3ede2</span>\n"
+						+ "</div>",
+				null);
 	}
 }
