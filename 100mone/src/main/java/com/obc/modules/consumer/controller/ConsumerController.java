@@ -24,6 +24,7 @@ import com.obc.common.constant.Canonical;
 import com.obc.common.constant.PageUrl;
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
+import com.obc.common.utils.EmailUtils;
 import com.obc.common.utils.IStringUtils;
 import com.obc.common.utils.ValidateCode;
 import com.obc.modules.LoginPojo;
@@ -62,12 +63,10 @@ public class ConsumerController {
 										String code ) {
 		HttpSession session = request.getSession();
 		String validateCode = (String) session.getAttribute("validateCode");
-		
+
 		ExceptionMessage em = ExceptionMessage.newInstance();
 		try {
-			if(StringUtils.equals(code, validateCode)){
-				throw new Exception(Canonical.validateCodeMessage);
-			}
+			if (StringUtils.equals(code, validateCode)) { throw new Exception(Canonical.validateCodeMessage); }
 			bcSysUserService.addBcSysUser(user);
 			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		}
@@ -136,11 +135,11 @@ public class ConsumerController {
 	}
 
 	/**
-	 * 发送邮件验证用户邮箱
+	 * 
 	 * @Title: validateCode
 	 * 
 	 * @author FC
-	 * @Description: TODO 【发送邮箱验证码】
+	 * @Description: TODO 【图片证码】
 	 * @param request
 	 * @param user
 	 * @date 2016年4月10日 上午12:17:02
@@ -155,17 +154,12 @@ public class ConsumerController {
 			//发件人system@100mone.com
 			//密码Fc13
 			HttpSession session = request.getSession();
-
-			//发送邮件
-			//freemacker使用
-
 			// 设置响应的类型格式为图片格式  
 			response.setContentType("image/jpeg");
 			//禁止图像缓存。  
 			response.setHeader("Pragma", "no-cache");
 			response.setHeader("Cache-Control", "no-cache");
 			response.setDateHeader("Expires", 0);
-
 			session.setAttribute("validateCode", validateCode.getCode());
 			session.setMaxInactiveInterval(1800);
 			validateCode.write(response.getOutputStream());
@@ -175,5 +169,25 @@ public class ConsumerController {
 			e.printStackTrace();
 		}
 
+	}
+
+	/**
+	 * 
+	 * @Title: emailCode
+	 * 
+	 * @author FC
+	 * @Description: TODO 【发送邮件验证用户邮箱】
+	 * @date 2016年4月10日 上午11:56:56
+	 */
+	@RequestMapping("/emailCode.do")
+	@ResponseBody
+	public void emailCode (	HttpServletRequest request ,
+							BcSysUser user ) {
+		HttpSession session = request.getSession();
+		String emailCode = ValidateCode.createCode(Canonical.num6);
+		//发送邮件
+		EmailUtils.send(user.getEmail(), emailCode);
+		session.setAttribute("validateCode", emailCode);
+		session.setMaxInactiveInterval(1800);
 	}
 }

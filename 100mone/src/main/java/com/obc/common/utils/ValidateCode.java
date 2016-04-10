@@ -11,7 +11,6 @@ import java.util.Random;
 
 import javax.imageio.ImageIO;
 
-
 /**
  * 
  * @ClassName: ValidateCode
@@ -31,11 +30,13 @@ public class ValidateCode {
 	private int lineCount = 150;
 	// 验证码
 	private String code = null;
+	// 生成随机数
+	private static final Random random = new Random();
 	// 验证码图片Buffer
 	private BufferedImage buffImg = null;
 
-	private char[] codeSequence = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R',
-			'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+	private static final char[] codeSequence = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
+			'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 
 	private ValidateCode ( ) {
 		this.createCode();
@@ -82,8 +83,6 @@ public class ValidateCode {
 		// 图像buffer
 		buffImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		Graphics2D g = buffImg.createGraphics();
-		// 生成随机数
-		Random random = new Random();
 		// 将图像填充为白色
 		g.setColor(Color.WHITE);
 		g.fillRect(0, 0, width, height);
@@ -120,6 +119,15 @@ public class ValidateCode {
 		}
 		// 将四位数字的验证码保存到Session中。
 		code = randomCode.toString();
+	}
+
+	public static String createCode ( int length ) {
+		StringBuffer randomCode = new StringBuffer();
+		for (int i = 0; i < length; i++) {
+			String strRand = String.valueOf(codeSequence[random.nextInt(codeSequence.length)]);
+			randomCode.append(strRand);
+		}
+		return randomCode.toString();
 	}
 
 	public void write ( String path ) throws IOException {

@@ -28,6 +28,17 @@ public class Canonical {
 	public static final String codeRegex = "^[A-Za-z0-9]$";
 	public static final String validateCodeMessage = "验证码不正确或已过期，请重新获取.";
 
+	public static final Integer num1 = 1;
+	public static final Integer num2 = 2;
+	public static final Integer num3 = 3;
+	public static final Integer num4 = 4;
+	public static final Integer num5 = 5;
+	public static final Integer num6 = 6;
+	public static final Integer num7 = 7;
+	public static final Integer num8 = 8;
+	public static final Integer num9 = 9;
+	public static final Integer num0 = 0;
+
 	static {
 		cvk.put("0", "a");
 		ckv.put("a", "0");
