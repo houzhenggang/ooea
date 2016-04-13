@@ -121,6 +121,16 @@ public class ValidateCode {
 		code = randomCode.toString();
 	}
 
+	/**
+	 * 
+	 * @Title: createCode
+	 * 
+	 * @author FC
+	 * @Description: TODO 【生成随机码】 
+	 * @param length
+	 * @return 
+	 * @date 2016年4月13日 下午6:12:46
+	 */
 	public static String createCode ( int length ) {
 		StringBuffer randomCode = new StringBuffer();
 		for (int i = 0; i < length; i++) {

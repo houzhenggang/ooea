@@ -1,6 +1,8 @@
 package com.obc.modules.consumer.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,9 +24,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.obc.common.ExceptionMessage;
 import com.obc.common.constant.Canonical;
 import com.obc.common.constant.PageUrl;
+import com.obc.common.constant.TemplateFileNames;
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
 import com.obc.common.utils.EmailUtils;
+import com.obc.common.utils.FreemarkerUtils;
 import com.obc.common.utils.IStringUtils;
 import com.obc.common.utils.ValidateCode;
 import com.obc.modules.LoginPojo;
@@ -168,7 +172,6 @@ public class ConsumerController {
 
 		}
 		catch (IOException e) {
-			e.printStackTrace();
 		}
 
 	}
@@ -183,15 +186,34 @@ public class ConsumerController {
 	 */
 	@RequestMapping( "/emailCode.do" )
 	@ResponseBody
-	public void emailCode (	HttpServletRequest request ,
+	public Object emailCode (	HttpServletRequest request ,
 							BcSysUser user ) {
-		HttpSession session = request.getSession();
-		String emailCode = ValidateCode.createCode(Canonical.num6);
-		//发送邮件
-		EmailUtils.send(user.getEmail(), emailCode, null);
-		session.setAttribute("validateCode", emailCode);
-		session.setMaxInactiveInterval(1800);
-		IStringUtils.log("验证码：" + emailCode, ConsumerController.class);
+		try {
+			ExceptionMessage exceptionMessage =ExceptionMessage.newInstance();
+			HttpSession session = request.getSession();
+			
+			String validateCode = (String) session.getAttribute("validateCode");
+			if(StringUtils.isNotEmpty(validateCode)){
+				exceptionMessage.addCuePhrases("请等会儿再发。");
+				return exceptionMessage;
+			}
+			
+			String emailCode = ValidateCode.createCode(Canonical.num6);
+			Map<String, String> param = new HashMap<String, String>();
+			String addressee = user.getEmail();//收件人
 
+			param.put("addressee", addressee);
+			param.put("validateCode", emailCode);
+			String msg = FreemarkerUtils.genStrFormTemplate(TemplateFileNames.registerCode, param);
+			//发送邮件
+			EmailUtils.send(addressee, msg, null);
+			session.setAttribute("validateCode", emailCode);
+			session.setMaxInactiveInterval(1800);
+			IStringUtils.log("验证码：" + emailCode, ConsumerController.class);
+		}
+		catch (Exception e) {
+			IStringUtils.log("验证码获取异常：" + e.getMessage(), ConsumerController.class);
+		}
+		return null;
 	}
 }
