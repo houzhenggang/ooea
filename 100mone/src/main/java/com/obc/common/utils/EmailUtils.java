@@ -30,7 +30,7 @@ public class EmailUtils {
 	/** 发送方的邮箱（必须为邮箱服务器的登录用户名） **/
 	private static final String fromEmail = "system@100mone.com";
 	/** 发送方姓名 **/
-	private static final String fromUsername = "100mone(system)";
+	private static final String fromUsername = "system（100mone.com）";
 	/** 邮件内容编码，防止乱码 **/
 	private static final String charset = "UTF-8";
 
