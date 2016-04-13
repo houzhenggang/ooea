@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.obc.common.ExceptionMessage;
 import com.obc.common.constant.Canonical;
 import com.obc.common.constant.PageUrl;
-import com.obc.common.constant.TemplateFileNames;
+import com.obc.common.constant.TemplateFileName;
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
 import com.obc.common.utils.EmailUtils;
@@ -204,7 +204,7 @@ public class ConsumerController {
 
 			param.put("addressee", addressee);
 			param.put("validateCode", emailCode);
-			String msg = FreemarkerUtils.genStrFormTemplate(TemplateFileNames.registerCode, param);
+			String msg = FreemarkerUtils.genStrFormTemplate(TemplateFileName.registerCode, param);
 			//发送邮件
 			EmailUtils.send(addressee, msg, null);
 			session.setAttribute("validateCode", emailCode);
