@@ -70,11 +70,14 @@ public class ConsumerController {
 
 		ExceptionMessage em = ExceptionMessage.newInstance();
 		try {
-			if (StringUtils.isNotEmpty(code)
-					&& StringUtils.equals(code, validateCode)) { throw new Exception(Canonical.validateCodeMessage); }
+			if (StringUtils.isNotEmpty(code) && StringUtils.equals(code.toLowerCase(), validateCode.toLowerCase())
+					&& code.length() == Canonical.num6) {
+				bcSysUserService.addBcSysUser(user);
+				em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
+			} else {
+				throw new Exception(Canonical.validateCodeMessage);
+			}
 
-			bcSysUserService.addBcSysUser(user);
-			em.addCuePhrases(Code.SuccesssMessage.getDesc()).addIsBool(true);
 		}
 		catch (Exception e) {
 			em.addCuePhrases(e.getMessage()).addIsBool(false);
@@ -171,8 +174,7 @@ public class ConsumerController {
 			validateCode.write(response.getOutputStream());
 
 		}
-		catch (IOException e) {
-		}
+		catch (IOException e) {}
 
 	}
 
@@ -187,17 +189,17 @@ public class ConsumerController {
 	@RequestMapping( "/emailCode.do" )
 	@ResponseBody
 	public Object emailCode (	HttpServletRequest request ,
-							BcSysUser user ) {
+								BcSysUser user ) {
+		ExceptionMessage exceptionMessage = ExceptionMessage.newInstance();
 		try {
-			ExceptionMessage exceptionMessage =ExceptionMessage.newInstance();
 			HttpSession session = request.getSession();
-			
+
 			String validateCode = (String) session.getAttribute("validateCode");
-			if(StringUtils.isNotEmpty(validateCode)){
+			if (StringUtils.isNotEmpty(validateCode)) {
 				exceptionMessage.addCuePhrases("请等会儿再发。");
 				return exceptionMessage;
 			}
-			
+
 			String emailCode = ValidateCode.createCode(Canonical.num6);
 			Map<String, String> param = new HashMap<String, String>();
 			String addressee = user.getEmail();//收件人
@@ -214,6 +216,7 @@ public class ConsumerController {
 		catch (Exception e) {
 			IStringUtils.log("验证码获取异常：" + e.getMessage(), ConsumerController.class);
 		}
-		return null;
+		exceptionMessage.addCuePhrases("验证码发送成功。");
+		return exceptionMessage;
 	}
 }
