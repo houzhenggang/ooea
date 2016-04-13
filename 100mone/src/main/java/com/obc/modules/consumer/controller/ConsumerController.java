@@ -190,14 +190,14 @@ public class ConsumerController {
 	@ResponseBody
 	public Object emailCode (	HttpServletRequest request ,
 								BcSysUser user ) {
-		ExceptionMessage exceptionMessage = ExceptionMessage.newInstance();
+		ExceptionMessage em = ExceptionMessage.newInstance();
 		try {
 			HttpSession session = request.getSession();
 
 			String validateCode = (String) session.getAttribute("validateCode");
 			if (StringUtils.isNotEmpty(validateCode)) {
-				exceptionMessage.addCuePhrases("请等会儿再发。");
-				return exceptionMessage;
+				em.addCuePhrases("请等会儿再发。");
+				return em;
 			}
 
 			String emailCode = ValidateCode.createCode(Canonical.num6);
@@ -216,7 +216,7 @@ public class ConsumerController {
 		catch (Exception e) {
 			IStringUtils.log("验证码获取异常：" + e.getMessage(), ConsumerController.class);
 		}
-		exceptionMessage.addCuePhrases("验证码发送成功。");
-		return exceptionMessage;
+		em.addCuePhrases("验证码发送成功。");
+		return em;
 	}
 }
