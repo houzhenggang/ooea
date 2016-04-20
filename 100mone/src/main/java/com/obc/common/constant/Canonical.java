@@ -19,7 +19,7 @@ public class Canonical {
 	/** 手机号码 */
 	public static final String Phone = "^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$";
 	/** 密码验证 */
-	public static final String Pass = "^[a-zA-Z]\\w{5,17}$";
+	public static final String Pass = "^\\w{6,18}$";
 
 	/** **/
 	public static final Map<String, String> cvk = new HashMap<String, String>();
