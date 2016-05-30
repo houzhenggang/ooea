@@ -146,13 +146,12 @@ public class MoneStringUtils extends StringUtils {
 
 	/**
 	 * 
-	 * @Title: log
+	 * <br>方法名： log
 	 * 
-	 * @author FC
-	 * @Description: TODO 【异常休息输出格式】
+	 * <br>描述：【异常休息输出格式】 
+	 * <br>创建时间： 2016年5月31日 上午2:46:00 
 	 * @param e
-	 * @return
-	 * @date 2016年3月29日 下午8:33:57
+	 * @param clazz
 	 */
 	public static void log (	Exception e ,
 								Class<?> clazz ) {
@@ -166,13 +165,12 @@ public class MoneStringUtils extends StringUtils {
 
 	/**
 	 * 
-	 * @Title: log
+	 * <br>方法名： log
 	 * 
-	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】 
+	 * <br>描述：【日志】 
+	 * <br>创建时间： 2016年5月31日 上午2:46:17 
 	 * @param str
-	 * @param clazz 
-	 * @date 2016年3月30日 下午5:59:20
+	 * @param clazz
 	 */
 	public static void log (	String str ,
 								Class<?> clazz ) {
