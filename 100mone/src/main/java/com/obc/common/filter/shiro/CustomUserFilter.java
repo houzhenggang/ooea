@@ -10,11 +10,12 @@ import com.obc.modules.sys.entity.BcSysUser;
 
 /**
  * 
- * @ClassName: CustomUserFilter 
+ * <br>类名： CustomUserFilter 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:22:52 
  * @author FC
- * @Description: TODO 【这里用一句话描述这个类的作用】
- * @date 2016年3月28日 下午6:10:05
  */
 public class CustomUserFilter extends UserFilter {
 

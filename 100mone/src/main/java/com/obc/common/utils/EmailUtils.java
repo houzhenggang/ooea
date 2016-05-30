@@ -34,64 +34,16 @@ public class EmailUtils {
 	/** 邮件内容编码，防止乱码 **/
 	private static final String charset = "UTF-8";
 
-	/**
-	 * 
-	 * @Title: sendEmail
-	 * 
-	 * @author FC
-	 * @Description: TODO 【java发送邮件-commons-email】
-	 * @param nameAndAddrMap 用户名及对应的邮箱组成的Map
-	 * @param subject 邮件主题或标题
-	 * @param htmlContent 邮件内容html格式
-	 * @throws EmailException
-	 * @throws MessagingException
-	 * @date 2016年4月10日 下午5:28:55
-	 */
-	@Deprecated
-	public static void sendEmail (	Map<String, String> nameAndAddrMap ,
-									String subject ,
-									String htmlContent )	throws EmailException ,
-															MessagingException {
-		/*
-		 * ImageHtmlEmail:HTML文本的邮件、通过2代码转转内联图片, 1.3新增的，但我怎么也测试不成功
-		 * ImageHtmlEmail网上都是官网上例子而官网上例子比较模糊
-		 * ImageHtmlEmail email=new ImageHtmlEmail();
-		 */
-		HtmlEmail email = new HtmlEmail();//创建能加附件内容为HTML文本的邮件、HTML直接内联图片但必须用setHtmlMsg()传邮件内容  
-
-		for (Map.Entry<String, String> map : nameAndAddrMap.entrySet()) {//遍历用户名及对应的邮箱地址组成的map  
-			email.addTo(map.getValue(), map.getKey());//接收方邮箱和用户名  
-		}
-		//email.addCc("chen_leixing@qq.com");//抄送方  
-		//email.addBcc("leixing_chen@120.com");//秘密抄送方  
-
-		email.setCharset(EmailUtils.charset);//设置邮件的字符集为UTF-8防止乱码  
-		email.setSubject(subject);//主题  
-		email.setHtmlMsg(htmlContent);//邮件内容:<font color='red'>测试简单邮件发送功能！</font>  
-
-		//创建邮件附件可多个   
-		EmailAttachment attachment = new EmailAttachment();//创建附件  
-		attachment.setPath("D:\\MongoDB.txt");//本地附件，绝对路径    
-		//attachment.setURL(new URL("http://www.baidu.com/moumou附件"));//可添加网络上的附件  
-		attachment.setDisposition(EmailAttachment.ATTACHMENT);
-		attachment.setDescription("MongoDB入门精通");//附件描述   
-		attachment.setName("NoSQL数据库");//附件名称  
-		email.attach(attachment);//添加附件到邮件,可添加多个  
-		email.attach(attachment);//添加附件到邮件,可添加多个  
-		email.send();//发送邮件  
-	}
 
 	/**
 	 * 
-	 * @Title: send
+	 * <br>方法名： send
 	 * 
-	 * @author FC
-	 * @Description: TODO 【邮件发送】
+	 * <br>描述：【邮件发送】 
+	 * <br>创建时间： 2016年5月31日 上午2:39:42 
 	 * @param addressee 收件人邮箱
 	 * @param html 邮件内容
 	 * @param adjunct 附件信息【支持多附件】
-	 * @throws EmailException
-	 * @date 2016年4月10日 下午5:42:10
 	 */
 	public static void send (	String addressee ,
 								String html ,
@@ -121,7 +73,7 @@ public class EmailUtils {
 			email.send();//发送邮件
 		}
 		catch (EmailException e) {
-			IStringUtils.log(e, EmailUtils.class);
+			MoneStringUtils.log(e, EmailUtils.class);
 		}
 	}
 

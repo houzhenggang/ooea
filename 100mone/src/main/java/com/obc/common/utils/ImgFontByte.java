@@ -5,11 +5,12 @@ import java.awt.*;
 
 /**
  * 
- * @ClassName: ImgFontByte 
+ * <br>类名： ImgFontByte 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:38:45 
  * @author FC
- * @Description: TODO 【这里用一句话描述这个类的作用】
- * @date 2016年4月10日 上午10:56:43
  */
 public class ImgFontByte {
 

@@ -29,7 +29,7 @@ import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
 import com.obc.common.utils.EmailUtils;
 import com.obc.common.utils.FreemarkerUtils;
-import com.obc.common.utils.IStringUtils;
+import com.obc.common.utils.MoneStringUtils;
 import com.obc.common.utils.ValidateCode;
 import com.obc.modules.LoginPojo;
 import com.obc.modules.sys.entity.BcSysUser;
@@ -37,11 +37,12 @@ import com.obc.modules.sys.service.BcSysUserService;
 
 /**
  * 
- * @ClassName: ConsumerController
+ * <br>类名： ConsumerController 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:21:13 
  * @author FC
- * @Description: TODO 【普通用户注册登录】
- * @date 2016年3月27日 下午6:08:15
  */
 @RequestMapping( "/consumer" )
 @Controller
@@ -53,12 +54,14 @@ public class ConsumerController {
 
 	/**
 	 * 
-	 * @Title: register
+	 * <br>方法名： register
 	 * 
-	 * @author FC
-	 * @Description: TODO 【注册】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:21:17 
+	 * @param request
+	 * @param user
+	 * @param code
 	 * @return
-	 * @date 2016年3月27日 下午12:39:01
 	 */
 	@RequestMapping( value = "/register.do" , method = RequestMethod.POST )
 	@ResponseBody
@@ -81,19 +84,18 @@ public class ConsumerController {
 		}
 		catch (Exception e) {
 			em.addCuePhrases(e.getMessage()).addIsBool(false);
-			IStringUtils.log(e.getMessage(), ConsumerController.class);
+			MoneStringUtils.log(e.getMessage(), ConsumerController.class);
 		}
 		return em;
 	}
 
 	/**
 	 * 
-	 * @Title: register
+	 * <br>方法名： register
 	 * 
-	 * @author FC
-	 * @Description: TODO 【跳转到注册页面】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:21:23 
 	 * @return
-	 * @date 2016年3月27日 下午12:43:31
 	 */
 	@RequestMapping( value = "/register.do" , method = RequestMethod.GET )
 	public String register ( ) {
@@ -211,10 +213,10 @@ public class ConsumerController {
 			session.setAttribute("validateCode", emailCode);
 			session.setAttribute("count", count + Canonical.num1);
 			session.setMaxInactiveInterval(300);
-			IStringUtils.log("验证码：" + emailCode, ConsumerController.class);
+			MoneStringUtils.log("验证码：" + emailCode, ConsumerController.class);
 		}
 		catch (Exception e) {
-			IStringUtils.log("验证码获取异常：" + e.getMessage(), ConsumerController.class);
+			MoneStringUtils.log("验证码获取异常：" + e.getMessage(), ConsumerController.class);
 		}
 		em.addCuePhrases("验证码发送成功。");
 		return em;

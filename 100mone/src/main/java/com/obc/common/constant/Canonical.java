@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 验证格式
  * 
- * @ClassName: Canonical
+ * <br>类名： Canonical 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:21:52 
  * @author FC
- * @Description: TODO 【这里用一句话描述这个类的作用】
- * @date 2016年3月19日 下午10:44:10
  */
 public class Canonical {
 

@@ -10,16 +10,24 @@ import com.obc.common.constant.Canonical;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
+/**
+ * 
+ * <br>类名： FreemarkerUtils 
+ *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:39:33 
+ * @author FC
+ */
 public class FreemarkerUtils {
 
 	/**
 	 * 
-	 * @Title: getFreeMarkerCFG
+	 * <br>方法名： getFreeMarkerCFG
 	 * 
-	 * @author FC
-	 * @Description: TODO 【获取freemarker的配置】
+	 * <br>描述：【获取freemarker的配置】 
+	 * <br>创建时间： 2016年5月31日 上午2:38:55 
 	 * @return
-	 * @date 2016年4月13日 下午5:57:16
 	 */
 	private static Configuration getFreeMarkerCFG ( ) {
 		Configuration configuration = new Configuration(Configuration.DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
@@ -30,14 +38,13 @@ public class FreemarkerUtils {
 
 	/**
 	 * 
-	 * @Title: genStrFormTemplate
+	 * <br>方法名： genStrFormTemplate
 	 * 
-	 * @author FC
-	 * @Description: TODO 【输出模板信息】
+	 * <br>描述：【输出模板信息】 
+	 * <br>创建时间： 2016年5月31日 上午2:39:06 
 	 * @param templateFileName 模板名称
 	 * @param values 模板需要替换内容
 	 * @return
-	 * @date 2016年4月13日 下午5:59:00
 	 */
 	public static String genStrFormTemplate (	String templateFileName ,
 												Object values ) {

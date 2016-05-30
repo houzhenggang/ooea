@@ -5,11 +5,12 @@ import javax.servlet.http.HttpServletRequestWrapper;
 
 /**
  * 
- * @ClassName: XssHttpServletRequestWrapper
+ * <br>类名： XssHttpServletRequestWrapper 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:34:51 
  * @author FC
- * @Description: TODO 【这里用一句话描述这个类的作用】
- * @date 2016年3月21日 下午5:48:35
  */
 public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
 
@@ -50,13 +51,12 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
 
 	/**
 	 * 
-	 * @Title: cleanXSS
+	 * <br>方法名： cleanXSS
 	 * 
-	 * @author FC
-	 * @Description: TODO 【清除特殊字符】
+	 * <br>描述：【清除特殊字符】 
+	 * <br>创建时间： 2016年5月31日 上午2:34:59 
 	 * @param value
 	 * @return
-	 * @date 2016年3月21日 下午5:49:08
 	 */
 	private String cleanXSS ( String value ) {
 		value = value.replaceAll("<", "＜").replaceAll(">", "＞");

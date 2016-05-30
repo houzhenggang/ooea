@@ -5,28 +5,26 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 
 /**
  * 
- * @ClassName: FastJsonUtils
+ * <br>类名： FastJsonUtils 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:31:14 
  * @author FC
- * @Description: TODO 【fastJson解析】
- * @date 2016年3月6日 下午8:12:44
  */
 public class FastJsonUtils<T> {
 
 	/**
 	 * 
-	 * @Title: toJSONString
+	 * <br>方法名： toJSONString
 	 * 
-	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:31:21 
 	 * @param object
-	 *            【】
-	 * @param dateFormat
-	 *            【yyyy-MM-dd HH:mm:ss|yyyy-MM-dd】
-	 * @param key
-	 *            【1|2|3|】
+	 * @param dateFormat 【yyyy-MM-dd HH:mm:ss|yyyy-MM-dd】
+	 * @param key 【1|2|3|】
 	 * @return
-	 * @date 2016年3月6日 下午8:22:03
+	 * @throws Exception
 	 */
 	public String toJSONString (	Object object ,
 									String dateFormat ,
@@ -46,14 +44,13 @@ public class FastJsonUtils<T> {
 
 	/**
 	 * 
-	 * @Title: parseObject
+	 * <br>方法名： parseObject
 	 * 
-	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:31:51 
 	 * @param text
 	 * @param clazz
 	 * @return
-	 * @date 2016年3月6日 下午8:22:33
 	 */
 	public Object parseObject (	String text ,
 								Class<T> clazz ) {

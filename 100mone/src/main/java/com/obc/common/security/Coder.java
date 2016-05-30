@@ -4,24 +4,24 @@ import org.apache.commons.codec.binary.Base64;
 
 /**
  * 
- * @ClassName: Coder 
+ * <br>类名： Coder 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【基础加密组件】
+ * <br>创建时间： 2016年5月31日 上午2:32:50 
  * @author FC
- * @Description: TODO 【基础加密组件】
- * @date 2016年3月22日 下午5:41:28
  */
 public abstract class Coder {
 
 	/**
 	 * 
-	 * @Title: decryptBASE64
+	 * <br>方法名： decryptBASE64
 	 * 
-	 * @author FC
-	 * @Description: TODO 【BASE64解密】
+	 * <br>描述：【BASE64解密】 
+	 * <br>创建时间： 2016年5月31日 上午2:33:06 
 	 * @param key
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:40:51
 	 */
 	public static byte[] decryptBASE64 ( String key ) throws Exception {
 		return (new Base64()).decode(key.getBytes());
@@ -29,14 +29,13 @@ public abstract class Coder {
 
 	/**
 	 * 
-	 * @Title: encryptBASE64
+	 * <br>方法名： encryptBASE64
 	 * 
-	 * @author FC
-	 * @Description: TODO 【BASE64加密】 
+	 * <br>描述：【BASE64加密】 
+	 * <br>创建时间： 2016年5月31日 上午2:33:16 
 	 * @param key
 	 * @return
-	 * @throws Exception 
-	 * @date 2016年3月22日 下午5:41:13
+	 * @throws Exception
 	 */
 	public static String encryptBASE64 ( byte[] key ) throws Exception {
 		return (new Base64()).encodeAsString(key).replace("\r", "").replace("\n", "");

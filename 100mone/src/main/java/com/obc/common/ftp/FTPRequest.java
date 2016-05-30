@@ -15,74 +15,79 @@ import org.apache.log4j.Logger;
 
 /**
  * 
- * @ClassName: FTPRequest
+ * <br>
+ * 类名： FTPRequest
  *
- * @Description: TODO 【ftp文件上传下载】
+ * <br>
+ * 公司名称： 【】
+ * <br>
+ * 描述：【】
+ * <br>
+ * 创建时间： 2016年5月31日 上午2:23:54
  * @author FC
- * @date 2016年2月20日 下午8:51:23
  */
 public class FTPRequest {
-
-	private static Logger logger = Logger.getLogger("Log");
-	private String ftpHost;
-	private int port;
-	private String ftpPath; // 文件在ftp server上的路径
-	private String userName;
-	private String password;
-	private String localPath;// 文件在本地的路径
-	private List<String> fileName = new ArrayList<String>(); // 操作的文件名
-
-	private FTPRequest ( ) {
-	}
-
+	
+	private static Logger logger   = Logger.getLogger("Log");
+	private String		  ftpHost;
+	private int			  port;
+						  
+	private String		  ftpPath;							  /* 文件在ftp server上的路径 */
+	private String		  userName;
+	private String		  password;
+	private String		  localPath;						  /* 文件在本地的路径 */
+	private List<String>  fileName = new ArrayList<String>(); /* 操作的文件名 */
+															  
+	private FTPRequest ( ) {}
+	
 	public static FTPRequest newInstance ( ) {
 		return new FTPRequest();
 	}
-
+	
 	public FTPRequest addFTPPath ( String path ) {
 		this.ftpPath = path;
 		return this;
 	}
-
+	
 	public FTPRequest addFTPHost ( String host ) {
 		this.ftpHost = host;
 		return this;
 	}
-
+	
 	public FTPRequest addUserName ( String userName ) {
 		this.userName = userName;
 		return this;
 	}
-
+	
 	public FTPRequest addPassword ( String password ) {
 		this.password = password;
 		return this;
 	}
-
+	
 	public FTPRequest addLocalPath ( String localPath ) {
 		this.localPath = localPath;
 		return this;
 	}
-
+	
 	public FTPRequest addFileName ( String fileName ) {
 		this.fileName.add(fileName);
 		return this;
 	}
-
+	
 	public FTPRequest addFileNames ( List<String> fileName ) {
 		this.fileName = fileName;
 		return this;
 	}
-
+	
 	public FTPRequest addPort ( int port ) {
 		this.port = port;
 		return this;
 	}
-
+	
 	/**
 	 * 
 	 * @Title: downFile
-	 * 
+	 *         
 	 * @author FC
 	 * @Description: TODO 【下载】
 	 * @throws Exception
@@ -90,9 +95,9 @@ public class FTPRequest {
 	 * @date 2016年2月20日 下午9:00:52
 	 */
 	public void downFile ( ) throws Exception {
-
+		
 		FTPClient ftp = new FTPClient();
-
+		
 		try {
 			ftp.setConnectTimeout(5000);
 			ftp.connect(this.ftpHost, this.port);
@@ -108,9 +113,9 @@ public class FTPRequest {
 			initLocalPath();
 			FTPFile[] fs = ftp.listFiles();
 			boolean isDowned = false;
-
+			
 			logger.info("【文件:" + this.fileName + "开始下载 ,下载路径为：" + this.ftpPath + "】");
-
+			
 			for (int i = 0; i < fs.length; i++) {
 				FTPFile file = fs[i];
 				if (this.fileName.contains(file.getName())) {
@@ -124,22 +129,24 @@ public class FTPRequest {
 					}
 					is.close();
 				}
-
+				
 			}
 			ftp.logout();
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			throw e;
-		} finally {
+		}
+		finally {
 			if (ftp.isConnected()) {
 				ftp.disconnect();
 			}
 		}
 	}
-
+	
 	/**
 	 * 
 	 * @Title: uploadFile
-	 * 
+	 *         
 	 * @author FC
 	 * @Description: TODO 【上传】
 	 * @throws Exception
@@ -175,19 +182,21 @@ public class FTPRequest {
 				input = null;
 			}
 			ftp.logout();
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			throw e;
-		} finally {
+		}
+		finally {
 			if (ftp.isConnected()) {
 				ftp.disconnect();
 			}
 		}
 	}
-
+	
 	/**
 	 * 
 	 * @Title: initLocalPath
-	 * 
+	 *         
 	 * @author FC
 	 * @Description: TODO 【这里用一句话描述这个方法的作用】
 	 * @throws Exception
@@ -202,11 +211,11 @@ public class FTPRequest {
 			}
 		}
 	}
-
+	
 	/**
 	 * 
 	 * @Title: createDirecroty
-	 * 
+	 *         
 	 * @author FC
 	 * @Description: TODO 【这里用一句话描述这个方法的作用】
 	 * @param ftpClient
@@ -224,12 +233,12 @@ public class FTPRequest {
 			String directory = directorys[i];
 			if (StringUtils.isNotEmpty(directory) && !StringUtils.equals("", directory.trim())) {
 				if (!ftpClient.changeWorkingDirectory(directory)) {
-
+					
 					ftpClient.makeDirectory(directory);
 					ftpClient.changeWorkingDirectory(directory);
 				}
 			}
 		}
 	}
-
+	
 }

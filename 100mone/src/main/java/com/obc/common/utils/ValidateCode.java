@@ -13,11 +13,12 @@ import javax.imageio.ImageIO;
 
 /**
  * 
- * @ClassName: ValidateCode
+ * <br>类名： ValidateCode 
  *
+ * <br>公司名称： 【验证码生成器】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:35:14 
  * @author FC
- * @Description: TODO 【验证码生成器】
- * @date 2016年4月10日 上午10:44:36
  */
 public class ValidateCode {
 	// 图片的宽度。
@@ -123,13 +124,12 @@ public class ValidateCode {
 
 	/**
 	 * 
-	 * @Title: createCode
+	 * <br>方法名： createCode
 	 * 
-	 * @author FC
-	 * @Description: TODO 【生成随机码】 
+	 * <br>描述：【生成随机码】 
+	 * <br>创建时间： 2016年5月31日 上午2:35:37 
 	 * @param length
-	 * @return 
-	 * @date 2016年4月13日 下午6:12:46
+	 * @return
 	 */
 	public static String createCode ( int length ) {
 		StringBuffer randomCode = new StringBuffer();

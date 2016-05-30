@@ -3,42 +3,47 @@ package com.obc.modules.sys.dao;
 import java.util.List;
 
 import com.obc.modules.sys.entity.BcSysUser;
-
+/**
+ * 
+ * <br>类名： BcSysUserDao 
+ *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:19:55 
+ * @author FC
+ */
 public interface BcSysUserDao {
 
 	/**
 	 * 
-	 * @Title: findBcSysUser
+	 * <br>方法名： findBcSysUser
 	 * 
-	 * @author FC
-	 * @Description: TODO 【查找当前用户信息:登陆】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:19:52 
 	 * @param username
 	 * @return
-	 * @date 2016年3月19日 下午9:55:01
 	 */
 	public List<BcSysUser> findBcSysUser ( String username );
 
 	/**
 	 * 
-	 * @Title: updateBcSysUser
+	 * <br>方法名： updateBcSysUser
 	 * 
-	 * @author FC
-	 * @Description: TODO 【更新】
-	 * @param bcSysUser
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:19:59 
+	 * @param bsu
 	 * @return
-	 * @date 2016年3月22日 下午7:05:00
 	 */
 	public int updateBcSysUser ( BcSysUser bsu );
 
 	/**
 	 * 
-	 * @Title: addBcSysUser
+	 * <br>方法名： addBcSysUser
 	 * 
-	 * @author FC
-	 * @Description: TODO 【新增】
-	 * @param bcSysUser
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:20:03 
+	 * @param bsu
 	 * @return
-	 * @date 2016年3月22日 下午7:05:04
 	 */
 	public int addBcSysUser ( BcSysUser bsu );
 }

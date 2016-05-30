@@ -2,6 +2,7 @@ package com.obc.common.utils;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -11,24 +12,24 @@ import com.obc.common.enumeration.Code;
 
 /**
  * 
- * @ClassName: ObcStringUtils
+ * <br>类名： IStringUtils 
  *
+ * <br>公司名称： 【自定义StringUtils】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:35:50 
  * @author FC
- * @Description: TODO 【自定义StringUtils】
- * @date 2016年3月27日 下午6:58:36
  */
-public class IStringUtils {
+public class MoneStringUtils extends StringUtils {
 
 	/**
 	 * 
-	 * @Title: isValidate
+	 * <br>方法名： isValidate
 	 * 
-	 * @author FC
-	 * @Description: TODO 【用户注册登录字符串验证】
+	 * <br>描述：【用户注册登录字符串验证】 
+	 * <br>创建时间： 2016年5月31日 上午2:37:49 
 	 * @param str
 	 * @param validate
 	 * @return
-	 * @date 2016年3月27日 下午7:05:29
 	 */
 	public static Boolean isValidate (	String str ,
 										Code validate ) {
@@ -49,13 +50,12 @@ public class IStringUtils {
 
 	/**
 	 * 
-	 * @Title: getLog
+	 * <br>方法名： getLog
 	 * 
-	 * @author FC
-	 * @Description: TODO 【日志】
+	 * <br>描述：【日志】 
+	 * <br>创建时间： 2016年5月31日 上午2:38:03 
 	 * @param str
 	 * @return
-	 * @date 2016年3月28日 下午6:04:58
 	 */
 	public static StringBuilder getLog ( String str ) {
 		StringBuilder stringBuilder = new StringBuilder();
@@ -73,13 +73,12 @@ public class IStringUtils {
 
 	/**
 	 * 
-	 * @Title: getIpAddress
+	 * <br>方法名： getIpAddress
 	 * 
-	 * @author FC
-	 * @Description: TODO 【获得ip地址】
+	 * <br>描述：【获得ip地址】 
+	 * <br>创建时间： 2016年5月31日 上午2:38:17 
 	 * @param request
 	 * @return
-	 * @date 2016年3月28日 下午6:07:24
 	 */
 	public static String getIpAddress ( HttpServletRequest request ) {
 		String ip = request.getHeader("x-forwarded-for");
@@ -103,13 +102,12 @@ public class IStringUtils {
 
 	/**
 	 * 
-	 * @Title: codeReplaceVK
+	 * <br>方法名： replaceK
 	 * 
-	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:38:26 
 	 * @param str
 	 * @return
-	 * @date 2016年3月29日 下午7:33:37
 	 */
 	public static String replaceK ( String str ) {
 		StringBuffer buffer = new StringBuffer();
@@ -126,13 +124,12 @@ public class IStringUtils {
 
 	/**
 	 * 
-	 * @Title: codeReplaceKV
+	 * <br>方法名： replaceV
 	 * 
-	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:38:31 
 	 * @param str
 	 * @return
-	 * @date 2016年3月29日 下午7:33:41
 	 */
 	public static String replaceV ( String str ) {
 		StringBuffer buffer = new StringBuffer();

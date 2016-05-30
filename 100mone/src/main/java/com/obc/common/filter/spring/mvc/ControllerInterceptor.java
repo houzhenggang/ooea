@@ -7,23 +7,16 @@ import org.apache.log4j.Logger;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.obc.common.utils.IStringUtils;
+import com.obc.common.utils.MoneStringUtils;
 
 /**
  * 
- * @ClassName: ControllerInterceptor
+ * <br>类名： ControllerInterceptor 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:23:04 
  * @author FC
- * @Description: TODO 【 SpringMVC 中的Interceptor 拦截请求是通过HandlerInterceptor来实现的。
- *               在SpringMVC中定义一个Interceptor非常简单，主要有两种方式，
- * 
- *               第一种方式是要定义的Interceptor类要实现了Spring的HandlerInterceptor接口，
- *               或者是这个类继承实现了HandlerInterceptor接口的类， 比如Spring
- *               已经提供的实现了HandlerInterceptor接口的抽象类HandlerInterceptorAdapter；
- * 
- *               第二种方式是实现Spring的WebRequestInterceptor接口，
- *               或者是继承实现了WebRequestInterceptor的类。】
- * @date 2016年3月28日 下午6:12:44
  */
 public class ControllerInterceptor implements HandlerInterceptor {
 
@@ -60,9 +53,9 @@ public class ControllerInterceptor implements HandlerInterceptor {
 								Object arg2 ) throws Exception {
 		String servletPath = arg0.getServletPath();
 		if (servletPath.toLowerCase().matches(".*?(\\.do)$")) {
-			StringBuilder logInfo = IStringUtils.getLog("start@");
+			StringBuilder logInfo = MoneStringUtils.getLog("start@");
 			logInfo.append("请求：" + servletPath + ";");
-			logInfo.append("IP：" + IStringUtils.getIpAddress(arg0) + ";");
+			logInfo.append("IP：" + MoneStringUtils.getIpAddress(arg0) + ";");
 			log.info(logInfo.toString());
 		}
 		return true;

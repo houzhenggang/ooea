@@ -54,14 +54,13 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: toKey
+	 * <br>方法名： toKey
 	 * 
-	 * @author FC
-	 * @Description: TODO 【转换密钥】
+	 * <br>描述：【转换密钥】 
+	 * <br>创建时间： 2016年5月31日 上午2:33:36 
 	 * @param key
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:45:21
 	 */
 	private static Key toKey ( byte[] key ) throws Exception {
 		DESKeySpec dks = new DESKeySpec(key);
@@ -74,15 +73,14 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: decrypt
+	 * <br>方法名： decrypt
 	 * 
-	 * @author FC
-	 * @Description: TODO 【解密】
+	 * <br>描述：【解密】 
+	 * <br>创建时间： 2016年5月31日 上午2:33:43 
 	 * @param data
 	 * @param key
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:45:06
 	 */
 	public static byte[] decrypt (	byte[] data ,
 									String key ) throws Exception {
@@ -94,15 +92,14 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: decrypt
+	 * <br>方法名： decrypt
 	 * 
-	 * @author FC
-	 * @Description: TODO 【解密】
+	 * <br>描述：【解密】 
+	 * <br>创建时间： 2016年5月31日 上午2:33:52 
 	 * @param data
 	 * @param key
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:44:56
 	 */
 	public static String decrypt (	String data ,
 									String key ) throws Exception {
@@ -113,15 +110,14 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: encrypt
+	 * <br>方法名： encrypt
 	 * 
-	 * @author FC
-	 * @Description: TODO 【加密】
+	 * <br>描述：【加密】 
+	 * <br>创建时间： 2016年5月31日 上午2:33:59 
 	 * @param data
 	 * @param key
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:44:40
 	 */
 	public static String encrypt (	String data ,
 									String key ) throws Exception {
@@ -131,15 +127,14 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: encrypt
+	 * <br>方法名： encrypt
 	 * 
-	 * @author FC
-	 * @Description: TODO 【加密】
+	 * <br>描述：【加密】 
+	 * <br>创建时间： 2016年5月31日 上午2:34:07 
 	 * @param data
 	 * @param key
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:44:20
 	 */
 	public static byte[] encrypt (	byte[] data ,
 									String key ) throws Exception {
@@ -151,13 +146,12 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: initKey
+	 * <br>方法名： initKey
 	 * 
-	 * @author FC
-	 * @Description: TODO 【生成密钥】
+	 * <br>描述：【生成密钥】 
+	 * <br>创建时间： 2016年5月31日 上午2:34:15 
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:44:11
 	 */
 	public static String initKey ( ) throws Exception {
 		return initKey(null);
@@ -165,14 +159,13 @@ public class DESCoder extends Coder {
 
 	/**
 	 * 
-	 * @Title: initKey
+	 * <br>方法名： initKey
 	 * 
-	 * @author FC
-	 * @Description: TODO 【生成密钥】
+	 * <br>描述：【生成密钥】 
+	 * <br>创建时间： 2016年5月31日 上午2:34:23 
 	 * @param seed
 	 * @return
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:43:48
 	 */
 	public static String initKey ( String seed ) throws Exception {
 		SecureRandom secureRandom = null;

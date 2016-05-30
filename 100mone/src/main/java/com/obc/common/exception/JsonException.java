@@ -4,12 +4,12 @@ import com.obc.common.enumeration.Code;
 
 public class JsonException extends RuntimeException {
 
-	/**
-	 * @author FC
-	 * @Fields serialVersionUID : TODO 【标识】
-	 * @date 2016年3月6日 下午8:26:25
-	 */
-	private static final long serialVersionUID = -6105893005062688525L;
+
+	/** 
+	 * <br>创建时间： 2016年5月31日 上午2:22:35 
+	 * @Fields serialVersionUID : TODO 【】
+	 */ 
+	private static final long serialVersionUID = 5211876414236674811L;
 
 	public JsonException ( ) {
 		super(Code.i000010002em.getNO());

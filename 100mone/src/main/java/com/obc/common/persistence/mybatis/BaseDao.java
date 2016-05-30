@@ -7,19 +7,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 
- * @ClassName: BaseDao
+ * <br>类名： BaseDao 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:32:05 
  * @author FC
- * @Description: TODO 【数据库连接模板】
- * @date 2016年3月21日 下午5:50:33
  */
 public class BaseDao implements Serializable {
 
-	/**
-	 * @author FC
-	 * @Fields serialVersionUID : TODO 【用一句话描述这个变量表示什么】
-	 * @date 2016年3月21日 下午5:58:26
-	 */
+	/** 
+	 * <br>创建时间： 2016年5月31日 上午2:32:14 
+	 * @Fields serialVersionUID : TODO 【】
+	 */ 
 	private static final long serialVersionUID = 856014541129256429L;
 	
 	@Autowired

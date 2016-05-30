@@ -15,11 +15,12 @@ import javax.servlet.http.HttpSession;
 
 /**
  * 
- * @ClassName: DisableUrlSessionFilter
+ * <br>类名： DisableUrlSessionFilter 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:23:38 
  * @author FC
- * @Description: TODO 【这里用一句话描述这个类的作用】
- * @date 2016年3月21日 下午5:48:10
  */
 public class DisableUrlSessionFilter implements Filter {
 

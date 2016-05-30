@@ -2,41 +2,47 @@ package com.obc.modules.sys.service;
 
 import com.obc.modules.sys.entity.BcSysUser;
 
+/**
+ * 
+ * <br>类名： BcSysUserService 
+ *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:18:28 
+ * @author FC
+ */
 public interface BcSysUserService {
 
 	/**
 	 * 
-	 * @Title: findBcSysUser
+	 * <br>方法名： findBcSysUser
 	 * 
-	 * @author FC
-	 * @Description: TODO 【登陆】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:18:31 
 	 * @param username
 	 * @return
-	 * @date 2016年3月19日 下午10:08:22
 	 */
 	public BcSysUser findBcSysUser ( String username );
 	
 	/**
 	 * 
-	 * @Title: updateBcSysUser
+	 * <br>方法名： updateBcSysUser
 	 * 
-	 * @author FC
-	 * @Description: TODO 【更新】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:18:35 
 	 * @param bcSysUser
 	 * @return
-	 * @date 2016年3月22日 下午7:05:00
 	 */
 	public BcSysUser updateBcSysUser ( BcSysUser bcSysUser );
 
 	/**
 	 * 
-	 * @Title: addBcSysUser
+	 * <br>方法名： addBcSysUser
 	 * 
-	 * @author FC
-	 * @Description: TODO 【新增】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:18:42 
 	 * @param bcSysUser
 	 * @return
-	 * @date 2016年3月22日 下午7:05:04
 	 */
 	public BcSysUser addBcSysUser ( BcSysUser bcSysUser );
 }

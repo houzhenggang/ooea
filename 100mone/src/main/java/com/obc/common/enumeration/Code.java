@@ -2,11 +2,12 @@ package com.obc.common.enumeration;
 
 /**
  * 
- * @ClassName: Code
+ * <br>类名： Code 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:22:09 
  * @author FC
- * @Description: TODO 【项目中所有的字符串】
- * @date 2016年3月27日 下午2:06:28
  */
 public enum Code {
 	/** json解析异常 */

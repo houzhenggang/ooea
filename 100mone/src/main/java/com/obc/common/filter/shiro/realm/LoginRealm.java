@@ -11,17 +11,18 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-import com.obc.common.utils.IStringUtils;
+import com.obc.common.utils.MoneStringUtils;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
 
 /**
  * 
- * @ClassName: LoginRealm
+ * <br>类名： LoginRealm 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:22:44 
  * @author FC
- * @Description: TODO 【登陆时验证】
- * @date 2016年3月21日 下午5:50:11
  */
 public class LoginRealm extends AuthorizingRealm {
 
@@ -41,7 +42,7 @@ public class LoginRealm extends AuthorizingRealm {
 		BcSysUser user = bcSysUserService.findBcSysUser(username);
 		SimpleAuthenticationInfo authenticationInfo = null;
 		if (user != null) {
-			String name = IStringUtils.replaceV(user.getUsername());
+			String name = MoneStringUtils.replaceV(user.getUsername());
 			authenticationInfo = new SimpleAuthenticationInfo(name, user.getPassword(), getName());
 		}
 		return authenticationInfo;

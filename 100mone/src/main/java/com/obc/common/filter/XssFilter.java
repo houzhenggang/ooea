@@ -14,11 +14,12 @@ import com.obc.common.utils.XssHttpServletRequestWrapper;
 
 /**
  * 
- * @ClassName: XssFilter 
+ * <br>类名： XssFilter 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:23:43 
  * @author FC
- * @Description: TODO 【这里用一句话描述这个类的作用】
- * @date 2016年3月21日 下午5:47:59
  */
 public class XssFilter implements Filter {
 	FilterConfig filterConfig = null;

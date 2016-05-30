@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.obc.common.enumeration.Code;
 import com.obc.common.security.EncryptUtil;
-import com.obc.common.utils.IStringUtils;
+import com.obc.common.utils.MoneStringUtils;
 import com.obc.modules.sys.dao.BcSysUserDao;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
@@ -24,7 +24,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 
 	@Override
 	public BcSysUser findBcSysUser ( String username ) {
-		username = IStringUtils.replaceK(username);
+		username = MoneStringUtils.replaceK(username);
 		List<BcSysUser> users = bcSysUserDao.findBcSysUser(username);
 		if (users.size() > 0) { return users.get(0); }
 		return null;
@@ -40,17 +40,17 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 	public BcSysUser addBcSysUser ( BcSysUser bsu ) {
 		String pass = bsu.getPlain_text();// 用户传入的密码
 		// 正则验证密码格式是否正确
-		if (!IStringUtils.isValidate(pass,
+		if (!MoneStringUtils.isValidate(pass,
 				Code.validatePass)) { throw new RuntimeException(Code.i000010002em.getNO()); }
 		String email = bsu.getEmail();
-		if (!IStringUtils.isValidate(email,
+		if (!MoneStringUtils.isValidate(email,
 				Code.validateEmail)) { throw new RuntimeException(Code.i000010002em.getNO()); }
 		Map<String, String> enc = EncryptUtil.encrypt(pass);
 		bsu.setPassword(enc.get(Code.i000Pass.getDesc()));
 		bsu.setSalt(enc.get(Code.i000Salt.getDesc()));
 		bsu.setCreate_time(new Date());
 		bsu.setIs_valid(Code.i000IsValid1L.getDesc());
-		bsu.setEmail(IStringUtils.replaceK(email));
+		bsu.setEmail(MoneStringUtils.replaceK(email));
 		bcSysUserDao.addBcSysUser(bsu);
 		return bsu;
 	}

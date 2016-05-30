@@ -2,7 +2,7 @@ package test;
 
 import com.obc.common.constant.Canonical;
 import com.obc.common.security.DESCoder;
-import com.obc.common.utils.IStringUtils;
+import com.obc.common.utils.MoneStringUtils;
 
 import junit.framework.TestCase;
 
@@ -27,9 +27,9 @@ public class EncryptUtilTest extends TestCase {
 		System.out.println("1286808279@qq.com".matches(Canonical.Email));
 
 		String str = "1286808279@qq.com";
-		str = IStringUtils.replaceK(str);
+		str = MoneStringUtils.replaceK(str);
 		System.out.println(str);
-		str = IStringUtils.replaceV(str);
+		str = MoneStringUtils.replaceV(str);
 		System.out.println(str);
 
 	}

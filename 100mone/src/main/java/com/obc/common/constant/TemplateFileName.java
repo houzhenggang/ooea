@@ -2,11 +2,12 @@ package com.obc.common.constant;
 
 /**
  * 
- * @ClassName: TemplateFileName
+ * <br>类名： TemplateFileName 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:22:03 
  * @author FC
- * @Description: TODO 【存放freemark模板】
- * @date 2016年4月13日 下午6:49:00
  */
 public class TemplateFileName {
 

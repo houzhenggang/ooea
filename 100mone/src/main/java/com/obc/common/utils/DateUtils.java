@@ -5,25 +5,24 @@ import java.util.Date;
 
 /**
  * 
- * @ClassName: DateUtils
+ * <br>类名： DateUtils 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【时间工具类】
+ * <br>创建时间： 2016年5月31日 上午2:40:53 
  * @author FC
- * @Description: TODO 【时间工具类】
- * @date 2016年3月21日 下午5:55:00
  */
 public class DateUtils {
+
 	/**
 	 * 
-	 * @Title: dateToStr
+	 * <br>方法名： dateToStr
 	 * 
-	 * @author FC
-	 * @Description: TODO 【日期转换成字符串格式】
-	 * @param date
-	 *            日期
-	 * @param dateFormat
-	 *            返回字符串的格式【yyyy-MM-dd】...
+	 * <br>描述：【日期转换成字符串格式】 
+	 * <br>创建时间： 2016年5月31日 上午2:41:01 
+	 * @param date 日期
+	 * @param dateFormat 返回字符串的格式【yyyy-MM-dd】...
 	 * @return
-	 * @date 2016年3月21日 下午5:53:35
 	 */
 	public static String dateToStr (	Date date ,
 										String dateFormat ) {

@@ -14,11 +14,12 @@ import org.springside.modules.utils.Encodes;
 
 /**
  * 
- * @ClassName: EncryptUtil
+ * <br>类名： EncryptUtil 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【加密工具类】
+ * <br>创建时间： 2016年5月31日 上午2:41:38 
  * @author FC
- * @Description: TODO 【加密工具类】
- * @date 2016年3月22日 下午5:46:00
  */
 public class EncryptUtil {
 	public static final int INTERATIONS = 1024;
@@ -32,11 +33,20 @@ public class EncryptUtil {
 	 * @Title: encrypt
 	 * 
 	 * @author FC
-	 * @Description: TODO 【对密码明文进行SHA-1加密 返回加密因子和密文】
+	 * @Description: TODO 【】
 	 * @param plainText
-	 *            密码明文
-	 * @return Map{SALT->saltVal,PASSWD->passwdVal}
+	 *            
+	 * @return 
 	 * @date 2016年3月22日 下午5:46:17
+	 */
+	/**
+	 * 
+	 * <br>方法名： encrypt
+	 * 
+	 * <br>描述：【对密码明文进行SHA-1加密 返回加密因子和密文】 
+	 * <br>创建时间： 2016年5月31日 上午2:41:47 
+	 * @param plainText 密码明文
+	 * @return Map{SALT->saltVal,PASSWD->passwdVal}
 	 */
 	public static Map<String, String> encrypt ( String plainText ) {
 		// 构造返回Map对象
@@ -52,16 +62,13 @@ public class EncryptUtil {
 
 	/**
 	 * 
-	 * @Title: encryptBySalt
+	 * <br>方法名： encryptBySalt
 	 * 
-	 * @author FC
-	 * @Description: TODO 【指定加密因子对明文进行加密】
-	 * @param plainText
-	 *            密码明文
-	 * @param salt
-	 *            加密因子
-	 * @return 加密后的密文
-	 * @date 2016年3月22日 下午5:47:06
+	 * <br>描述：【指定加密因子对明文进行加密】 
+	 * <br>创建时间： 2016年5月31日 上午2:42:10 
+	 * @param plainText 密码明文
+	 * @param salt 加密因子
+	 * @return
 	 */
 	public static String encryptBySalt (	String plainText ,
 									String salt ) {
@@ -73,16 +80,15 @@ public class EncryptUtil {
 		return Encodes.encodeHex(hashPassword);
 	}
 
+
 	/**
 	 * 
-	 * @Title: getBytesFromFile
+	 * <br>方法名： getBytesFromFile
 	 * 
-	 * @author FC
-	 * @Description: TODO 【取得文件的哈希值】
-	 * @param file
-	 *            文件路径
+	 * <br>描述：【取得文件的哈希值】 
+	 * <br>创建时间： 2016年5月31日 上午2:42:40 
+	 * @param file 文件路径
 	 * @return 文件哈希值
-	 * @date 2016年3月22日 下午5:47:46
 	 */
 	public static byte[] getBytesFromFile ( File file ) {
 		if (file == null)
@@ -106,17 +112,14 @@ public class EncryptUtil {
 
 	/**
 	 * 
-	 * @Title: getHash
+	 * <br>方法名： getHash
 	 * 
-	 * @author FC
-	 * @Description: TODO 【取得文件的哈希值】
-	 * @param fileName
-	 *            文件路径
-	 * @param hashType
-	 *            哈希类型
+	 * <br>描述：【取得文件的哈希值】 
+	 * <br>创建时间： 2016年5月31日 上午2:43:02 
+	 * @param fileName 文件路径
+	 * @param hashType 哈希类型
 	 * @return 文件哈希值
 	 * @throws Exception
-	 * @date 2016年3月22日 下午5:50:14
 	 */
 	public static String getHash (	String fileName ,
 									String hashType ) throws Exception {
@@ -134,14 +137,12 @@ public class EncryptUtil {
 
 	/**
 	 * 
-	 * @Title: toHexString
+	 * <br>方法名： toHexString
 	 * 
-	 * @author FC
-	 * @Description: TODO 【md5码数组转十六进制字符串】
-	 * @param b
-	 *            md5码数组
+	 * <br>描述：【md5码数组转十六进制字符串】 
+	 * <br>创建时间： 2016年5月31日 上午2:43:29 
+	 * @param b md5码数组
 	 * @return 十六进制字符串
-	 * @date 2016年3月22日 下午5:51:29
 	 */
 	private static String toHexString ( byte[] b ) {
 		StringBuffer sbuf = new StringBuffer(b.length * 2);
@@ -154,14 +155,12 @@ public class EncryptUtil {
 
 	/**
 	 * 
-	 * @Title: toSha1
+	 * <br>方法名： toSha1
 	 * 
-	 * @author FC
-	 * @Description: TODO 【对明文进行sha1】
-	 * @param plainText
-	 *            明文
+	 * <br>描述：【对明文进行sha1】 
+	 * <br>创建时间： 2016年5月31日 上午2:43:58 
+	 * @param plainText 明文
 	 * @return sha1 密文
-	 * @date 2016年3月22日 下午5:51:58
 	 */
 	public static String toSha1 ( String plainText ) {
 		// 用加密因子对明文进行SHA-1加密

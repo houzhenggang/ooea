@@ -12,11 +12,12 @@ import com.obc.modules.sys.service.BcSysUserService;
 
 /**
  * 
- * @ClassName: BcSysUserController
+ * <br>类名： SysController 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:20:53 
  * @author FC
- * @Description: TODO 【系统注册】
- * @date 2016年3月27日 下午5:57:05
  */
 @RequestMapping( "/sys" )
 @Controller
@@ -28,12 +29,11 @@ public class SysController {
 
 	/**
 	 * 
-	 * @Title: login
+	 * <br>方法名： login
 	 * 
-	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:20:57 
 	 * @return
-	 * @date 2016年3月19日 下午10:12:53
 	 */
 	@RequestMapping( "/login.do" )
 	public String login ( ) {
@@ -42,12 +42,12 @@ public class SysController {
 
 	/**
 	 * 
-	 * @Title: loginout
+	 * <br>方法名： loginout
 	 * 
-	 * @author FC
-	 * @Description: TODO 【退出登录（后台）】
+	 * <br>描述：【】 
+	 * <br>创建时间： 2016年5月31日 上午2:21:02 
+	 * @param loginSalt
 	 * @return
-	 * @date 2016年3月19日 下午10:30:44
 	 */
 	@RequestMapping( "/loginout.do" )
 	public String loginout ( String loginSalt ) {

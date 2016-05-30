@@ -2,11 +2,12 @@ package com.obc.common.constant;
 
 /**
  * 
- * @ClassName: PageUrl
+ * <br>类名： PageUrl 
  *
+ * <br>公司名称： 【】
+ * <br>描述：【】
+ * <br>创建时间： 2016年5月31日 上午2:21:59 
  * @author FC
- * @Description: TODO 【每个页面跳转地址】
- * @date 2016年3月19日 下午10:15:55
  */
 public class PageUrl {
 	/** sys管理首页 */
