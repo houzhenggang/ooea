@@ -28,6 +28,13 @@ public class Canonical {
 	public static final String codeRegex = "^[A-Za-z0-9]$";
 	public static final String validateCodeMessage = "验证码不正确或已过期，请重新获取.";
 	public static final String emailSubject = "100mone注册验证";
+	public static final String endpoint = "http://oss-cn-shanghai.aliyuncs.com";
+	public static final String accessKeyId = "3FHmJQGiFbt4sbun";
+	public static final String accessKeySecret = "1tzpq1aNrDtaoJxINwOgXnpDtVKY39";
+	/**
+	 * ljs1e2xeeda2ercvd2lo
+	 */
+	public static final String BucketMyImg = "ljs1e2xeeda2ercvd2lo";
 
 	public static final Integer num1 = 1;
 	public static final Integer num2 = 2;
