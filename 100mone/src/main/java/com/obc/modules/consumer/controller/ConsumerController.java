@@ -193,9 +193,8 @@ public class ConsumerController {
 		ExceptionMessage em = ExceptionMessage.newInstance();
 		try {
 			HttpSession session = request.getSession();
-
-			String validateCode = (String) session.getAttribute("validateCode");
-			if (StringUtils.isNotEmpty(validateCode)) {
+			int count = (int) (session.getAttribute("count") == null ? 0 : session.getAttribute("count"));
+			if (count >= Canonical.num6) {//发件数控制
 				em.addCuePhrases("请等会儿再发。");
 				return em;
 			}
@@ -210,7 +209,8 @@ public class ConsumerController {
 			//发送邮件
 			EmailUtils.send(addressee, msg, null);
 			session.setAttribute("validateCode", emailCode);
-			session.setMaxInactiveInterval(1800);
+			session.setAttribute("count", count + Canonical.num1);
+			session.setMaxInactiveInterval(300);
 			IStringUtils.log("验证码：" + emailCode, ConsumerController.class);
 		}
 		catch (Exception e) {
