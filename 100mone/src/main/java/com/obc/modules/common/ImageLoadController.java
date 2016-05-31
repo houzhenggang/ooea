@@ -47,7 +47,7 @@ public class ImageLoadController {
 	 * @throws ClientException
 	 * @throws IOException
 	 */
-	@RequestMapping( "imgUpLoad.do" )
+	@RequestMapping( "/imgUpLoad.do" )
 	@ResponseBody
 	public Map<String, Object> imgUpLoad ( HttpServletRequest request ) throws OSSException ,
 	                                                                    ClientException ,

@@ -7,9 +7,10 @@
         <title>fileinput样例</title>
         <link href="<%=request.getContextPath()%>/resources/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="<%=request.getContextPath()%>/resources/js/bootstrap-fileinput/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
-        <script src="<%=request.getContextPath()%>/resources/js/jquery.2.2.0.min.js"></script>
-        <script src="<%=request.getContextPath()%>/resources/js/bootstrap-fileinput/resources/js/fileinput.js" type="text/javascript"></script>
+        <script src="<%=request.getContextPath()%>/resources/js/jquery-2.2.0.min.js"></script>
+        <script src="<%=request.getContextPath()%>/resources/js/bootstrap-fileinput/js/fileinput.js" type="text/javascript"></script>
         <script src="<%=request.getContextPath()%>/resources/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="<%=request.getContextPath()%>/resources/js/bootstrap-fileinput/js/locales/zh.js" type="text/javascript"></script>
     </head>
     <body>
     	<a href="<%=request.getContextPath()%>/getL.do">重定向</a>
@@ -89,21 +90,23 @@
     </body>
 	<script>
     $('#file-fr').fileinput({
-        language: 'fr',
-        uploadUrl: '${pageContext.request.contextPath}/upload.do',
-        allowedFileExtensions : ['jpg', 'png','gif','jpeg'],
+        language: 'zh',
+        uploadUrl: '${pageContext.request.contextPath}/common/imgUpLoad.do',
+        allowedFileExtensions : ['jpg', 'png','gif','jpeg','tbi'],
     });
     $('#file-es').fileinput({
-        language: 'es',
-        uploadUrl: '${pageContext.request.contextPath}/upload.do',
-        allowedFileExtensions : ['jpg', 'png','gif','jpeg'],
+        language: 'zh',
+        uploadUrl: '${pageContext.request.contextPath}/common/imgUpLoad.do',
+        allowedFileExtensions : ['jpg', 'png','gif','jpeg','tbi'],
     });
     $("#file-0").fileinput({
-        'allowedFileExtensions' : ['jpg', 'png','gif','jpeg'],
+        language: 'zh',
+        'allowedFileExtensions' : ['jpg', 'png','gif','jpeg','tbi'],
     });
     $("#file-1").fileinput({
-        uploadUrl: '${pageContext.request.contextPath}/upload.do', // you must set a valid URL here else you will get an error
-        allowedFileExtensions : ['jpg', 'png','gif','jpeg'],
+        language: 'zh',
+        uploadUrl: '${pageContext.request.contextPath}/common/imgUpLoad.do', // you must set a valid URL here else you will get an error
+        allowedFileExtensions : ['jpg', 'png','gif','jpeg','tbi'],
         overwriteInitial: false,
         maxFileSize: 1000,
         maxFilesNum: 10,
@@ -118,6 +121,7 @@
     });
     */
 	$("#file-3").fileinput({
+        language: 'zh',
 		showUpload: false,
 		showCaption: false,
 		browseClass: "btn btn-primary btn-lg",
@@ -125,17 +129,21 @@
         previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
 	});
 	$("#file-4").fileinput({
+        language: 'zh',
 		uploadExtraData: {kvId: '10'}
 	});
     $(".btn-warning").on('click', function() {
         if ($('#file-4').attr('disabled')) {
-            $('#file-4').fileinput('enable');
+            $('#file-4').fileinput('enable',{
+                language: 'zh',});
         } else {
-            $('#file-4').fileinput('disable');
+            $('#file-4').fileinput('disable',{
+                language: 'zh',});
         }
     });    
     $(".btn-info").on('click', function() {
-        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+        $('#file-4').fileinput('refresh', {previewClass:'bg-info',
+            language: 'zh',});
     });
     /*
     $('#file-4').on('fileselectnone', function() {
@@ -147,8 +155,9 @@
     */
     $(document).ready(function() {
         $("#test-upload").fileinput({
+            language: 'zh',
             'showPreview' : false,
-            'allowedFileExtensions' : ['jpg', 'png','gif','jpeg'],
+            'allowedFileExtensions' : ['jpg', 'png','gif','jpeg','tbi'],
             'elErrorContainer': '#errorBlock'
         });
         /*
