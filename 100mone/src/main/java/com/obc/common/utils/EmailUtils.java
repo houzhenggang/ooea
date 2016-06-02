@@ -1,9 +1,6 @@
 package com.obc.common.utils;
 
 import java.util.List;
-import java.util.Map;
-
-import javax.mail.MessagingException;
 
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;
