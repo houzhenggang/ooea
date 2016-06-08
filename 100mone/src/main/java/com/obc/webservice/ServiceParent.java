@@ -1,5 +1,5 @@
 package com.obc.webservice;
 
-public class A {
+public interface ServiceParent {
 
 }

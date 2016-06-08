@@ -1,5 +1,5 @@
 package org.aliyun;
 
-public class A {
+public interface Aliyun {
 
 }
