@@ -1,5 +1,7 @@
 @CHARSET "UTF-8";
+
 @IMPORT url("css.css");
+
 #footer {
 	width: 100%;
 	height: 90px;

@@ -1,5 +1,7 @@
 @CHARSET "UTF-8";
+
 @IMPORT url("css.css");
+
 #header {
 	width: 100%;
 	height: 30px;
