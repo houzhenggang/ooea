@@ -31,9 +31,9 @@ import com.obc.common.utils.EmailUtils;
 import com.obc.common.utils.FreemarkerUtils;
 import com.obc.common.utils.MoneStringUtils;
 import com.obc.common.utils.ValidateCode;
-import com.obc.modules.LoginPojo;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
+import com.obc.vo.LoginPojo;
 
 /**
  * 

@@ -1,4 +1,4 @@
-package com.obc.modules;
+package com.obc.vo;
 
 import java.io.Serializable;
 
