@@ -1,5 +1,5 @@
 package com.obc.job;
 
-public class A {
+public class Job {
 	Integer s =1;
 }
