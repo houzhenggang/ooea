@@ -2,14 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.obc.modules.sys.dao.BcSysUserRoleDao">
     <sql id="UserRoleColumns">
-        bsur.sys_user_role_id,
-        bsur.sys_user_id,
-        bsur.sys_role_id
+        BSUR.SYS_USER_ROLE_ID,
+        BSUR.SYS_USER_ID,
+        BSUR.SYS_ROLE_ID
     </sql>
-    <resultMap type="bcSysUserRole" id="userRoleResult">
-        <id property="sys_user_role_id" column="sys_user_role_id" />
-        <result property="sys_user_id" column="sys_user_id" />
-        <result property="sys_role_id" column="sys_role_id" />
+    <resultMap type="bcSysUserRole" id="USERROLERESULT">
+        <id property="sys_user_role_id" column="SYS_USER_ROLE_ID" />
+        <result property="sys_user_id" column="SYS_USER_ID" />
+        <result property="sys_role_id" column="SYS_ROLE_ID" />
     </resultMap>
 
 </mapper>

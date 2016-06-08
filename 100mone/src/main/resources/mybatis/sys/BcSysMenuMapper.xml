@@ -2,27 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.obc.modules.sys.dao.BcSysMenuDao">
     <sql id="MenuColumns">
-        bsm.sys_meum_id,
-        bsm.sn,
-        bsm.name,
-        bsm.priority,
-        bsm.parent_id,
-        bsm.description,
-        bsm.url
+        BSM.SYS_MEUM_ID,
+        BSM.SN,
+        BSM.NAME,
+        BSM.PRIORITY,
+        BSM.PARENT_ID,
+        BSM.DESCRIPTION,
+        BSM.URL
     </sql>
     <resultMap type="bcSysMenu" id="menuResult">
-        <id property="sys_meum_id" column="sys_meum_id" />
-        <result property="sn" column="sn" />
-        <result property="name" column="name" />
-        <result property="priority" column="priority" />
-        <result property="parent_id" column="parent_id" />
-        <result property="description" column="description" />
+        <id property="sys_meum_id" column="SYS_MEUM_ID" />
+        <result property="sn" column="SN" />
+        <result property="name" column="NAME" />
+        <result property="priority" column="PRIORITY" />
+        <result property="parent_id" column="PARENT_ID" />
+        <result property="description" column="DESCRIPTION" />
         <result property="url" column="url" />
     </resultMap>
     <select id="findSysMenu">
-        select
+        SELECT
         <include refid="MenuColumns" />
-        from bc_sys_menu bsm
+        FROM BC_SYS_MENU BSM
     </select>
 
 </mapper>
