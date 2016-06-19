@@ -22,7 +22,7 @@ public class BcSysUserDaoImpl extends BaseDao implements BcSysUserDao {
 		try {
 			return sqlSession.selectList("com.obc.modules.sys.dao.BcSysUserDao.findBcSysUser", username);
 		} catch (Exception e) {
-			MoneStringUtils.log(e, BcSysUserDaoImpl.class);
+			MoneStringUtils.log(e, BcSysUserDaoImpl.class.getName());
 			throw new JdbcException(BcSysUserDaoImpl.class);
 		}
 	}
@@ -32,7 +32,7 @@ public class BcSysUserDaoImpl extends BaseDao implements BcSysUserDao {
 		try {
 			return sqlSession.update("com.obc.modules.sys.dao.BcSysUserDao.updateBcSysUser", bsu);
 		} catch (Exception e) {
-			MoneStringUtils.log(e, BcSysUserDaoImpl.class);
+			MoneStringUtils.log(e, BcSysUserDaoImpl.class.getName());
 			throw new JdbcException(BcSysUserDaoImpl.class);
 		}
 	}
@@ -42,7 +42,7 @@ public class BcSysUserDaoImpl extends BaseDao implements BcSysUserDao {
 		try {
 			return sqlSession.insert("com.obc.modules.sys.dao.BcSysUserDao.addBcSysUser", bsu);
 		} catch (Exception e) {
-			MoneStringUtils.log(e, BcSysUserDaoImpl.class);
+			MoneStringUtils.log(e, BcSysUserDaoImpl.class.getName());
 			throw new JdbcException(BcSysUserDaoImpl.class);
 		}
 	}

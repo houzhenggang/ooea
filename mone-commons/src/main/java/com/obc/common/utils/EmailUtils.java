@@ -70,7 +70,7 @@ public class EmailUtils {
 			email.send();//发送邮件
 		}
 		catch (EmailException e) {
-			MoneStringUtils.log(e, EmailUtils.class);
+			MoneStringUtils.log(e, EmailUtils.class.getName());
 		}
 	}
 

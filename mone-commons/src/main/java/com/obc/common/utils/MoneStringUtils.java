@@ -12,48 +12,58 @@ import com.obc.common.enumeration.Code;
 
 /**
  * 
- * <br>类名： IStringUtils 
+ * <br>
+ * 类名： IStringUtils
  *
- * <br>公司名称： 【自定义StringUtils】
- * <br>描述：【】
- * <br>创建时间： 2016年5月31日 上午2:35:50 
+ * <br>
+ * 公司名称： 【自定义StringUtils】
+ * <br>
+ * 描述：【】
+ * <br>
+ * 创建时间： 2016年5月31日 上午2:35:50
  * @author FC
  */
 public class MoneStringUtils extends StringUtils {
-
+	
 	/**
 	 * 
-	 * <br>方法名： isValidate
+	 * <br>
+	 * 方法名： isValidate
 	 * 
-	 * <br>描述：【用户注册登录字符串验证】 
-	 * <br>创建时间： 2016年5月31日 上午2:37:49 
+	 * <br>
+	 * 描述：【用户注册登录字符串验证】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:37:49
 	 * @param str
 	 * @param validate
 	 * @return
 	 */
-	public static Boolean isValidate (	String str ,
-										Code validate ) {
+	public static Boolean isValidate ( String str ,
+	                                   Code validate ) {
 		Boolean bool = false;
 		switch (validate.getDesc()) {
-		case "Pass":
-			bool = str.matches(Canonical.Pass);
-			break;
-		case "Email":
-			bool = str.matches(Canonical.Email);
-			break;
-		case "Phone":
-			bool = str.matches(Canonical.Phone);
-			break;
+			case "Pass":
+				bool = str.matches(Canonical.Pass);
+				break;
+			case "Email":
+				bool = str.matches(Canonical.Email);
+				break;
+			case "Phone":
+				bool = str.matches(Canonical.Phone);
+				break;
 		}
 		return bool;
 	}
-
+	
 	/**
 	 * 
-	 * <br>方法名： getLog
+	 * <br>
+	 * 方法名： getLog
 	 * 
-	 * <br>描述：【日志】 
-	 * <br>创建时间： 2016年5月31日 上午2:38:03 
+	 * <br>
+	 * 描述：【日志】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:38:03
 	 * @param str
 	 * @return
 	 */
@@ -70,13 +80,16 @@ public class MoneStringUtils extends StringUtils {
 		stringBuilder.append("================================");
 		return stringBuilder;
 	}
-
+	
 	/**
 	 * 
-	 * <br>方法名： getIpAddress
+	 * <br>
+	 * 方法名： getIpAddress
 	 * 
-	 * <br>描述：【获得ip地址】 
-	 * <br>创建时间： 2016年5月31日 上午2:38:17 
+	 * <br>
+	 * 描述：【获得ip地址】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:38:17
 	 * @param request
 	 * @return
 	 */
@@ -99,13 +112,16 @@ public class MoneStringUtils extends StringUtils {
 		}
 		return ip;
 	}
-
+	
 	/**
 	 * 
-	 * <br>方法名： replaceK
+	 * <br>
+	 * 方法名： replaceK
 	 * 
-	 * <br>描述：【】 
-	 * <br>创建时间： 2016年5月31日 上午2:38:26 
+	 * <br>
+	 * 描述：【】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:38:26
 	 * @param str
 	 * @return
 	 */
@@ -121,13 +137,16 @@ public class MoneStringUtils extends StringUtils {
 		}
 		return buffer.toString();
 	}
-
+	
 	/**
 	 * 
-	 * <br>方法名： replaceV
+	 * <br>
+	 * 方法名： replaceV
 	 * 
-	 * <br>描述：【】 
-	 * <br>创建时间： 2016年5月31日 上午2:38:31 
+	 * <br>
+	 * 描述：【】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:38:31
 	 * @param str
 	 * @return
 	 */
@@ -143,37 +162,49 @@ public class MoneStringUtils extends StringUtils {
 		}
 		return buffer.toString();
 	}
-
+	
 	/**
 	 * 
-	 * <br>方法名： log
+	 * <br>
+	 * 方法名： log
 	 * 
-	 * <br>描述：【异常休息输出格式】 
-	 * <br>创建时间： 2016年5月31日 上午2:46:00 
+	 * <br>
+	 * 描述：【异常休息输出格式】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:46:00
 	 * @param e
 	 * @param clazz
 	 */
-	public static void log (	Exception e ,
-								Class<?> clazz ) {
-		Logger log = Logger.getLogger(clazz);
-		StringBuilder builder = new StringBuilder();
-		builder.append("[");
-		builder.append(e.getMessage());
-		builder.append("]");
-		log.info(builder.toString());
+	public static void log ( Exception e ,
+	                         String className ) {
+		Logger log = null;
+		try {
+			log = Logger.getLogger(Class.forName(className).getClass());
+			StringBuilder builder = new StringBuilder();
+			builder.append("[");
+			builder.append(e.getMessage());
+			builder.append("]");
+			log.info(builder.toString());
+		}
+		catch (ClassNotFoundException e1) {
+		}
+		
 	}
-
+	
 	/**
 	 * 
-	 * <br>方法名： log
+	 * <br>
+	 * 方法名： log
 	 * 
-	 * <br>描述：【日志】 
-	 * <br>创建时间： 2016年5月31日 上午2:46:17 
+	 * <br>
+	 * 描述：【日志】
+	 * <br>
+	 * 创建时间： 2016年5月31日 上午2:46:17
 	 * @param str
 	 * @param clazz
 	 */
-	public static void log (	String str ,
-								Class<?> clazz ) {
+	public static void log ( String str ,
+	                         Class<?> clazz ) {
 		Logger log = Logger.getLogger(clazz);
 		StringBuilder builder = new StringBuilder();
 		builder.append("[");
