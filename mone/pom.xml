@@ -14,11 +14,6 @@
     <name>product Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
-    <properties>
-        <shiro.version>1.2.3</shiro.version>
-        <spring.version>4.2.4.RELEASE</spring.version>
-    </properties>
-
 
     <dependencies>
         <dependency>
