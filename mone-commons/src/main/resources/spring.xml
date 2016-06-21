@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="clientService" class="examples.构造方法注入.ClientService" factory-method="createInstance" />
+
+
+	<!-- ====================================================================构造方法注入 -->
+	<!-- 构造方法注入（引用【ref】其他bean） -->
+	<bean id="foo" class="examples.构造方法注入.Foo">
+		<constructor-arg ref="bar" />
+		<constructor-arg ref="baz" />
+	</bean>
+	<bean id="bar" class="examples.构造方法注入.引用.Bar" />
+	<bean id="baz" class="examples.构造方法注入.引用.Baz" />
+	<!-- 构造方法注入（类型【type】） -->
+	<bean id="exampleBeanA" class="examples.构造方法注入.ExampleBean">
+		<constructor-arg type="int" value="100000" />
+		<constructor-arg type="java.lang.String" value="名字" />
+	</bean>
+	<!-- 构造方法注入（指数【index】） -->
+	<bean id="exampleBeanB" class="examples.构造方法注入.ExampleBean">
+		<constructor-arg index="0" value="100000" />
+		<constructor-arg index="1" value="名字" />
+	</bean>
+	<!-- 构造方法注入（名字【name】） -->
+	<bean id="exampleBeanC" class="examples.构造方法注入.ExampleBean">
+		<constructor-arg name="years" value="100000" />
+		<constructor-arg name="ultimateAnswer" value="名字" />
+	</bean>
+	<!-- 构造方法注入：参数传入-ref（引用其他实体）、type（已知类型）、index（参数排列顺序：0开始）、name（参数名称）/4种 -->
+	<!-- ====================================================================构造方法注入 -->
+
+
+
+
+
+
+</beans>
