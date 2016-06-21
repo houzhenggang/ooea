@@ -19,9 +19,9 @@ import org.apache.log4j.Logger;
  * 类名： FTPRequest
  *
  * <br>
- * 公司名称： 【】
+ * 公司名称： ==================
  * <br>
- * 描述：【】
+ * 描述：==================
  * <br>
  * 创建时间： 2016年5月31日 上午2:23:54
  * @author FC
@@ -29,14 +29,13 @@ import org.apache.log4j.Logger;
 public class FTPRequest {
 	
 	private static Logger logger   = Logger.getLogger("Log");
-	private String		  ftpHost;
-	private int			  port;
-						  
+	private String		  ftpHost;							  /* host */
+	private int			  port;								  /* 端口 */
 	private String		  ftpPath;							  /* 文件在ftp server上的路径 */
-	private String		  userName;
-	private String		  password;
+	private String		  userName;							  /* ftp登录名 */
+	private String		  password;							  /* ftp密码 */
 	private String		  localPath;						  /* 文件在本地的路径 */
-	private List<String>  fileName = new ArrayList<String>(); /* 操作的文件名 */
+	private List<String>  fileName = new ArrayList<String>(); /* 操作的文件集合 */
 															  
 	private FTPRequest ( ) {}
 	
@@ -89,7 +88,7 @@ public class FTPRequest {
 	 * @Title: downFile
 	 *         
 	 * @author FC
-	 * @Description: TODO 【下载】
+	 * @Description: TODO =========下载=========
 	 * @throws Exception
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:52
@@ -105,7 +104,7 @@ public class FTPRequest {
 			int reply = ftp.getReplyCode();
 			if (!FTPReply.isPositiveCompletion(reply)) {
 				ftp.disconnect();
-				throw new Exception("不能访问ftp主机!");
+				throw new Exception("=========不能访问ftp主机=========");
 			}
 			ftp.setFileType(FTPClient.BINARY_FILE_TYPE);
 			ftp.enterLocalPassiveMode();
@@ -114,7 +113,7 @@ public class FTPRequest {
 			FTPFile[] fs = ftp.listFiles();
 			boolean isDowned = false;
 			
-			logger.info("【文件:" + this.fileName + "开始下载 ,下载路径为：" + this.ftpPath + "】");
+			logger.info("=========文件:" + this.fileName + "开始下载 ,下载路径为：" + this.ftpPath + "=========");
 			
 			for (int i = 0; i < fs.length; i++) {
 				FTPFile file = fs[i];
@@ -123,9 +122,9 @@ public class FTPRequest {
 					OutputStream is = new FileOutputStream(localFile);
 					isDowned = ftp.retrieveFile(file.getName(), is);
 					if (isDowned) {
-						logger.info("【下载文件:" + file.getName() + " 成功!!!】");
+						logger.info("=========下载文件:" + file.getName() + " 成功。=========");
 					} else {
-						throw new Exception("【下载文件:" + file.getName() + " 失败!!!】");
+						throw new Exception("=========下载文件:" + file.getName() + " 失败。=========");
 					}
 					is.close();
 				}
@@ -148,7 +147,7 @@ public class FTPRequest {
 	 * @Title: uploadFile
 	 *         
 	 * @author FC
-	 * @Description: TODO 【上传】
+	 * @Description: TODO =========上传=========
 	 * @throws Exception
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:45
@@ -170,13 +169,13 @@ public class FTPRequest {
 			createDirecroty(ftp);
 			for (String upLoadFileName : this.fileName) {
 				File uploadFile = new File(this.localPath + upLoadFileName);
-				logger.info("【文件:" + this.fileName + "开始上传 ,上传路径为：" + this.ftpPath + "】");
+				logger.info("=========文件:" + this.fileName + "开始上传 ,上传路径为：" + this.ftpPath + "=========");
 				FileInputStream input = new FileInputStream(uploadFile);
 				boolean isSuccess = ftp.storeFile(upLoadFileName, input);
 				if (isSuccess) {
-					logger.info("【上传文件:" + this.fileName + " 成功!!!】");
+					logger.info("=========上传文件:" + this.fileName + " 成功。=========");
 				} else {
-					throw new Exception("【上传文件:" + upLoadFileName + " 失败!!!】");
+					throw new Exception("=========上传文件:" + upLoadFileName + " 失败。=========");
 				}
 				input.close();
 				input = null;
@@ -198,7 +197,7 @@ public class FTPRequest {
 	 * @Title: initLocalPath
 	 *         
 	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * @Description: TODO =========这里用一句话描述这个方法的作用=========
 	 * @throws Exception
 	 * @return void
 	 * @date 2016年2月20日 下午9:00:39
@@ -217,7 +216,7 @@ public class FTPRequest {
 	 * @Title: createDirecroty
 	 *         
 	 * @author FC
-	 * @Description: TODO 【这里用一句话描述这个方法的作用】
+	 * @Description: TODO =========这里用一句话描述这个方法的作用=========
 	 * @param ftpClient
 	 * @throws Exception
 	 * @return void
