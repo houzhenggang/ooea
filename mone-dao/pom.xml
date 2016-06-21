@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.mone</groupId>
         <artifactId>mone-parent</artifactId>
@@ -8,21 +9,24 @@
         <relativePath>../mone-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>mone</artifactId>
-    <packaging>war</packaging>
+
+
+    <artifactId>mone-dao</artifactId>
     <version>0.0.1</version>
-    <name>product Maven Webapp</name>
+    <packaging>jar</packaging>
+
+    <name>mone-dao</name>
     <url>http://maven.apache.org</url>
 
 
     <dependencies>
         <dependency>
             <groupId>com.mone</groupId>
-            <artifactId>mone-dao</artifactId>
+            <artifactId>mone-commons</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.mone</groupId>
-            <artifactId>mone-commons</artifactId>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
         </dependency>
         <dependency>
             <groupId>com.aliyun.oss</groupId>
@@ -180,8 +184,57 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
+
+        <!-- 提供了对于JavaBean进行各种操作，克隆对象,属性等等. -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+        </dependency>
+        <!-- 处理常用的编码方法的工具类包 例如DES、SHA1、MD5、Base64等. -->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        <!-- java集合框架操作. -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+        <!-- java提供文件打包 压缩类库. -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+        </dependency>
+        <!-- java发送邮件 对javamail的封装. -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+        </dependency>
+        <!-- 提供文件上传功能. -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+        </dependency>
+        <!-- 提供的是一个Java 的日志接口. -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+        <!-- io工具的封装. -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <!-- Java基本对象方法的工具类包 如：StringUtils,ArrayUtils等等. -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+        </dependency>
+        <!-- 提供了客户端和服务器端的数据验证框架. -->
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+        </dependency>
+
     </dependencies>
-    <build>
-        <finalName>mone</finalName>
-    </build>
 </project>
