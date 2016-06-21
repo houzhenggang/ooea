@@ -22,7 +22,7 @@ public class XMLUtils {
 	                                   E val ) throws ClassNotFoundException {
 		XStream xs = new XStream();
 		xs.processAnnotations(Class.forName(className).getClass());// 应用Person类的注解
-		xs.autodetectAnnotations(true);// 自动检测注解
+		xs.autodetectAnnotations(true);// 自动检测注解，将@XStreamAlias("属性名")注解定义在属性上面
 		xs.toXML(val, os);
 	}
 	
