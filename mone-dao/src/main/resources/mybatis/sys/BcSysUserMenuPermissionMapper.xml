@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.obc.modules.sys.dao.BcSysUserMenuPermissionDao">
+    <sql id="UserMenuPermissionColumns">
+        BSUMP.SYS_USER_MENU_PERMISSION_ID,
+        BSUMP.SYS_USER_ID,
+        BSUMP.SYS_MENU_ID,
+        BSUMP.SYS_MENU_PERMISSION_ID
+    </sql>
+    <resultMap type="bcSysUserMenuPermission" id="userMenuPermissionResult">
+        <id property="sys_user_menu_permission_id" column="SYS_USER_MENU_PERMISSION_ID" />
+        <result property="sys_user_id" column="SYS_USER_ID" />
+        <result property="sys_menu_id" column="SYS_MENU_ID" />
+        <result property="sys_menu_permission_id" column="SYS_MENU_PERMISSION_ID" />
+    </resultMap>
+</mapper>

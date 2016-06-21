@@ -1,7 +1,7 @@
 package examples.构造方法注入;
 
 import java.beans.ConstructorProperties;
-
+@SuppressWarnings( "unused" )
 public class ExampleBean {
 	private int	   years;
 	private String ultimateAnswer;

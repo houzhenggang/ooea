@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.obc.modules.sys.dao.BcSysUserRoleDao">
+    <sql id="UserRoleColumns">
+        BSUR.SYS_USER_ROLE_ID,
+        BSUR.SYS_USER_ID,
+        BSUR.SYS_ROLE_ID
+    </sql>
+    <resultMap type="bcSysUserRole" id="USERROLERESULT">
+        <id property="sys_user_role_id" column="SYS_USER_ROLE_ID" />
+        <result property="sys_user_id" column="SYS_USER_ID" />
+        <result property="sys_role_id" column="SYS_ROLE_ID" />
+    </resultMap>
+
+</mapper>
