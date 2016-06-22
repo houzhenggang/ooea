@@ -14,9 +14,5 @@
     default-lazy-init="true">
 
     <import resource="applicationContext-db.xml" />
-    <import resource="applicationContext-jedis.xml" />
-    <import resource="applicationContext-memcached.xml" />
-    <import resource="applicationContext-mq.xml" />
-    <import resource="applicationContext-shiro.xml" />
 </beans>
     
