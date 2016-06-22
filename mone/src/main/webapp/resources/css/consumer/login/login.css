@@ -109,7 +109,7 @@ button {
 	padding: 0;
 	background: red;
 	border: 1px solid red;
-	border-radius: 6px;
+	border-radius: 0px;
 	font-weight: 700;
 	color: #fff;
 	font-size: 24px;

@@ -8,6 +8,10 @@
 <link rel="icon" href="<%=request.getContextPath()%>/resources/images/favicon.ico" type="image/x-icon">
 <link href="<%=request.getContextPath()%>/resources/css/consumer/login/login.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
+function refreshImg(){
+        $ ('#validCodeImg').get (0).src = $ ('#validCodeImg').get (0).src+"?temp=" + Math.random ();
+}
+
 </script>
 </head>
 <body>
@@ -23,7 +27,7 @@
 			<div class="code">
 				<label>验证码：</label> <input type="text" name="" maxlength="4" id="code" tabindex="3" />
 				<div class="codeImg">
-					<img src="<%=request.getContextPath()%>/consumer/validateCode.do" />
+					<img src="<%=request.getContextPath()%>/consumer/validateCode.do" id="validCodeImg" onclick="refreshImg()" />
 				</div>
 			</div>
 			<div class="remember">
