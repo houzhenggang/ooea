@@ -1,0 +1,6 @@
+2016-06-21 22:43:39 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-21 22:44:03 [ 19198314@qtp-22915742-2:23826 ] - [ INFO ] ================================线程号：0X0000000F用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@7fb0c2================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-21 22:44:03 [ 19198314@qtp-22915742-2:23827 ] - [ INFO ] ================================线程号：0X0000000F用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@7fb0c2================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-21 22:48:11 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-21 22:48:55 [ 20940868@qtp-31646452-2:43953 ] - [ INFO ] ================================线程号：0X00000012用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@848c4================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-21 22:49:54 [ 20940868@qtp-31646452-2:102503 ] - [ INFO ] ================================线程号：0X00000012用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@848c4================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
