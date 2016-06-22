@@ -1,11 +1,182 @@
-2016-06-22 23:27:48 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:28:47 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:29:17 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:31:18 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:32:37 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:33:13 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:33:28 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:34:34 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:36:19 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:39:52 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-22 23:46:44 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-23 00:11:11 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-06-23 00:11:11 [ main:269 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Thu Jun 23 00:11:11 CST 2016]; root of context hierarchy
+2016-06-23 00:11:11 [ main:389 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-06-23 00:11:11 [ main:564 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-06-23 00:11:12 [ main:918 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-06-23 00:11:12 [ main:938 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-06-23 00:11:12 [ main:960 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-06-23 00:11:12 [ main:983 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-06-23 00:11:51 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-06-23 00:11:51 [ main:242 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Thu Jun 23 00:11:51 CST 2016]; root of context hierarchy
+2016-06-23 00:11:51 [ main:329 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-06-23 00:11:51 [ main:464 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-06-23 00:11:51 [ main:774 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-06-23 00:11:51 [ main:802 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-06-23 00:11:51 [ main:825 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-06-23 00:11:51 [ main:839 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-06-23 00:11:52 [ main:1135 ] - [ INFO ] Loading properties file from class path resource [jdbc.properties]
+2016-06-23 00:11:52 [ main:1494 ] - [ INFO ] Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1905 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1907 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1930 ] - [ INFO ] Bean 'sqlSession' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1932 ] - [ INFO ] Bean 'bcSysUserDaoImpl' of type [class com.obc.modules.sys.dao.impl.BcSysUserDaoImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1933 ] - [ INFO ] Bean 'bcSysUserServiceImpl' of type [class com.obc.modules.sys.service.impl.BcSysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1935 ] - [ INFO ] Bean 'loginRealm' of type [class com.obc.common.filter.shiro.realm.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:52 [ main:1941 ] - [ INFO ] Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:53 [ main:1992 ] - [ INFO ] Bean 'customUserFilter' of type [class com.obc.common.filter.shiro.CustomUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:11:53 [ main:2204 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2200 ms
+2016-06-23 00:11:53 [ main:2331 ] - [ INFO ] FrameworkServlet 'mvc': initialization started
+2016-06-23 00:11:53 [ main:2334 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:11:53 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:11:53 [ main:2335 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone/target/classes/applicationContext-mvc.xml]
+2016-06-23 00:11:53 [ main:2763 ] - [ INFO ] Mapped "{[/common/imgUpLoad.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.obc.modules.common.ImageLoadController.imgUpLoad(javax.servlet.http.HttpServletRequest) throws com.aliyun.oss.OSSException,com.aliyun.oss.ClientException,java.io.IOException
+2016-06-23 00:11:53 [ main:2775 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login()
+2016-06-23 00:11:53 [ main:2777 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[POST]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login(javax.servlet.http.HttpServletRequest,com.obc.vo.LoginPojo)
+2016-06-23 00:11:53 [ main:2778 ] - [ INFO ] Mapped "{[/consumer/emailCode.do]}" onto public java.lang.Object com.obc.modules.consumer.controller.ConsumerController.emailCode(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:11:53 [ main:2779 ] - [ INFO ] Mapped "{[/consumer/validateCode.do]}" onto public void com.obc.modules.consumer.controller.ConsumerController.validateCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:11:53 [ main:2780 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[POST]}" onto public com.obc.common.ExceptionMessage com.obc.modules.consumer.controller.ConsumerController.register(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser,java.lang.String)
+2016-06-23 00:11:53 [ main:2781 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.register()
+2016-06-23 00:11:53 [ main:2788 ] - [ INFO ] Mapped "{[/sys/login.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.login()
+2016-06-23 00:11:53 [ main:2789 ] - [ INFO ] Mapped "{[/sys/loginout.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.loginout(java.lang.String)
+2016-06-23 00:11:54 [ main:3145 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:11:53 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:11:54 [ main:3257 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:11:53 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:11:54 [ main:3528 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-06-23 00:11:54 [ main:3624 ] - [ INFO ] FrameworkServlet 'mvc': initialization completed in 1293 ms
+2016-06-23 00:12:24 [ 32977762@qtp-20891480-3:33433 ] - [ INFO ] ================================线程号：0X0000000F用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@1ad0d6e================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:13:08 [ 15615397@qtp-20891480-2:77079 ] - [ INFO ] ================================线程号：0X0000000E用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@1090a2e================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:13:25 [ 14441695@qtp-20891480-4:94286 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@bd86d4================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:14:39 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-06-23 00:14:39 [ main:148 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Thu Jun 23 00:14:39 CST 2016]; root of context hierarchy
+2016-06-23 00:14:40 [ main:232 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-06-23 00:14:40 [ main:325 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-06-23 00:14:40 [ main:581 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-06-23 00:14:40 [ main:602 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-06-23 00:14:40 [ main:617 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-06-23 00:14:40 [ main:632 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-06-23 00:14:40 [ main:892 ] - [ INFO ] Loading properties file from class path resource [jdbc.properties]
+2016-06-23 00:14:40 [ main:1160 ] - [ INFO ] Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1497 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1498 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1519 ] - [ INFO ] Bean 'sqlSession' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1522 ] - [ INFO ] Bean 'bcSysUserDaoImpl' of type [class com.obc.modules.sys.dao.impl.BcSysUserDaoImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1523 ] - [ INFO ] Bean 'bcSysUserServiceImpl' of type [class com.obc.modules.sys.service.impl.BcSysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1526 ] - [ INFO ] Bean 'loginRealm' of type [class com.obc.common.filter.shiro.realm.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1531 ] - [ INFO ] Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1562 ] - [ INFO ] Bean 'customUserFilter' of type [class com.obc.common.filter.shiro.CustomUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:14:41 [ main:1700 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1698 ms
+2016-06-23 00:14:41 [ main:1807 ] - [ INFO ] FrameworkServlet 'mvc': initialization started
+2016-06-23 00:14:41 [ main:1810 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:14:41 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:14:41 [ main:1812 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone/target/classes/applicationContext-mvc.xml]
+2016-06-23 00:14:41 [ main:2146 ] - [ INFO ] Mapped "{[/common/imgUpLoad.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.obc.modules.common.ImageLoadController.imgUpLoad(javax.servlet.http.HttpServletRequest) throws com.aliyun.oss.OSSException,com.aliyun.oss.ClientException,java.io.IOException
+2016-06-23 00:14:41 [ main:2153 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login()
+2016-06-23 00:14:41 [ main:2153 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[POST]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login(javax.servlet.http.HttpServletRequest,com.obc.vo.LoginPojo)
+2016-06-23 00:14:41 [ main:2154 ] - [ INFO ] Mapped "{[/consumer/emailCode.do]}" onto public java.lang.Object com.obc.modules.consumer.controller.ConsumerController.emailCode(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:14:41 [ main:2154 ] - [ INFO ] Mapped "{[/consumer/validateCode.do]}" onto public void com.obc.modules.consumer.controller.ConsumerController.validateCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:14:41 [ main:2155 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[POST]}" onto public com.obc.common.ExceptionMessage com.obc.modules.consumer.controller.ConsumerController.register(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser,java.lang.String)
+2016-06-23 00:14:41 [ main:2155 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.register()
+2016-06-23 00:14:41 [ main:2160 ] - [ INFO ] Mapped "{[/sys/login.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.login()
+2016-06-23 00:14:41 [ main:2161 ] - [ INFO ] Mapped "{[/sys/loginout.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.loginout(java.lang.String)
+2016-06-23 00:15:13 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-06-23 00:15:13 [ main:317 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Thu Jun 23 00:15:13 CST 2016]; root of context hierarchy
+2016-06-23 00:15:13 [ main:379 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-06-23 00:15:13 [ main:488 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-06-23 00:15:13 [ main:802 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-06-23 00:15:13 [ main:822 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-06-23 00:15:14 [ main:837 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-06-23 00:15:14 [ main:856 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-06-23 00:15:14 [ main:1082 ] - [ INFO ] Loading properties file from class path resource [jdbc.properties]
+2016-06-23 00:15:14 [ main:1437 ] - [ INFO ] Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1763 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1765 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1787 ] - [ INFO ] Bean 'sqlSession' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1789 ] - [ INFO ] Bean 'bcSysUserDaoImpl' of type [class com.obc.modules.sys.dao.impl.BcSysUserDaoImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1790 ] - [ INFO ] Bean 'bcSysUserServiceImpl' of type [class com.obc.modules.sys.service.impl.BcSysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1792 ] - [ INFO ] Bean 'loginRealm' of type [class com.obc.common.filter.shiro.realm.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1795 ] - [ INFO ] Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:14 [ main:1826 ] - [ INFO ] Bean 'customUserFilter' of type [class com.obc.common.filter.shiro.CustomUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:15:15 [ main:1964 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1958 ms
+2016-06-23 00:15:15 [ main:2091 ] - [ INFO ] FrameworkServlet 'mvc': initialization started
+2016-06-23 00:15:15 [ main:2094 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:15:15 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:15:15 [ main:2095 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone/target/classes/applicationContext-mvc.xml]
+2016-06-23 00:15:15 [ main:2441 ] - [ INFO ] Mapped "{[/common/imgUpLoad.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.obc.modules.common.ImageLoadController.imgUpLoad(javax.servlet.http.HttpServletRequest) throws com.aliyun.oss.OSSException,com.aliyun.oss.ClientException,java.io.IOException
+2016-06-23 00:15:15 [ main:2449 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[POST]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login(javax.servlet.http.HttpServletRequest,com.obc.vo.LoginPojo)
+2016-06-23 00:15:15 [ main:2449 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login()
+2016-06-23 00:15:15 [ main:2450 ] - [ INFO ] Mapped "{[/consumer/validateCode.do]}" onto public void com.obc.modules.consumer.controller.ConsumerController.validateCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:15:15 [ main:2450 ] - [ INFO ] Mapped "{[/consumer/emailCode.do]}" onto public java.lang.Object com.obc.modules.consumer.controller.ConsumerController.emailCode(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:15:15 [ main:2451 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[POST]}" onto public com.obc.common.ExceptionMessage com.obc.modules.consumer.controller.ConsumerController.register(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser,java.lang.String)
+2016-06-23 00:15:15 [ main:2451 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.register()
+2016-06-23 00:15:15 [ main:2455 ] - [ INFO ] Mapped "{[/sys/login.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.login()
+2016-06-23 00:15:15 [ main:2456 ] - [ INFO ] Mapped "{[/sys/loginout.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.loginout(java.lang.String)
+2016-06-23 00:15:15 [ main:2744 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:15:15 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:15:15 [ main:2834 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:15:15 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:15:16 [ main:3020 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-06-23 00:15:16 [ main:3105 ] - [ INFO ] FrameworkServlet 'mvc': initialization completed in 1014 ms
+2016-06-23 00:15:58 [ Thread-0:45725 ] - [ INFO ] Closing WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:15:15 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:15:58 [ Thread-0:45743 ] - [ INFO ] Closing Root WebApplicationContext: startup date [Thu Jun 23 00:15:13 CST 2016]; root of context hierarchy
+2016-06-23 00:15:58 [ Thread-0:45745 ] - [ WARN ] Invocation of destroy method 'close' failed on bean with name 'sqlSession': java.lang.UnsupportedOperationException: Manual close is not allowed over a Spring managed SqlSession
+2016-06-23 00:17:46 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-06-23 00:17:46 [ main:433 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Thu Jun 23 00:17:46 CST 2016]; root of context hierarchy
+2016-06-23 00:17:46 [ main:519 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-06-23 00:17:46 [ main:779 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-06-23 00:17:47 [ main:1209 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-06-23 00:17:47 [ main:1233 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-06-23 00:17:47 [ main:1254 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-06-23 00:17:47 [ main:1280 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-06-23 00:17:47 [ main:1557 ] - [ INFO ] Loading properties file from class path resource [jdbc.properties]
+2016-06-23 00:17:48 [ main:1912 ] - [ INFO ] Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2427 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2429 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2461 ] - [ INFO ] Bean 'sqlSession' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2463 ] - [ INFO ] Bean 'bcSysUserDaoImpl' of type [class com.obc.modules.sys.dao.impl.BcSysUserDaoImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2464 ] - [ INFO ] Bean 'bcSysUserServiceImpl' of type [class com.obc.modules.sys.service.impl.BcSysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2466 ] - [ INFO ] Bean 'loginRealm' of type [class com.obc.common.filter.shiro.realm.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2470 ] - [ INFO ] Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2513 ] - [ INFO ] Bean 'customUserFilter' of type [class com.obc.common.filter.shiro.CustomUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-06-23 00:17:48 [ main:2682 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2669 ms
+2016-06-23 00:17:48 [ main:2836 ] - [ INFO ] FrameworkServlet 'mvc': initialization started
+2016-06-23 00:17:48 [ main:2839 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:17:48 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:17:48 [ main:2841 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone/target/classes/applicationContext-mvc.xml]
+2016-06-23 00:17:49 [ main:3275 ] - [ INFO ] Mapped "{[/common/imgUpLoad.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.obc.modules.common.ImageLoadController.imgUpLoad(javax.servlet.http.HttpServletRequest) throws com.aliyun.oss.OSSException,com.aliyun.oss.ClientException,java.io.IOException
+2016-06-23 00:17:49 [ main:3283 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login()
+2016-06-23 00:17:49 [ main:3284 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[POST]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login(javax.servlet.http.HttpServletRequest,com.obc.vo.LoginPojo)
+2016-06-23 00:17:49 [ main:3284 ] - [ INFO ] Mapped "{[/consumer/emailCode.do]}" onto public java.lang.Object com.obc.modules.consumer.controller.ConsumerController.emailCode(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:17:49 [ main:3284 ] - [ INFO ] Mapped "{[/consumer/validateCode.do]}" onto public void com.obc.modules.consumer.controller.ConsumerController.validateCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.obc.modules.sys.entity.BcSysUser)
+2016-06-23 00:17:49 [ main:3285 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[POST]}" onto public com.obc.common.ExceptionMessage com.obc.modules.consumer.controller.ConsumerController.register(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser,java.lang.String)
+2016-06-23 00:17:49 [ main:3286 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.register()
+2016-06-23 00:17:49 [ main:3291 ] - [ INFO ] Mapped "{[/sys/login.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.login()
+2016-06-23 00:17:49 [ main:3292 ] - [ INFO ] Mapped "{[/sys/loginout.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.loginout(java.lang.String)
+2016-06-23 00:17:49 [ main:3672 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:17:48 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:17:49 [ main:3777 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Thu Jun 23 00:17:48 CST 2016]; parent: Root WebApplicationContext
+2016-06-23 00:17:50 [ main:4006 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-06-23 00:17:50 [ main:4127 ] - [ INFO ] FrameworkServlet 'mvc': initialization completed in 1291 ms
+2016-06-23 00:17:55 [ qtp16757505-17:9095 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@ff6b0d================================请求：/consumer/register.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:18:03 [ qtp16757505-15:17464 ] - [ INFO ] ================================线程号：0X0000000F用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@1953a4e================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:18:28 [ qtp16757505-16:41992 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@31c70b================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:20:28 [ qtp16757505-16:162232 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@888fd4================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:20:31 [ qtp16757505-17:165413 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@84888a================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:20:37 [ qtp16757505-13:171395 ] - [ INFO ] ================================线程号：0X0000000D用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@10c78ff================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:21:07 [ qtp16757505-13:201574 ] - [ INFO ] ================================线程号：0X0000000D用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@15a4815================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:32 [ qtp16757505-12:285990 ] - [ INFO ] ================================线程号：0X0000000C用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@2e3705================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:32 [ qtp16757505-15:286137 ] - [ INFO ] ================================线程号：0X0000000F用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@309596================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:32 [ qtp16757505-16:286158 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@c70c4c================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:35 [ qtp16757505-13:289707 ] - [ INFO ] ================================线程号：0X0000000D用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@108624================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:35 [ qtp16757505-12:289734 ] - [ INFO ] ================================线程号：0X0000000C用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@102160b================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:35 [ qtp16757505-13:289756 ] - [ INFO ] ================================线程号：0X0000000D用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@1f54863================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-16:290266 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@6391ed================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-17:290287 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@b3fd89================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-16:290307 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@ca2fc8================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-17:290443 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@716c0================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-16:290465 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@166b2f6================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-17:290486 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@16f3a53================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-16:290618 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@15e20e7================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-17:290639 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@c25cf7================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:36 [ qtp16757505-16:290661 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@658dc1================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:38 [ qtp16757505-17:292504 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@a9bc2b================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:38 [ qtp16757505-15:292562 ] - [ INFO ] ================================线程号：0X0000000F用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@180d051================================请求：/resources/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:50 [ qtp16757505-12:304721 ] - [ INFO ] ================================线程号：0X0000000C用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@1bfe1d8================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:22:50 [ qtp16757505-16:304853 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@11f1c77================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:23:01 [ qtp16757505-23:315168 ] - [ INFO ] ================================线程号：0X00000017用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@1111a90================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:23:01 [ qtp16757505-12:315239 ] - [ INFO ] ================================线程号：0X0000000C用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@cded50================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:23:01 [ qtp16757505-17:315876 ] - [ INFO ] ================================线程号：0X00000011用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@6858e3================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:23:02 [ qtp16757505-22:315945 ] - [ INFO ] ================================线程号：0X00000016用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@171c7df================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:23:02 [ qtp16757505-16:316481 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@181895f================================请求：/consumer/login.do;IP：0:0:0:0:0:0:0:1;
+2016-06-23 00:23:02 [ qtp16757505-22:316525 ] - [ INFO ] ================================线程号：0X00000016用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@161bcbe================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;

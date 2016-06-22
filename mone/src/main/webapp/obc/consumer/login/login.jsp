@@ -23,7 +23,7 @@
 			<div class="code">
 				<label>验证码：</label> <input type="text" name="" maxlength="4" id="code" tabindex="3" />
 				<div class="codeImg">
-					<img src="<%=request.getContextPath()%>/resources/images/captcha.jpeg.jpg" />
+					<img src="<%=request.getContextPath()%>/consumer/validateCode.do" />
 				</div>
 			</div>
 			<div class="remember">
