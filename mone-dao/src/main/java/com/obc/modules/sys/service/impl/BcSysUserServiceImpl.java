@@ -50,7 +50,7 @@ public class BcSysUserServiceImpl implements BcSysUserService {
 		bsu.setSalt(enc.get(Code.i000Salt.getDesc()));
 		bsu.setCreate_time(new Date());
 		bsu.setIs_valid(Code.i000IsValid1L.getDesc());
-		bsu.setEmail(MoneStringUtils.replaceK(email));
+//		bsu.setEmail(MoneStringUtils.replaceK(email));
 		bcSysUserDao.addBcSysUser(bsu);
 		return bsu;
 	}

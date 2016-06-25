@@ -11,7 +11,6 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-import com.obc.common.utils.MoneStringUtils;
 import com.obc.modules.sys.entity.BcSysUser;
 import com.obc.modules.sys.service.BcSysUserService;
 
@@ -42,8 +41,8 @@ public class LoginRealm extends AuthorizingRealm {
 		BcSysUser user = bcSysUserService.findBcSysUser(username);
 		SimpleAuthenticationInfo authenticationInfo = null;
 		if (user != null) {
-			String name = MoneStringUtils.replaceV(user.getUsername());
-			authenticationInfo = new SimpleAuthenticationInfo(name, user.getPassword(), getName());
+//			String name = MoneStringUtils.replaceV(user.getUsername());
+			authenticationInfo = new SimpleAuthenticationInfo(user.getUsername(), user.getPassword(), getName());
 		}
 		return authenticationInfo;
 	}
