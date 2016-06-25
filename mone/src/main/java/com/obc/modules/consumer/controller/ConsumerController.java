@@ -128,6 +128,7 @@ public class ConsumerController {
 	 * @date 2016年4月10日 上午12:17:45
 	 */
 	@RequestMapping( value = "/login.do" , method = RequestMethod.POST )
+	@ResponseBody
 	public String login (	HttpServletRequest request ,
 							LoginPojo user ) {
 		try {
@@ -172,7 +173,6 @@ public class ConsumerController {
 			response.setHeader("Cache-Control", "no-cache");
 			response.setDateHeader("Expires", 0);
 			session.setAttribute("validateCode", validateCode.getCode());
-			session.setMaxInactiveInterval(1800);
 			validateCode.write(response.getOutputStream());
 
 		}
