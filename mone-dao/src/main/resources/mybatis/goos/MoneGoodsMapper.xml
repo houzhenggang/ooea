@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.obc.modules.sys.dao.BcSysMenuDao">
+
+
+    <resultMap type="MoneGoods" id="MoneGoodsResult">
+        <id property="goods_id" column="GOODS_ID" />
+        <result property="goods_name" column="GOODS_NAME" />
+        <result property="goods_title" column="GOODS_TITLE" />
+        <result property="trade_id" column="TRADE_ID" />
+        <result property="image" column="IMAGE" />
+        <result property="server_code" column="SERVER_CODE" />
+        <result property="goods_attr_id" column="GOODS_ATTR_ID" />
+        <result property="status" column="STATUS" />
+        <result property="audit_status" column="AUDIT_STATUS" />
+        <result property="update_time" column="UPDATE_TIME" />
+        <result property="create_time" column="CREATE_TIME" />
+        <result property="order_id" column="ORDER_ID" />
+    </resultMap>
+
+    <sql id="MoneGoodsColumns">
+    </sql>
+    <select id="findSysMoneGoodsResult">
+        SELECT
+        <include refid="MenuColumns" />
+        FROM BC_SYS_MENU BSM
+    </select>
+
+</mapper>
