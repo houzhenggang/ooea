@@ -17,7 +17,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
  *
  */
 public class JMSProducer {
-	
+//	PriorityDispatchPolicy
 	// 默认连接用户名
 	private static final String	USERNAME = ActiveMQConnection.DEFAULT_USER;
 	// 默认连接密码
@@ -25,7 +25,7 @@ public class JMSProducer {
 	// 默认连接地址
 	private static final String	BROKEURL = ActiveMQConnection.DEFAULT_BROKER_URL;
 	// 发送的消息数量
-	private static final int	SENDNUM	 = 10;
+	private static final int	SENDNUM	 = 100000;
 	
 	public static void main ( String[] args ) {
 		// 连接工厂
