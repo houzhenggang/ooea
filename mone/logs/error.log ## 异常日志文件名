@@ -234,3 +234,10 @@
 2016-06-23 00:30:54 [ qtp16757505-13:788282 ] - [ INFO ] ================================线程号：0X0000000D用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@123bfc4================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
 2016-06-23 00:30:54 [ qtp16757505-16:788804 ] - [ INFO ] ================================线程号：0X00000010用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@17f4370================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
 2016-06-23 00:30:55 [ qtp16757505-11:789013 ] - [ INFO ] ================================线程号：0X0000000B用　户：org.apache.shiro.web.subject.support.WebDelegatingSubject@f63eec================================请求：/consumer/validateCode.do;IP：0:0:0:0:0:0:0:1;
+2016-06-27 09:25:46 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-27 09:26:26 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-27 09:28:17 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-27 09:28:38 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-27 09:30:14 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-27 09:31:18 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-06-27 09:32:02 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
