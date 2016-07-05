@@ -1,4 +1,4 @@
-package a.b.c;
+package com.obc.listener;
 import javax.jms.JMSException;
 import javax.jms.MapMessage;
 import javax.jms.Session;

@@ -6,6 +6,9 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <dependent-module archiveName="mone-jar-0.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mone-jar/mone-jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="mone-mq"/>
         <property name="java-output-path" value="/mone-mq/target/classes"/>
     </wb-module>
