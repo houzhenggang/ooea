@@ -32,6 +32,15 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!-- ====================================================================构造方法注入 -->
 
 
+	<!-- depends-on /依赖bean实例化前优先实例化depends-on配置的bean（beanA,beanB）（ 按顺序优先实例化，可配置多个） -->
+	<!-- abstract false默认/ture表示抽象Bean，ApplicationContext预初始化时忽略所有抽象Bean定义 -->
+
+
+	<bean depends-on="" abstract="true" autowire-candidate="default" autowire="default" class="" destroy-method="" factory-bean="" factory-method="" id="" init-method="" lazy-init="default"
+		name="" parent="" primary="true" scope="">
+
+	</bean>
+
 
 
 
