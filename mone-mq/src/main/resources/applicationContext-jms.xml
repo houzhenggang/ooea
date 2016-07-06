@@ -55,11 +55,11 @@
 
 
 
-	<!-- 过滤清洗队列的MessageListener -->
+	<!-- 过滤清洗队列的MessageListener （占用线程数量=消费者个数、当前默认2个）-->
 	<bean id="statListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer" lazy-init="false">
 		<property name="connectionFactory" ref="connectionFactory"></property>
 		<property name="destination" ref="statDestination"></property>
-		<property name="messageListener" ref="statSessionAwareMessageListener"></property>
+		<property name="messageListener" ref="emailConsumerSessionAwareMessageListener"></property>
 		<property name="sessionTransacted" value="true"></property>
 		<property name="errorHandler" ref="someHandler" />
 		<!-- 设置固定的线程数 -->
@@ -77,7 +77,7 @@
 
 
 	<!-- 过滤清洗队列的MessageListener -->
-	<bean id="statSessionAwareMessageListener" class="com.sse.sivss.service.msg.listener.StatConsumerSessionAwareMessageListener">
+	<bean id="emailConsumerSessionAwareMessageListener" class="com.obc.listene.EmailConsumerSessionAwareMessageListener">
 		<property name="taskMap">
 			<map>
 				<entry key="S001" value-ref="stat4ChanelService" />  <!-- S001 股权数据发布 -->
