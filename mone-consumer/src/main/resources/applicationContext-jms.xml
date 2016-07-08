@@ -69,6 +69,7 @@
 	<bean id="smsConsumerSessionAwareMessageListener" class="com.obc.listener.SmsConsumerSessionAwareMessageListener">
 		<property name="taskMap">
 			<map>
+				<entry key="R004" value-ref="smsMessageService"/>
 				<entry key="R005" value-ref="emailMessageService" />
 			</map>
 		</property>

@@ -12,6 +12,8 @@
 
 	
 	<bean id="emailMessageService" class="com.obc.mq.p2p.EmailMessageService"></bean>
+	<bean id="smsMessageService" class="com.obc.mq.p2p.SmsMessageService"></bean>
+	
 	<bean id="someHandler" class="com.obc.listener.SomeHandler"></bean>
 
 </beans>
