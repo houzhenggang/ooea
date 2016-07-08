@@ -10,16 +10,16 @@ import javax.jms.Session;
 
 import org.springframework.jms.listener.SessionAwareMessageListener;
 
-import com.obc.mq.MessageService;
+import com.obc.mq.ConsumerService;
 import com.obc.mq.p2p.entity.MessageReq;
 import com.obc.mq.p2p.entity.MessageResp;
 
 public class SMSConsumerSessionAwareMessageListener implements SessionAwareMessageListener<MapMessage> {
 	
-	private Map<String, MessageService<MessageResp, MessageReq>> taskMap;
+	private Map<String, ConsumerService<MessageResp, MessageReq>> taskMap;
 	private Map<String, Integer>								 exeTimeMap;
 	
-	public void setTaskMap ( Map<String, MessageService<MessageResp, MessageReq>> taskMap ) {
+	public void setTaskMap ( Map<String, ConsumerService<MessageResp, MessageReq>> taskMap ) {
 		this.taskMap = taskMap;
 	}
 	
@@ -31,7 +31,7 @@ public class SMSConsumerSessionAwareMessageListener implements SessionAwareMessa
 	public void onMessage ( MapMessage message ,
 	                        Session session ) throws JMSException {
 		String task = message.getString("taskId");
-		final MessageService<MessageResp, MessageReq> ms = taskMap.get(task);
+		final ConsumerService<MessageResp, MessageReq> ms = taskMap.get(task);
 		Date now = new Date();
 		MessageResp resp = ms.exec(new MessageReq());
 		

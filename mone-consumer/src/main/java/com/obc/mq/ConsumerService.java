@@ -8,7 +8,7 @@ package com.obc.mq;
  * <br>创建时间： 2016年7月5日 下午7:35:36 
  * @author FC
  */
-public interface MessageService<T, E> {
+public interface ConsumerService<T, E> {
 	
 	/**
 	 * <br>方法名： exec
