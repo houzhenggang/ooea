@@ -8,7 +8,7 @@
 	</parent>
 
 
-	<artifactId>mone-mq</artifactId>
+	<artifactId>mone-consumer</artifactId>
 	<packaging>war</packaging>
 	<name>mone-mq Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -28,6 +28,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>mone-mq</finalName>
+		<finalName>mone-consumer</finalName>
 	</build>
 </project>
