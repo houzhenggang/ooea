@@ -18,7 +18,7 @@ public class SmsConsumerSessionAwareMessageListener implements SessionAwareMessa
 	
 	private Map<String, ConsumerService<MessageResp, MessageReq>> taskMap;
 	private Map<String, Integer>								  taskExeTimeMap;
-	
+																  
 	public void setTaskMap ( Map<String, ConsumerService<MessageResp, MessageReq>> taskMap ) {
 		this.taskMap = taskMap;
 	}
@@ -31,9 +31,9 @@ public class SmsConsumerSessionAwareMessageListener implements SessionAwareMessa
 	public void onMessage ( MapMessage message ,
 	                        Session session ) throws JMSException {
 		String task = message.getString("taskId");
-		final ConsumerService<MessageResp, MessageReq> ms = taskMap.get(task);
+		final ConsumerService<MessageResp, MessageReq> consumer = taskMap.get(task);
 		Date now = new Date();
-		MessageResp resp = ms.exec(new MessageReq());
+		MessageResp resp = consumer.exec(new MessageReq());
 		
 		Date curDate = new Date();
 		int mustTime = taskExeTimeMap.get(task);

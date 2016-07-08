@@ -1,0 +1,392 @@
+2016-07-08 23:48:35 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-08 23:48:35 [ main:205 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Fri Jul 08 23:48:35 CST 2016]; root of context hierarchy
+2016-07-08 23:48:35 [ main:273 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-08 23:48:35 [ main:456 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-comsumer.xml]
+2016-07-08 23:48:35 [ main:482 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-08 23:48:36 [ main:1055 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-consumer\target\classes\config.properties]
+2016-07-08 23:48:36 [ main:1056 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-consumer\target\classes\log4j.properties]
+2016-07-08 23:48:36 [ main:1056 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-jar\target\classes\null.properties]
+2016-07-08 23:48:36 [ main:1057 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common.properties]
+2016-07-08 23:48:36 [ main:1057 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common_zh_CN.properties]
+2016-07-08 23:48:36 [ main:1058 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss.properties]
+2016-07-08 23:48:36 [ main:1058 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss_zh_CN.properties]
+2016-07-08 23:48:36 [ main:1059 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/versioninfo.properties]
+2016-07-08 23:48:36 [ main:1059 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/net/sf/ehcache/ehcache-core/2.5.0/ehcache-core-2.5.0.jar!/ehcache-version.properties]
+2016-07-08 23:48:36 [ main:1060 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/poi/poi/3.13/poi-3.13.jar!/font_metrics.properties]
+2016-07-08 23:48:36 [ main:1064 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/activemq/activemq-all/5.13.3/activemq-all-5.13.3.jar!/log4j.properties]
+2016-07-08 23:48:36 [ main:1067 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/923/0/.cp/lib/servlet-api-2.5.jar!/plugin.properties]
+2016-07-08 23:48:36 [ main:1075 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/923/0/.cp/lib/javax.servlet.jsp.jstl_1.2.0.v201004190952.jar!/plugin.properties]
+2016-07-08 23:48:36 [ main:1080 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/923/0/.cp/lib/javax.el_2.1.0.v201004190952.jar!/plugin.properties]
+2016-07-08 23:48:36 [ main:1086 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/923/0/.cp/lib/com.sun.el_1.0.0.v201004190952.jar!/plugin.properties]
+2016-07-08 23:48:36 [ main:1093 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/923/0/.cp/lib/jetty-jndi-7.6.2.v20120308.jar!/jndi.properties]
+2016-07-08 23:48:36 [ main:1094 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/923/0/.cp/lib/javax.servlet.jsp_2.1.0.v201004190952.jar!/plugin.properties]
+2016-07-08 23:48:36 [ main:1348 ] - [ INFO ] Starting beans in phase 2147483647
+2016-07-08 23:48:36 [ main:1527 ] - [ INFO ] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:FC01-53247-1467992916604-1:1,clientId=null,started=false}] }
+2016-07-08 23:48:36 [ ActiveMQ Task-1:1678 ] - [ INFO ] Successfully connected to tcp://localhost:61616
+2016-07-08 23:48:36 [ main:1721 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1718 ms
+2016-07-08 23:48:37 [ main:1813 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-08 23:48:37 [ main:1817 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:48:37 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:48:37 [ main:1819 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-mvc.xml]
+2016-07-08 23:48:37 [ main:2235 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:48:37 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:48:37 [ main:2284 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:48:37 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:48:37 [ main:2388 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 575 ms
+2016-07-08 23:50:48 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-08 23:50:48 [ main:198 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Fri Jul 08 23:50:48 CST 2016]; root of context hierarchy
+2016-07-08 23:50:49 [ main:293 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-08 23:50:49 [ main:458 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-comsumer.xml]
+2016-07-08 23:50:49 [ main:484 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-08 23:50:49 [ main:715 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-08 23:50:49 [ main:1029 ] - [ INFO ] Starting beans in phase 2147483647
+2016-07-08 23:50:50 [ main:1412 ] - [ INFO ] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:FC01-53340-1467993049985-1:1,clientId=null,started=false}] }
+2016-07-08 23:50:50 [ ActiveMQ Task-1:1546 ] - [ INFO ] Successfully connected to tcp://localhost:61616
+2016-07-08 23:50:50 [ main:1603 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1600 ms
+2016-07-08 23:50:50 [ main:1731 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-08 23:50:50 [ main:1737 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:50:50 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:50:50 [ main:1738 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-mvc.xml]
+2016-07-08 23:50:51 [ main:2385 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:50:50 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:50:51 [ main:2458 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:50:50 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:50:51 [ main:2596 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 865 ms
+2016-07-08 23:51:59 [ smsListenerContainer-1:71236 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:52:01 [ smsListenerContainer-1:72312 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:52:02 [ smsListenerContainer-1:73645 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:52:03 [ smsListenerContainer-1:74710 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:52:04 [ smsListenerContainer-1:75790 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:52:05 [ smsListenerContainer-1:76854 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:52:06 [ smsListenerContainer-1:78106 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:56:39 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-08 23:56:39 [ main:160 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Fri Jul 08 23:56:39 CST 2016]; root of context hierarchy
+2016-07-08 23:56:39 [ main:231 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-08 23:56:39 [ main:371 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-comsumer.xml]
+2016-07-08 23:56:39 [ main:396 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-08 23:56:40 [ main:574 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-08 23:56:40 [ main:811 ] - [ INFO ] Starting beans in phase 2147483647
+2016-07-08 23:56:40 [ main:1020 ] - [ INFO ] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:FC01-53582-1467993400363-1:1,clientId=null,started=false}] }
+2016-07-08 23:56:40 [ ActiveMQ Task-1:1108 ] - [ INFO ] Successfully connected to tcp://127.0.0.1:61616
+2016-07-08 23:56:40 [ main:1147 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1144 ms
+2016-07-08 23:56:40 [ main:1271 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-08 23:56:40 [ main:1276 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:56:40 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:56:40 [ main:1277 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-mvc.xml]
+2016-07-08 23:56:40 [ smsListenerContainer-2:1298 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:56:41 [ main:1656 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:56:40 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:56:41 [ main:1712 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:56:40 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:56:41 [ main:1807 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 535 ms
+2016-07-08 23:56:41 [ smsListenerContainer-2:2354 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:56:42 [ smsListenerContainer-2:3387 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:56:43 [ smsListenerContainer-2:4443 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:56:44 [ smsListenerContainer-2:5484 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:56:46 [ smsListenerContainer-2:6554 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:57:49 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-08 23:57:49 [ main:160 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Fri Jul 08 23:57:49 CST 2016]; root of context hierarchy
+2016-07-08 23:57:49 [ main:229 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-08 23:57:49 [ main:370 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-comsumer.xml]
+2016-07-08 23:57:49 [ main:395 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-08 23:57:50 [ main:570 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-08 23:57:50 [ main:795 ] - [ INFO ] Starting beans in phase 2147483647
+2016-07-08 23:57:50 [ main:991 ] - [ INFO ] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:FC01-53617-1467993470335-1:1,clientId=null,started=false}] }
+2016-07-08 23:57:50 [ ActiveMQ Task-1:1074 ] - [ INFO ] Successfully connected to tcp://127.0.0.1:61616
+2016-07-08 23:57:50 [ main:1118 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1115 ms
+2016-07-08 23:57:50 [ main:1212 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-08 23:57:50 [ main:1217 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:57:50 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:57:50 [ main:1219 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-mvc.xml]
+2016-07-08 23:57:51 [ main:1605 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:57:50 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:57:51 [ main:1657 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Jul 08 23:57:50 CST 2016]; parent: Root WebApplicationContext
+2016-07-08 23:57:51 [ main:1808 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 596 ms
+2016-07-08 23:58:27 [ smsListenerContainer-2:38293 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:58:28 [ smsListenerContainer-2:39349 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:58:29 [ smsListenerContainer-2:40413 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:58:31 [ smsListenerContainer-2:41536 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:58:32 [ smsListenerContainer-2:42624 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:58:33 [ smsListenerContainer-2:43668 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:58:34 [ smsListenerContainer-2:44731 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:59:53 [ smsListenerContainer-1:124318 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:59:54 [ smsListenerContainer-1:125487 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:59:56 [ smsListenerContainer-1:126630 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:59:57 [ smsListenerContainer-1:127687 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:59:58 [ smsListenerContainer-1:128744 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)
+2016-07-08 23:59:59 [ smsListenerContainer-1:129785 ] - [ ERROR ] Error in listener
+java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage cannot be cast to javax.jms.MapMessage
+	at com.obc.listener.SmsConsumerSessionAwareMessageListener.onMessage(SmsConsumerSessionAwareMessageListener.java:1)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:689)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:649)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:619)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:307)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:245)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1144)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
+	at java.lang.Thread.run(Thread.java:745)

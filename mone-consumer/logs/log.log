@@ -94,3 +94,261 @@ java.lang.ClassCastException: org.apache.activemq.command.ActiveMQTextMessage ca
 	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1136)
 	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1033)
 	at java.lang.Thread.run(Thread.java:745)
+2016-07-09 00:05:06 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:05:06 [ main:196 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:05:06 CST 2016]; root of context hierarchy
+2016-07-09 00:05:06 [ main:275 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:05:06 [ main:487 ] - [ ERROR ] Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Dangling meta character '*' near index 0
+*
+^
+Offending resource: URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parseTypeFilters(ComponentScanBeanDefinitionParser.java:217)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.configureScanner(ComponentScanBeanDefinitionParser.java:124)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:86)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1411)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1401)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:168)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:138)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:94)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:508)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+2016-07-09 00:05:47 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:05:47 [ main:160 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:05:47 CST 2016]; root of context hierarchy
+2016-07-09 00:05:47 [ main:231 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:05:48 [ main:391 ] - [ ERROR ] Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Dangling meta character '*' near index 0
+*.*mq.*
+^
+Offending resource: URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:70)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parseTypeFilters(ComponentScanBeanDefinitionParser.java:217)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.configureScanner(ComponentScanBeanDefinitionParser.java:124)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:86)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:74)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1411)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1401)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:168)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:138)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:94)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:508)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:510)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+2016-07-09 00:07:04 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:07:04 [ main:162 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:07:04 CST 2016]; root of context hierarchy
+2016-07-09 00:07:04 [ main:239 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:07:05 [ main:496 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 00:07:05 [ main:721 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-09 00:07:05 [ main:995 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsListenerContainer' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsConsumerSessionAwareMessageListener' while setting bean property 'messageListener'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsConsumerSessionAwareMessageListener' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsMessageService' while setting bean property 'taskMap' with key [TypedStringValue: value [R004], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+2016-07-09 00:07:05 [ main:999 ] - [ ERROR ] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsListenerContainer' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsConsumerSessionAwareMessageListener' while setting bean property 'messageListener'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsConsumerSessionAwareMessageListener' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsMessageService' while setting bean property 'taskMap' with key [TypedStringValue: value [R004], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsConsumerSessionAwareMessageListener' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsMessageService' while setting bean property 'taskMap' with key [TypedStringValue: value [R004], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:407)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 37 more
+2016-07-09 00:07:51 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:07:51 [ main:159 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:07:51 CST 2016]; root of context hierarchy
+2016-07-09 00:07:51 [ main:233 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:07:51 [ main:473 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 00:07:51 [ main:684 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-09 00:07:52 [ main:979 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsListenerContainer' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsConsumerSessionAwareMessageListener' while setting bean property 'messageListener'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsConsumerSessionAwareMessageListener' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsMessageService' while setting bean property 'taskMap' with key [TypedStringValue: value [R004], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+2016-07-09 00:07:52 [ main:983 ] - [ ERROR ] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsListenerContainer' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsConsumerSessionAwareMessageListener' while setting bean property 'messageListener'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsConsumerSessionAwareMessageListener' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsMessageService' while setting bean property 'taskMap' with key [TypedStringValue: value [R004], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsConsumerSessionAwareMessageListener' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'smsMessageService' while setting bean property 'taskMap' with key [TypedStringValue: value [R004], target type [null]]; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedMap(BeanDefinitionValueResolver.java:407)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'smsMessageService' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 37 more
+2016-07-09 00:12:51 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:12:51 [ main:177 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:12:51 CST 2016]; root of context hierarchy
+2016-07-09 00:12:51 [ main:248 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:12:51 [ main:526 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 00:12:52 [ main:803 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-09 00:12:52 [ main:1068 ] - [ WARN ] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsListenerContainer' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'someHandler' while setting bean property 'errorHandler'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'someHandler' is defined
+2016-07-09 00:12:52 [ main:1072 ] - [ ERROR ] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'smsListenerContainer' defined in class path resource [applicationContext-jms.xml]: Cannot resolve reference to bean 'someHandler' while setting bean property 'errorHandler'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'someHandler' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1481)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1226)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:733)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:233)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1222)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:676)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:455)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:90)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:261)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:59)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:82)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'someHandler' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:698)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 25 more
+2016-07-09 00:15:32 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:15:32 [ main:161 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:15:32 CST 2016]; root of context hierarchy
+2016-07-09 00:15:32 [ main:232 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:15:33 [ main:484 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 00:15:33 [ main:736 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-09 00:15:33 [ main:1085 ] - [ INFO ] Starting beans in phase 2147483647
+2016-07-09 00:15:33 [ main:1264 ] - [ INFO ] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:FC01-54340-1467994533804-1:1,clientId=null,started=false}] }
+2016-07-09 00:15:34 [ ActiveMQ Task-1:1352 ] - [ INFO ] Successfully connected to tcp://127.0.0.1:61616
+2016-07-09 00:15:34 [ main:1399 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1396 ms
+2016-07-09 00:15:34 [ main:1491 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-09 00:15:34 [ main:1495 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:15:34 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 00:15:34 [ main:1497 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-mvc.xml]
+2016-07-09 00:15:34 [ main:2085 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:15:34 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 00:15:34 [ main:2144 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:15:34 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 00:15:34 [ main:2311 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 820 ms
