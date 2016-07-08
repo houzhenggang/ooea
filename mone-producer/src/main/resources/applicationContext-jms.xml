@@ -40,14 +40,24 @@
     <!--统计队列目的地 -->
     <bean id="smsDestination" class="org.apache.activemq.command.ActiveMQQueue">
         <constructor-arg>
-            <value>recvQueue</value>
+            <value>smsQueue</value>
+        </constructor-arg>
+    </bean>
+    <!-- work destination end -->
+    
+    <!-- work destination start -->
+    <!--统计队列目的地 -->
+    <bean id="emailDestination" class="org.apache.activemq.command.ActiveMQQueue">
+        <constructor-arg>
+            <value>emailQueue</value>
         </constructor-arg>
     </bean>
     <!-- work destination end -->
 
     <bean id="producerService" class="com.obc.producer.impl.ProducerServiceImpl">
-        <property name="smsDestination" ref="smsDestination"></property>
         <property name="jmsTemplate" ref="jmsTemplate"></property>
+        <property name="smsDestination" ref="smsDestination"></property>
+        <property name="emailDestination" ref="emailDestination"></property>
     </bean>
 
 
