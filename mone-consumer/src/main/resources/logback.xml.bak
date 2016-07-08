@@ -2,23 +2,23 @@
 <configuration>
     <property name="USER_HOME" value="/weblogs/sivdc" />
 
-     <property name="pattern" value="%d{yyyyMMdd:HH:mm:ss.SSS} [%thread] [%class] %-5level  %msg%n" />
-	<!-- Appender's -->
-	<appender name="ROOT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${USER_HOME}/ROOT_LOG.txt</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${USER_HOME}/ROOT_LOG_%d{yyyy-MM-dd}.txt.%i</fileNamePattern>
-			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-				<maxFileSize>5MB</maxFileSize>
-			</timeBasedFileNamingAndTriggeringPolicy>
-			<maxHistory>5</maxHistory> 
-		</rollingPolicy>
-		<layout>
-			<pattern>${pattern}</pattern>
-		</layout>
-	</appender>
-     
-    <!-- 过滤掉 TRACE 和 DEBUG 级别的日志-->
+    <property name="pattern" value="%d{yyyyMMdd:HH:mm:ss.SSS} [%thread] [%class] %-5level  %msg%n" />
+    <!-- Appender's -->
+    <appender name="ROOT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${USER_HOME}/ROOT_LOG.txt</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/ROOT_LOG_%d{yyyy-MM-dd}.txt.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>5</maxHistory>
+        </rollingPolicy>
+        <layout>
+            <pattern>${pattern}</pattern>
+        </layout>
+    </appender>
+
+    <!-- 过滤掉 TRACE 和 DEBUG 级别的日志 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
@@ -101,19 +101,19 @@
     <logger name="org.apache.ibatis" level="DEBUG">
         <appender-ref ref="ROOT_FILE"></appender-ref>
     </logger>
-    
+
     <logger name="org.apache.activemq" level="error">
         <appender-ref ref="ERROR_FILE"></appender-ref>
     </logger>
 
-    <!--App的日志-->
+    <!--App的日志 -->
     <logger name="com.sse.sivdc.service" level="DEBUG">
         <appender-ref ref="ROOT_FILE" />
     </logger>
 
     <root level="DEBUG">
         <appender-ref ref="ROOT_FILE"></appender-ref>
-       
+
     </root>
 
 </configuration>

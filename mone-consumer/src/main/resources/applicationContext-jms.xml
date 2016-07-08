@@ -45,7 +45,7 @@
 
 
 	<!-- 过滤清洗队列的MessageListener （占用线程数量=消费者个数、当前默认2个）-->
-	<bean id="statListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+	<bean id="smsListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory"></property>
 		<property name="destination" ref="statDestination"></property>
 		<property name="messageListener" ref="smsConsumerSessionAwareMessageListener"></property>

@@ -12,7 +12,7 @@
 	<!-- ====================================================================================== -->
 	<!-- 加载属性文件 -->
 	<!-- ====================================================================================== -->
-	<context:property-placeholder location="classpath*:*.properties" />
+	<context:property-placeholder location="classpath*:config.properties" />
 
 	<import resource="classpath:/applicationContext-comsumer.xml" />
 	<import resource="classpath:/applicationContext-jms.xml" />
