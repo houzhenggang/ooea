@@ -15,7 +15,7 @@
 
 	<mvc:annotation-driven />
 	
-	<context:component-scan base-package="com.sse.sivss.controller" />
+<!-- 	<context:component-scan base-package="com.sse.sivss.controller" /> -->
 	
 	<bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
 		

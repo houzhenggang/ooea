@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="USER_HOME" value="/weblogs/sivdc" />
+
+     <property name="pattern" value="%d{yyyyMMdd:HH:mm:ss.SSS} [%thread] [%class] %-5level  %msg%n" />
+	<!-- Appender's -->
+	<appender name="ROOT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${USER_HOME}/ROOT_LOG.txt</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${USER_HOME}/ROOT_LOG_%d{yyyy-MM-dd}.txt.%i</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>5MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+			<maxHistory>5</maxHistory> 
+		</rollingPolicy>
+		<layout>
+			<pattern>${pattern}</pattern>
+		</layout>
+	</appender>
+     
+    <!-- 过滤掉 TRACE 和 DEBUG 级别的日志-->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <encoder>
+            <pattern>${pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ALL_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${USER_HOME}/LOG.txt</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/%d{yyyyMMdd}/LOG.txt.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>1024MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>365</maxHistory>
+        </rollingPolicy>
+
+        <layout>
+            <pattern>${pattern}</pattern>
+        </layout>
+    </appender>
+
+    <!-- 记录异常信息 -->
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>${USER_HOME}/ERROR_LOG.txt</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/%d{yyyyMMdd}/ERROR_LOG.txt.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>5</maxHistory>
+        </rollingPolicy>
+
+        <layout>
+            <pattern>${pattern}</pattern>
+        </layout>
+    </appender>
+
+    <appender name="DAO_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${USER_HOME}/DAO_LOG.txt</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${USER_HOME}/%d{yyyyMMdd}/dao_log.txt.%i</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>5MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>5</maxHistory>
+        </rollingPolicy>
+
+        <layout>
+            <pattern>${pattern}</pattern>
+        </layout>
+    </appender>
+
+    <!-- SQL 及 Parameters -->
+    <logger name="java.sql.PreparedStatement" level="DEBUG" additivity="false">
+        <appender-ref ref="ROOT_FILE"></appender-ref>
+    </logger>
+
+    <logger name="java.sql.Statement" level="DEBUG" additivity="false">
+        <appender-ref ref="ROOT_FILE"></appender-ref>
+    </logger>
+
+    <!-- DB Connection -->
+    <logger name="java.sql.Connection" level="DEBUG" additivity="false">
+        <appender-ref ref="ROOT_FILE"></appender-ref>
+    </logger>
+
+    <!-- Columns 及 Rows -->
+    <logger name="java.sql.ResultSet" level="DEBUG" additivity="false">
+        <appender-ref ref="ROOT_FILE"></appender-ref>
+    </logger>
+
+    <logger name="org.apache.ibatis" level="DEBUG">
+        <appender-ref ref="ROOT_FILE"></appender-ref>
+    </logger>
+    
+    <logger name="org.apache.activemq" level="error">
+        <appender-ref ref="ERROR_FILE"></appender-ref>
+    </logger>
+
+    <!--App的日志-->
+    <logger name="com.sse.sivdc.service" level="DEBUG">
+        <appender-ref ref="ROOT_FILE" />
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="ROOT_FILE"></appender-ref>
+       
+    </root>
+
+</configuration>

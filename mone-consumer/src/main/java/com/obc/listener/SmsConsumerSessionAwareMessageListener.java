@@ -14,17 +14,17 @@ import com.obc.mq.ConsumerService;
 import com.obc.mq.p2p.entity.MessageReq;
 import com.obc.mq.p2p.entity.MessageResp;
 
-public class SMSConsumerSessionAwareMessageListener implements SessionAwareMessageListener<MapMessage> {
+public class SmsConsumerSessionAwareMessageListener implements SessionAwareMessageListener<MapMessage> {
 	
 	private Map<String, ConsumerService<MessageResp, MessageReq>> taskMap;
-	private Map<String, Integer>								 exeTimeMap;
+	private Map<String, Integer>								  taskExeTimeMap;
 	
 	public void setTaskMap ( Map<String, ConsumerService<MessageResp, MessageReq>> taskMap ) {
 		this.taskMap = taskMap;
 	}
 	
-	public void setExeTimeMap ( Map<String, Integer> exeTimeMap ) {
-		this.exeTimeMap = exeTimeMap;
+	public void setTaskExeTimeMap ( Map<String, Integer> taskExeTimeMap ) {
+		this.taskExeTimeMap = taskExeTimeMap;
 	}
 	
 	@Override
@@ -36,7 +36,7 @@ public class SMSConsumerSessionAwareMessageListener implements SessionAwareMessa
 		MessageResp resp = ms.exec(new MessageReq());
 		
 		Date curDate = new Date();
-		int mustTime = exeTimeMap.get(task);
+		int mustTime = taskExeTimeMap.get(task);
 		Calendar ca = Calendar.getInstance();
 		ca.setTime(now);
 		ca.add(Calendar.MINUTE, mustTime);
