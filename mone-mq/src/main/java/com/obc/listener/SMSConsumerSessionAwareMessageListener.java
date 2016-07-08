@@ -10,16 +10,16 @@ import javax.jms.Session;
 
 import org.springframework.jms.listener.SessionAwareMessageListener;
 
-import com.obc.mq.MqService;
+import com.obc.mq.MessageService;
 import com.obc.mq.p2p.entity.MessageReq;
 import com.obc.mq.p2p.entity.MessageResp;
 
-public class EmailConsumerSessionAwareMessageListener implements SessionAwareMessageListener<MapMessage> {
+public class SMSConsumerSessionAwareMessageListener implements SessionAwareMessageListener<MapMessage> {
 	
-	private Map<String, MqService<MessageResp, MessageReq>>	taskMap;
-	private Map<String, Integer>							exeTimeMap;
+	private Map<String, MessageService<MessageResp, MessageReq>> taskMap;
+	private Map<String, Integer>								 exeTimeMap;
 	
-	public void setTaskMap ( Map<String, MqService<MessageResp, MessageReq>> taskMap ) {
+	public void setTaskMap ( Map<String, MessageService<MessageResp, MessageReq>> taskMap ) {
 		this.taskMap = taskMap;
 	}
 	
@@ -28,12 +28,12 @@ public class EmailConsumerSessionAwareMessageListener implements SessionAwareMes
 	}
 	
 	@Override
-	public void onMessage ( MapMessage mapMessage ,
+	public void onMessage ( MapMessage message ,
 	                        Session session ) throws JMSException {
-		String task = mapMessage.getString("taskId");
-		final MqService<MessageResp, MessageReq> mqService = taskMap.get(task);
+		String task = message.getString("taskId");
+		final MessageService<MessageResp, MessageReq> ms = taskMap.get(task);
 		Date now = new Date();
-		MessageResp messageResp= mqService.exec(new MessageReq());
+		MessageResp resp = ms.exec(new MessageReq());
 		
 		Date curDate = new Date();
 		int mustTime = exeTimeMap.get(task);
