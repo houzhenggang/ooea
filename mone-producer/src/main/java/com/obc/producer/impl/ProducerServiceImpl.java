@@ -1,4 +1,4 @@
-package com.obc.common.producer.impl;
+package com.obc.producer.impl;
 
 import java.util.Map;
 
@@ -11,7 +11,8 @@ import javax.jms.Session;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 
-import com.obc.common.producer.ProducerService;
+import com.obc.producer.ProducerService;
+
 
 public class ProducerServiceImpl implements ProducerService {
 	

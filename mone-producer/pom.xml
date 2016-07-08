@@ -7,13 +7,12 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../mone-parent/pom.xml</relativePath>
     </parent>
-
-
-    <artifactId>mone-consumer</artifactId>
+    <artifactId>mone-producer</artifactId>
     <packaging>war</packaging>
-    <version>1.0.1</version>
-    <name>mone-consumer</name>
+    <version>0.0.1</version>
+    <name>mone-producer</name>
     <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -30,6 +29,8 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>mone-consumer</finalName>
+        <finalName>mone-producer</finalName>
     </build>
+
+
 </project>

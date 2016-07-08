@@ -10,9 +10,9 @@ import javax.jms.Session;
 
 import org.springframework.jms.listener.SessionAwareMessageListener;
 
-import com.obc.mq.ConsumerService;
-import com.obc.mq.p2p.entity.MessageReq;
-import com.obc.mq.p2p.entity.MessageResp;
+import com.obc.consumer.ConsumerService;
+import com.obc.consumer.p2p.entity.MessageReq;
+import com.obc.consumer.p2p.entity.MessageResp;
 
 public class SmsConsumerSessionAwareMessageListener implements SessionAwareMessageListener<MapMessage> {
 	

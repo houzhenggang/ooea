@@ -1,4 +1,4 @@
-package com.obc.mq.p2p.entity;
+package com.obc.consumer.p2p.entity;
 
 import java.util.Date;
 /**

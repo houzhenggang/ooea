@@ -1,10 +1,10 @@
-package com.obc.mq.p2p;
+package com.obc.consumer.p2p;
 
 import org.springframework.stereotype.Service;
 
-import com.obc.mq.ConsumerService;
-import com.obc.mq.p2p.entity.MessageReq;
-import com.obc.mq.p2p.entity.MessageResp;
+import com.obc.consumer.ConsumerService;
+import com.obc.consumer.p2p.entity.MessageReq;
+import com.obc.consumer.p2p.entity.MessageResp;
 
 @Service("emailMessageService")
 public class EmailMessageService implements ConsumerService<MessageResp, MessageReq> {

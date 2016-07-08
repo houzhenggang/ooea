@@ -14,7 +14,7 @@
 	<!-- ====================================================================================== -->
 	<context:property-placeholder location="classpath*:*.properties" />
 
-	<import resource="classpath:/applicationContext-comsumer.xml" />
+	<import resource="classpath:/applicationContext-producer.xml" />
 	<import resource="classpath:/applicationContext-jms.xml" />
 
 </beans>

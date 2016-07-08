@@ -8,11 +8,12 @@
 
     <modules>
         <module>../mone</module>
+        <module>../mone-jar</module>
         <module>../mone-commons</module>
         <module>../mone-dao</module>
         <module>../mone-job</module>
-        <module>../mone-jar</module>
         <module>../mone-consumer</module>
+        <module>../mone-producer</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

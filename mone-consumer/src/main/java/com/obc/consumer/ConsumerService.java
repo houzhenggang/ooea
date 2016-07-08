@@ -1,4 +1,4 @@
-package com.obc.mq;
+package com.obc.consumer;
 
 /**
  * <br>类名： MqService 

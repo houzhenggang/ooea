@@ -352,3 +352,21 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2016-07-09 00:15:34 [ main:2085 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:15:34 CST 2016]; parent: Root WebApplicationContext
 2016-07-09 00:15:34 [ main:2144 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:15:34 CST 2016]; parent: Root WebApplicationContext
 2016-07-09 00:15:34 [ main:2311 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 820 ms
+2016-07-09 00:24:13 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:24:13 [ main:159 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:24:13 CST 2016]; root of context hierarchy
+2016-07-09 00:24:13 [ main:230 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:29:41 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 00:29:41 [ main:161 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 00:29:41 CST 2016]; root of context hierarchy
+2016-07-09 00:29:41 [ main:229 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-bean.xml]
+2016-07-09 00:29:41 [ main:481 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 00:29:42 [ main:720 ] - [ INFO ] Loading properties file from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/config.properties]
+2016-07-09 00:29:42 [ main:1032 ] - [ INFO ] Starting beans in phase 2147483647
+2016-07-09 00:29:42 [ main:1212 ] - [ INFO ] Established shared JMS Connection: PooledConnection { ConnectionPool[ActiveMQConnection {id=ID:FC01-54478-1467995382447-1:1,clientId=null,started=false}] }
+2016-07-09 00:29:42 [ ActiveMQ Task-1:1306 ] - [ INFO ] Successfully connected to tcp://127.0.0.1:61616
+2016-07-09 00:29:42 [ main:1344 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1341 ms
+2016-07-09 00:29:42 [ main:1431 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-09 00:29:42 [ main:1436 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:29:42 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 00:29:42 [ main:1438 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-consumer/target/classes/applicationContext-mvc.xml]
+2016-07-09 00:29:43 [ main:1949 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:29:42 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 00:29:43 [ main:2007 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 00:29:42 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 00:29:43 [ main:2154 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 721 ms

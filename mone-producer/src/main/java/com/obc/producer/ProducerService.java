@@ -1,4 +1,4 @@
-package com.obc.common.producer;
+package com.obc.producer;
 
 import java.util.Map;
 
