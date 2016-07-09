@@ -6,9 +6,10 @@ import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MapMessage;
 import javax.jms.Message;
+import javax.jms.MessageConsumer;
 import javax.jms.Session;
+import javax.jms.Topic;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
@@ -30,10 +31,13 @@ import com.obc.producer.ProducerService;
  */
 @Service( "producerServiceImpl" )
 public class ProducerServiceImpl implements ProducerService {
+	
 	/* 消息模板 */
 	private JmsTemplate	jmsTemplate;
+	
 	/* 短信消息标记 */
 	private Destination	smsDestination;
+	
 	/* email消息标记 */
 	private Destination	emailDestination;
 						
@@ -70,8 +74,10 @@ public class ProducerServiceImpl implements ProducerService {
 		jmsTemplate.send(emailDestination, new MessageCreator() {
 			
 			@Override
-			public Message createMessage ( Session arg0 ) throws JMSException {
-				// TODO Auto-generated method stub
+			public Message createMessage ( Session session ) throws JMSException {
+				Topic Topic = session.createTopic("");
+				MessageConsumer consumer = session.createConsumer(Topic);
+				consumer.receive();
 				return null;
 			}
 			

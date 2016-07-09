@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="USER_HOME" value="/weblogs/sivdc" />
+    <property name="USER_HOME" value="/weblogs/mone-consumer" />
 
     <property name="pattern" value="%d{yyyyMMdd:HH:mm:ss.SSS} [%thread] [%class] %-5level  %msg%n" />
     <!-- Appender's -->

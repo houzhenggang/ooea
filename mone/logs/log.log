@@ -1,4 +1,72 @@
-2016-06-27 09:30:14 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-27 09:31:18 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-27 09:32:02 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
-2016-06-27 09:33:20 [ main:0 ] - [ INFO ] HV000001: Hibernate Validator 5.2.2.Final
+2016-07-09 11:04:30 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 11:04:30 [ main:261 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 11:04:30 CST 2016]; root of context hierarchy
+2016-07-09 11:04:30 [ main:359 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-07-09 11:04:31 [ main:541 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-07-09 11:04:31 [ main:843 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-07-09 11:04:31 [ main:859 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-07-09 11:04:31 [ main:879 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-07-09 11:04:31 [ main:892 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-07-09 11:04:31 [ main:1328 ] - [ INFO ] Loading properties file from class path resource [jdbc.properties]
+2016-07-09 11:04:32 [ main:1796 ] - [ INFO ] Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2528 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2529 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2548 ] - [ INFO ] Bean 'sqlSession' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2550 ] - [ INFO ] Bean 'bcSysUserDaoImpl' of type [class com.obc.modules.sys.dao.impl.BcSysUserDaoImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2550 ] - [ INFO ] Bean 'bcSysUserServiceImpl' of type [class com.obc.modules.sys.service.impl.BcSysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2553 ] - [ INFO ] No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-07-09 11:04:33 [ main:2554 ] - [ INFO ] Bean 'loginRealm' of type [class com.obc.common.filter.shiro.realm.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2556 ] - [ INFO ] Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2592 ] - [ INFO ] Bean 'customUserFilter' of type [class com.obc.common.filter.shiro.CustomUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 11:04:33 [ main:2786 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2781 ms
+2016-07-09 11:04:33 [ main:3040 ] - [ INFO ] FrameworkServlet 'mvc': initialization started
+2016-07-09 11:04:33 [ main:3043 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Sat Jul 09 11:04:33 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 11:04:33 [ main:3044 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone/target/classes/applicationContext-mvc.xml]
+2016-07-09 11:04:34 [ main:3560 ] - [ INFO ] Mapped "{[/common/imgUpLoad.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.obc.modules.common.ImageLoadController.imgUpLoad(javax.servlet.http.HttpServletRequest) throws com.aliyun.oss.OSSException,com.aliyun.oss.ClientException,java.io.IOException
+2016-07-09 11:04:34 [ main:3568 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login()
+2016-07-09 11:04:34 [ main:3569 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[POST]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login(javax.servlet.http.HttpServletRequest,com.obc.vo.LoginPojo)
+2016-07-09 11:04:34 [ main:3569 ] - [ INFO ] Mapped "{[/consumer/emailCode.do]}" onto public java.lang.Object com.obc.modules.consumer.controller.ConsumerController.emailCode(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser)
+2016-07-09 11:04:34 [ main:3570 ] - [ INFO ] Mapped "{[/consumer/validateCode.do]}" onto public void com.obc.modules.consumer.controller.ConsumerController.validateCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.obc.modules.sys.entity.BcSysUser)
+2016-07-09 11:04:34 [ main:3570 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[POST]}" onto public com.obc.common.ExceptionMessage com.obc.modules.consumer.controller.ConsumerController.register(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser,java.lang.String)
+2016-07-09 11:04:34 [ main:3571 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.register()
+2016-07-09 11:04:34 [ main:3575 ] - [ INFO ] Mapped "{[/sys/login.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.login()
+2016-07-09 11:04:34 [ main:3575 ] - [ INFO ] Mapped "{[/sys/loginout.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.loginout(java.lang.String)
+2016-07-09 11:04:34 [ main:4245 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Sat Jul 09 11:04:33 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 11:04:35 [ main:4462 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Sat Jul 09 11:04:33 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 11:04:35 [ main:4676 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-07-09 11:04:35 [ main:4778 ] - [ INFO ] FrameworkServlet 'mvc': initialization completed in 1738 ms
+2016-07-09 19:08:08 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 19:08:09 [ main:173 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 19:08:09 CST 2016]; root of context hierarchy
+2016-07-09 19:08:09 [ main:240 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-beans.xml]
+2016-07-09 19:08:09 [ main:376 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-db.xml]
+2016-07-09 19:08:09 [ main:1008 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jedis.xml]
+2016-07-09 19:08:09 [ main:1042 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-memcached.xml]
+2016-07-09 19:08:09 [ main:1060 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-mq.xml]
+2016-07-09 19:08:10 [ main:1074 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-shiro.xml]
+2016-07-09 19:08:10 [ main:1486 ] - [ INFO ] Loading properties file from class path resource [jdbc.properties]
+2016-07-09 19:08:10 [ main:1788 ] - [ INFO ] Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2466 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2468 ] - [ INFO ] Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2487 ] - [ INFO ] Bean 'sqlSession' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2489 ] - [ INFO ] Bean 'bcSysUserDaoImpl' of type [class com.obc.modules.sys.dao.impl.BcSysUserDaoImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2490 ] - [ INFO ] Bean 'bcSysUserServiceImpl' of type [class com.obc.modules.sys.service.impl.BcSysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2492 ] - [ INFO ] No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-07-09 19:08:11 [ main:2493 ] - [ INFO ] Bean 'loginRealm' of type [class com.obc.common.filter.shiro.realm.LoginRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2495 ] - [ INFO ] Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2536 ] - [ INFO ] Bean 'customUserFilter' of type [class com.obc.common.filter.shiro.CustomUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-07-09 19:08:11 [ main:2674 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2649 ms
+2016-07-09 19:08:11 [ main:2861 ] - [ INFO ] FrameworkServlet 'mvc': initialization started
+2016-07-09 19:08:11 [ main:2864 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'mvc-servlet': startup date [Sat Jul 09 19:08:11 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:08:11 [ main:2866 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone/target/classes/applicationContext-mvc.xml]
+2016-07-09 19:08:12 [ main:3271 ] - [ INFO ] Mapped "{[/common/imgUpLoad.do]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.obc.modules.common.ImageLoadController.imgUpLoad(javax.servlet.http.HttpServletRequest) throws com.aliyun.oss.OSSException,com.aliyun.oss.ClientException,java.io.IOException
+2016-07-09 19:08:12 [ main:3340 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login()
+2016-07-09 19:08:12 [ main:3342 ] - [ INFO ] Mapped "{[/consumer/login.do],methods=[POST]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.login(javax.servlet.http.HttpServletRequest,com.obc.vo.LoginPojo)
+2016-07-09 19:08:12 [ main:3343 ] - [ INFO ] Mapped "{[/consumer/emailCode.do]}" onto public java.lang.Object com.obc.modules.consumer.controller.ConsumerController.emailCode(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser)
+2016-07-09 19:08:12 [ main:3345 ] - [ INFO ] Mapped "{[/consumer/validateCode.do]}" onto public void com.obc.modules.consumer.controller.ConsumerController.validateCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.obc.modules.sys.entity.BcSysUser)
+2016-07-09 19:08:12 [ main:3347 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[POST]}" onto public com.obc.common.ExceptionMessage com.obc.modules.consumer.controller.ConsumerController.register(javax.servlet.http.HttpServletRequest,com.obc.modules.sys.entity.BcSysUser,java.lang.String)
+2016-07-09 19:08:12 [ main:3349 ] - [ INFO ] Mapped "{[/consumer/register.do],methods=[GET]}" onto public java.lang.String com.obc.modules.consumer.controller.ConsumerController.register()
+2016-07-09 19:08:12 [ main:3361 ] - [ INFO ] Mapped "{[/sys/login.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.login()
+2016-07-09 19:08:12 [ main:3363 ] - [ INFO ] Mapped "{[/sys/loginout.do]}" onto public java.lang.String com.obc.modules.sys.controller.SysController.loginout(java.lang.String)
+2016-07-09 19:08:12 [ main:3664 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Sat Jul 09 19:08:11 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:08:12 [ main:3747 ] - [ INFO ] Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-servlet': startup date [Sat Jul 09 19:08:11 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:08:12 [ main:3931 ] - [ INFO ] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-07-09 19:08:12 [ main:4010 ] - [ INFO ] FrameworkServlet 'mvc': initialization completed in 1149 ms

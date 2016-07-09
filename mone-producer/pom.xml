@@ -20,6 +20,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.apache.xbean</groupId>
+            <artifactId>xbean-spring</artifactId>
+            <version>3.18</version>
+        </dependency>
+        <dependency>
             <groupId>com.mone</groupId>
             <artifactId>mone-jar</artifactId>
         </dependency>

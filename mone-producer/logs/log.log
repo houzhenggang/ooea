@@ -1,0 +1,80 @@
+2016-07-09 19:02:23 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 19:02:23 [ main:498 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 19:02:23 CST 2016]; root of context hierarchy
+2016-07-09 19:02:23 [ main:718 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-producer/target/classes/applicationContext-bean.xml]
+2016-07-09 19:02:24 [ main:1579 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 19:02:25 [ main:2568 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\config.properties]
+2016-07-09 19:02:25 [ main:2568 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\log4j.properties]
+2016-07-09 19:02:25 [ main:2570 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-jar\target\classes\null.properties]
+2016-07-09 19:02:25 [ main:2570 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common.properties]
+2016-07-09 19:02:25 [ main:2582 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common_zh_CN.properties]
+2016-07-09 19:02:25 [ main:2583 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss.properties]
+2016-07-09 19:02:25 [ main:2583 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss_zh_CN.properties]
+2016-07-09 19:02:25 [ main:2584 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/versioninfo.properties]
+2016-07-09 19:02:25 [ main:2584 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/net/sf/ehcache/ehcache-core/2.5.0/ehcache-core-2.5.0.jar!/ehcache-version.properties]
+2016-07-09 19:02:25 [ main:2596 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/poi/poi/3.13/poi-3.13.jar!/font_metrics.properties]
+2016-07-09 19:02:25 [ main:2600 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/activemq/activemq-all/5.13.3/activemq-all-5.13.3.jar!/log4j.properties]
+2016-07-09 19:02:25 [ main:2601 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/922/0/.cp/lib/core-3.1.1.jar!/plugin.properties]
+2016-07-09 19:02:26 [ main:3341 ] - [ INFO ] Root WebApplicationContext: initialization completed in 3327 ms
+2016-07-09 19:02:26 [ main:3508 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-09 19:02:26 [ main:3519 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 19:02:26 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:02:27 [ main:4232 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 723 ms
+2016-07-09 19:02:52 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 19:02:52 [ main:131 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 19:02:52 CST 2016]; root of context hierarchy
+2016-07-09 19:02:53 [ main:182 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-producer/target/classes/applicationContext-bean.xml]
+2016-07-09 19:02:53 [ main:407 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 19:02:53 [ main:826 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\config.properties]
+2016-07-09 19:02:53 [ main:826 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\log4j.properties]
+2016-07-09 19:02:53 [ main:827 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-jar\target\classes\null.properties]
+2016-07-09 19:02:53 [ main:827 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common.properties]
+2016-07-09 19:02:53 [ main:827 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common_zh_CN.properties]
+2016-07-09 19:02:53 [ main:828 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss.properties]
+2016-07-09 19:02:53 [ main:828 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss_zh_CN.properties]
+2016-07-09 19:02:53 [ main:829 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/versioninfo.properties]
+2016-07-09 19:02:53 [ main:829 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/net/sf/ehcache/ehcache-core/2.5.0/ehcache-core-2.5.0.jar!/ehcache-version.properties]
+2016-07-09 19:02:53 [ main:829 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/poi/poi/3.13/poi-3.13.jar!/font_metrics.properties]
+2016-07-09 19:02:53 [ main:833 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/activemq/activemq-all/5.13.3/activemq-all-5.13.3.jar!/log4j.properties]
+2016-07-09 19:02:53 [ main:834 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/922/0/.cp/lib/core-3.1.1.jar!/plugin.properties]
+2016-07-09 19:02:53 [ main:1055 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1053 ms
+2016-07-09 19:02:53 [ main:1113 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-09 19:02:53 [ main:1118 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 19:02:53 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:02:54 [ main:1279 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 165 ms
+2016-07-09 19:06:43 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 19:06:43 [ main:131 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 19:06:43 CST 2016]; root of context hierarchy
+2016-07-09 19:06:43 [ main:183 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-producer/target/classes/applicationContext-bean.xml]
+2016-07-09 19:06:43 [ main:394 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 19:06:44 [ main:803 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\config.properties]
+2016-07-09 19:06:44 [ main:804 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\log4j.properties]
+2016-07-09 19:06:44 [ main:804 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-jar\target\classes\null.properties]
+2016-07-09 19:06:44 [ main:804 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common.properties]
+2016-07-09 19:06:44 [ main:805 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common_zh_CN.properties]
+2016-07-09 19:06:44 [ main:805 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss.properties]
+2016-07-09 19:06:44 [ main:806 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss_zh_CN.properties]
+2016-07-09 19:06:44 [ main:807 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/versioninfo.properties]
+2016-07-09 19:06:44 [ main:807 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/net/sf/ehcache/ehcache-core/2.5.0/ehcache-core-2.5.0.jar!/ehcache-version.properties]
+2016-07-09 19:06:44 [ main:807 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/poi/poi/3.13/poi-3.13.jar!/font_metrics.properties]
+2016-07-09 19:06:44 [ main:811 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/activemq/activemq-all/5.13.3/activemq-all-5.13.3.jar!/log4j.properties]
+2016-07-09 19:06:44 [ main:812 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/922/0/.cp/lib/core-3.1.1.jar!/plugin.properties]
+2016-07-09 19:06:44 [ main:1035 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1032 ms
+2016-07-09 19:06:44 [ main:1092 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-09 19:06:44 [ main:1096 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 19:06:44 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:06:44 [ main:1225 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 133 ms
+2016-07-09 19:13:23 [ main:0 ] - [ INFO ] Root WebApplicationContext: initialization started
+2016-07-09 19:13:23 [ main:139 ] - [ INFO ] Refreshing Root WebApplicationContext: startup date [Sat Jul 09 19:13:23 CST 2016]; root of context hierarchy
+2016-07-09 19:13:23 [ main:193 ] - [ INFO ] Loading XML bean definitions from URL [file:/C:/Users/FC/git/ooea/mone-producer/target/classes/applicationContext-bean.xml]
+2016-07-09 19:13:23 [ main:407 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext-jms.xml]
+2016-07-09 19:13:24 [ main:810 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\config.properties]
+2016-07-09 19:13:24 [ main:811 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-producer\target\classes\log4j.properties]
+2016-07-09 19:13:24 [ main:811 ] - [ INFO ] Loading properties file from file [C:\Users\FC\git\ooea\mone-jar\target\classes\null.properties]
+2016-07-09 19:13:24 [ main:811 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common.properties]
+2016-07-09 19:13:24 [ main:812 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/common_zh_CN.properties]
+2016-07-09 19:13:24 [ main:812 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss.properties]
+2016-07-09 19:13:24 [ main:813 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/oss_zh_CN.properties]
+2016-07-09 19:13:24 [ main:813 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/com/aliyun/oss/aliyun-sdk-oss/2.2.3/aliyun-sdk-oss-2.2.3.jar!/versioninfo.properties]
+2016-07-09 19:13:24 [ main:813 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/net/sf/ehcache/ehcache-core/2.5.0/ehcache-core-2.5.0.jar!/ehcache-version.properties]
+2016-07-09 19:13:24 [ main:814 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/poi/poi/3.13/poi-3.13.jar!/font_metrics.properties]
+2016-07-09 19:13:24 [ main:818 ] - [ INFO ] Loading properties file from URL [jar:file:/D:/maven-repository/org/apache/activemq/activemq-all/5.13.3/activemq-all-5.13.3.jar!/log4j.properties]
+2016-07-09 19:13:24 [ main:819 ] - [ INFO ] Loading properties file from URL [jar:file:/E:/Program%20Files/Java/eclipse/configuration/org.eclipse.osgi/922/0/.cp/lib/core-3.1.1.jar!/plugin.properties]
+2016-07-09 19:13:24 [ main:1037 ] - [ INFO ] Root WebApplicationContext: initialization completed in 1034 ms
+2016-07-09 19:13:24 [ main:1094 ] - [ INFO ] FrameworkServlet 'spring': initialization started
+2016-07-09 19:13:24 [ main:1098 ] - [ INFO ] Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Sat Jul 09 19:13:24 CST 2016]; parent: Root WebApplicationContext
+2016-07-09 19:13:24 [ main:1229 ] - [ INFO ] FrameworkServlet 'spring': initialization completed in 135 ms
