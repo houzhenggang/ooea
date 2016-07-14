@@ -46,5 +46,8 @@ public class SmsConsumerSessionAwareMessageListener implements SessionAwareMessa
 			// 记录超时信息
 			return;
 		}
+		
+		resp.getStatus();
+		
 	}
 }
