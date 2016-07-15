@@ -6,7 +6,7 @@ import java.util.List;
 
 import redis.clients.jedis.Jedis;
 
-public class JListUtils{
+public class JedisListUtils{
 	
 	public static List<String> blpop(Jedis jedis,String key,String...args){
 		return jedis.blpop(args);

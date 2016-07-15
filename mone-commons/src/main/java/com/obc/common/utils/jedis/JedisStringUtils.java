@@ -4,7 +4,7 @@ import java.util.List;
 
 import redis.clients.jedis.Jedis;
 
-public class JStringUtils{
+public class JedisStringUtils{
 	
 	public static String set(Jedis jedis,String key,String value){
 		return jedis.set(key,value);
