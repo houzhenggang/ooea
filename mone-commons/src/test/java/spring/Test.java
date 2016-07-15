@@ -4,6 +4,7 @@ import java.util.Date;
 
 import com.obc.common.enumeration.DateFormat;
 import com.obc.common.utils.DateUtils;
+import com.obc.common.utils.jedis.JStringUtils;
 
 import examples.构造方法注入.ApplicationUtil;
 import examples.构造方法注入.ClientService;
@@ -28,13 +29,9 @@ public class Test extends TestCase {
 		
 		Jedis jedis = new Jedis("139.196.24.209", 6379);
 		jedis.set("string01", "1");
-		jedis.incr("string01");
-		jedis.set("string02", "2");
-		String sds = jedis.get("string01");
-		String sde = jedis.get("string02");
-		jedis.zadd("paiming", Double.valueOf(sds), "string01");
-		jedis.zadd("paiming", Double.valueOf(sde), "string02");
-		
+		System.out.println(jedis.get("string01"));
+		Long l = JStringUtils.setnx(jedis, "string01", "100");
+		System.out.println(l);
 	}
 	
 }
