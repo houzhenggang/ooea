@@ -3,7 +3,6 @@ package com.obc.common.utils.jedis;
 import redis.clients.jedis.Jedis;
 
 public class JedisTransaction{
-	StringRedisTemplate
 	
 	public static Object multi(Jedis jedis,String key){
 		return jedis.multi();
