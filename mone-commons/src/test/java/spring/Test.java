@@ -1,11 +1,13 @@
 package spring;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 import com.obc.common.enumeration.DateFormat;
 import com.obc.common.utils.DateUtils;
-import com.obc.common.utils.jedis.JedisStringUtils;
+import com.obc.common.utils.jedis.JedisZset;
 
 import examples.构造方法注入.ApplicationUtil;
 import examples.构造方法注入.ClientService;
@@ -29,16 +31,21 @@ public class Test extends TestCase{
 	public void test02() throws InterruptedException{
 		
 		Jedis jedis=new Jedis("10.10.11.86",6379);
+		// JedisStringUtils.set(jedis,"123132","dsad");
 		
-		// for(int i=0;i<50000;i++){
-		// JedisStringUtils.set(jedis,"test:"+i,i+"");
-		// }
+		for(int i=0;i<50000;i++){
+			String[] m=new String[500];
+			Map<String,Double> scoreMembers=new HashMap<String,Double>();
+			scoreMembers.put("zset_:"+i,(double)i);
+			// JedisSetUtils.sadd(jedis,"test",m);
+			JedisZset.zadd(jedis,"test",scoreMembers);
+		}
 		// for(int i=0;i<50000;i++){
 		// System.out.println(JStringUtils.get(jedis,"test:"+i));
 		// }
-		for(int i=0;i<50000;i++){
-			jedis.del("test:"+i);
-		}
+		// for(int i=0;i<50000;i++){
+		// jedis.del("test:"+i);
+		// }
 	}
 	
 }

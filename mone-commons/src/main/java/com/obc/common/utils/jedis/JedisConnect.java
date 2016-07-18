@@ -2,7 +2,7 @@ package com.obc.common.utils.jedis;
 
 import redis.clients.jedis.Jedis;
 
-public class JedisConnectUtils{
+public class JedisConnect{
 	
 	public static String auth(Jedis jedis,String password){
 		return jedis.auth(password);

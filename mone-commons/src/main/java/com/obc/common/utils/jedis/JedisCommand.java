@@ -4,7 +4,7 @@ import java.util.Set;
 
 import redis.clients.jedis.Jedis;
 
-public class JedisCommandUtils{
+public class JedisCommand{
 	
 	public static Long del(Jedis jedis,String key){
 		return jedis.del(key);

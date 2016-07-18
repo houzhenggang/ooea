@@ -6,7 +6,7 @@ import java.util.Set;
 
 import redis.clients.jedis.Jedis;
 
-public class JedisHashUtils{
+public class JedisHash{
 	
 	public static Long hdel(Jedis jedis,String key,String...fields){
 		return jedis.hdel(key,fields);

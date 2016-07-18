@@ -5,7 +5,7 @@ import java.util.Set;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ScanResult;
 
-public class JedisSetUtils{
+public class JedisSet{
 	
 	public static Long sadd(Jedis jedis,String key,String...members){
 		return jedis.sadd(key,members);

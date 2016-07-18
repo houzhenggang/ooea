@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ScanResult;
 import redis.clients.jedis.Tuple;
 
-public class JedisZsetUtils{
+public class JedisZset{
 	
 	public static Long zadd(Jedis jedis,String key,Map<String,Double> scoreMembers){
 		return jedis.zadd(key,scoreMembers);
