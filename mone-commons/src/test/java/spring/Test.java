@@ -17,6 +17,7 @@ import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;
+import redis.clients.jedis.Transaction;
 
 @SuppressWarnings("unused")
 public class Test extends TestCase{
@@ -46,6 +47,15 @@ public class Test extends TestCase{
 		// for(int i=0;i<50000;i++){
 		// jedis.del("test:"+i);
 		// }
+	}
+	
+	public void test03(){
+		Jedis jedis=new Jedis("10.10.11.86",6379);
+		Transaction transaction=jedis.multi();
+		
+		// 二选一
+		transaction.exec();// 提交事务
+		transaction.discard();// 终止事务
 	}
 	
 }
