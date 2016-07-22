@@ -31,18 +31,5 @@
     </dependencies>
     <build>
         <finalName>mone-consumer</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>7.6.10.v20130312</version>
-                <configuration>
-                    <scanIntervalSeconds>10</scanIntervalSeconds>
-                    <webApp>
-                        <contextPath>/test</contextPath>
-                    </webApp>
-                </configuration>
-            </plugin>
-        </plugins>
     </build>
 </project>
